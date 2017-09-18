@@ -1,0 +1,26 @@
+HKCR
+{
+	TradeScript.ScriptOutput.1 = s 'ScriptOutput Class'
+	{
+		CLSID = s '{5CA7CD37-4019-427C-A5BF-4A8C82DD9537}'
+	}
+	TradeScript.ScriptOutput = s 'ScriptOutput Class'
+	{
+		CLSID = s '{5CA7CD37-4019-427C-A5BF-4A8C82DD9537}'
+		CurVer = s 'TradeScript.ScriptOutput.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {5CA7CD37-4019-427C-A5BF-4A8C82DD9537} = s 'ScriptOutput Class'
+		{
+			ProgID = s 'TradeScript.ScriptOutput.1'
+			VersionIndependentProgID = s 'TradeScript.ScriptOutput'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{67BFF05D-5B2C-4E33-AFE4-D6CE2BDD3121}'
+		}
+	}
+}

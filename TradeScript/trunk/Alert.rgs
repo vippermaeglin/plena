@@ -1,0 +1,26 @@
+HKCR
+{
+	TradeScript.Alert.1 = s 'Alert Class'
+	{
+		CLSID = s '{83392496-8720-4F6B-B906-984B587FDF74}'
+	}
+	TradeScript.Alert = s 'Alert Class'
+	{
+		CLSID = s '{83392496-8720-4F6B-B906-984B587FDF74}'
+		CurVer = s 'TradeScript.Alert.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {83392496-8720-4F6B-B906-984B587FDF74} = s 'Alert Class'
+		{
+			ProgID = s 'TradeScript.Alert.1'
+			VersionIndependentProgID = s 'TradeScript.Alert'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{67BFF05D-5B2C-4E33-AFE4-D6CE2BDD3121}'
+		}
+	}
+}

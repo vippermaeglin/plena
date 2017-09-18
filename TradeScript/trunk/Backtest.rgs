@@ -1,0 +1,26 @@
+HKCR
+{
+	TradeScript.Backtest.1 = s 'Backtest Class'
+	{
+		CLSID = s '{DDAF2F33-6E54-4161-AFCD-15058E0AA338}'
+	}
+	TradeScript.Backtest = s 'Backtest Class'
+	{
+		CLSID = s '{DDAF2F33-6E54-4161-AFCD-15058E0AA338}'
+		CurVer = s 'TradeScript.Backtest.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {DDAF2F33-6E54-4161-AFCD-15058E0AA338} = s 'Backtest Class'
+		{
+			ProgID = s 'TradeScript.Backtest.1'
+			VersionIndependentProgID = s 'TradeScript.Backtest'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{67BFF05D-5B2C-4E33-AFE4-D6CE2BDD3121}'
+		}
+	}
+}

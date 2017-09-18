@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="TradeScript">
+</Property><Property Name="Solution File" Value="C:\MFE\ts8361_src33226\TradeScript.sln">
+</Property><Property Name="Date" Value="sexta-feira, 13 de maio de 2011">
+</Property><Property Name="Time" Value="23:46">
+</Property></Properties><Event ErrorLevel="0" Project="TradeScript" Source="TradeScript.vcproj" Description="Converting project file 'C:\MFE\ts8361_src33226\TradeScript.vcproj'.">
+</Event><Event ErrorLevel="1" Project="TradeScript" Source="TradeScript.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="TradeScript" Source="TradeScript.vcproj" Description="MSB8012: $(TargetPath) ('C:\MFE\ts8361_src33226\.\ReleaseMinDependency\TradeScript.dll') does not match the Linker's OutputFile property value '.\ReleaseMinDependency/TradeScript.dll' ('C:\MFE\ts8361_src33226\ReleaseMinDependency/TradeScript.dll') in project configuration 'Release MinDependency|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="TradeScript" Source="TradeScript.vcproj" Description="MSB8012: $(TargetPath) ('C:\MFE\ts8361_src33226\.\Debug\TradeScript.dll') does not match the Linker's OutputFile property value '.\Debug/TradeScript.dll' ('C:\MFE\ts8361_src33226\Debug/TradeScript.dll') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="TradeScript" Source="TradeScript.vcproj" Description="MSB8012: $(TargetPath) ('C:\MFE\ts8361_src33226\.\ReleaseMinSize\TradeScript.dll') does not match the Linker's OutputFile property value '.\ReleaseMinSize/TradeScript.dll' ('C:\MFE\ts8361_src33226\ReleaseMinSize/TradeScript.dll') in project configuration 'Release MinSize|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="TradeScript" Source="TradeScript.vcproj" Description="Done converting to new project file 'C:\MFE\ts8361_src33226\TradeScript.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="TradeScript" Source="TradeScript.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="TradeScript.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="TradeScript.sln" Description="Converted">
+</Event></UpgradeLog>

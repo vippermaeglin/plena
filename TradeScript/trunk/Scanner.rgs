@@ -1,0 +1,26 @@
+HKCR
+{
+	TradeScript.Scanner.1 = s 'Scanner Class'
+	{
+		CLSID = s '{93FD1A72-C3AC-41B0-AAD7-D34C8083EED6}'
+	}
+	TradeScript.Scanner = s 'Scanner Class'
+	{
+		CLSID = s '{93FD1A72-C3AC-41B0-AAD7-D34C8083EED6}'
+		CurVer = s 'TradeScript.Scanner.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {93FD1A72-C3AC-41B0-AAD7-D34C8083EED6} = s 'Scanner Class'
+		{
+			ProgID = s 'TradeScript.Scanner.1'
+			VersionIndependentProgID = s 'TradeScript.Scanner'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{67BFF05D-5B2C-4E33-AFE4-D6CE2BDD3121}'
+		}
+	}
+}

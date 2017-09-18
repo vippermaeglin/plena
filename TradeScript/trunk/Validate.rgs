@@ -1,0 +1,26 @@
+HKCR
+{
+	TradeScript.Validate.1 = s 'Validate Class'
+	{
+		CLSID = s '{92347C5B-95EB-4C71-8CB6-7F1AE45A2726}'
+	}
+	TradeScript.Validate = s 'Validate Class'
+	{
+		CLSID = s '{92347C5B-95EB-4C71-8CB6-7F1AE45A2726}'
+		CurVer = s 'TradeScript.Validate.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {92347C5B-95EB-4C71-8CB6-7F1AE45A2726} = s 'Validate Class'
+		{
+			ProgID = s 'TradeScript.Validate.1'
+			VersionIndependentProgID = s 'TradeScript.Validate'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{67BFF05D-5B2C-4E33-AFE4-D6CE2BDD3121}'
+		}
+	}
+}

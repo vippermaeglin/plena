@@ -1,0 +1,239 @@
+// TradeScript.idl : IDL source for TradeScript.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (TradeScript.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	
+
+	[
+		object,
+		uuid(7E2BD722-EBC5-481B-B690-01215E0B0348),
+		dual,
+		helpstring("IAlert Interface"),
+		pointer_default(unique)
+	]
+	interface IAlert : IDispatch
+	{
+		[id(1), helpstring("Adds a record to the dataset")] HRESULT AppendRecord([in] double JDate, [in] double OpenPrice, [in] double HighPrice, [in] double LowPrice, [in] double ClosePrice, [in] long Volume);
+		[id(2), helpstring("Edits a record in the dataset")] HRESULT EditRecord([in] double JDate, [in] double OpenPrice, [in] double HighPrice, [in] double LowPrice, [in] double ClosePrice, [in] long Volume, [out, retval] VARIANT_BOOL *pRet);
+		[id(3), helpstring("Returns a record from the dataset")] HRESULT GetRecordByJDate([in] double JDate, [in] double *OpenPrice, [in] double *HighPrice, [in] double *LowPrice, [in] double* ClosePrice, [in] long* Volume, [out, retval] VARIANT_BOOL *pRet);
+		[id(4), helpstring("Returns a record from the dataset")] HRESULT GetRecordByIndex([in] long Index, [in] double *JDate, [in] double *OpenPrice, [in] double *HighPrice, [in] double *LowPrice, [in] double* ClosePrice, [in] long* Volume, [out, retval] VARIANT_BOOL *pRet);
+		[id(5), helpstring("Removes all records")] HRESULT ClearRecords();
+		[propget, id(6), helpstring("Returns the record count")] HRESULT RecordCount([out, retval] long *pVal);
+		[propget, id(7), helpstring("Symbol")] HRESULT Symbol([out, retval] BSTR *pVal);
+		[propput, id(7), helpstring("Symbol")] HRESULT Symbol([in] BSTR newVal);
+		[propget, id(8), helpstring("Alert Script")] HRESULT AlertScript([out, retval] BSTR *pVal);
+		[propput, id(8), helpstring("Alert Script")] HRESULT AlertScript([in] BSTR newVal);
+		[id(9), helpstring("Converts a Gregorian date to a Julian date")] HRESULT ToJulianDate([in] int nYear, [in] int nMonth, [in] int nDay, [in] int nHour, [in] int nMinute, [in] int nSecond, [in] int nMillisecond, [out, retval] double *pRet);
+		[id(10), helpstring("Converts a Julian date to a Gregorian date")] HRESULT FromJulianDate([in] double JDate, [out, retval] BSTR *pRet);
+		[propget, id(11), helpstring("AlertName")] HRESULT AlertName([out, retval] BSTR *pVal);
+		[propput, id(11), helpstring("AlertName")] HRESULT AlertName([in] BSTR newVal);
+		[propget, id(12), helpstring("property License")] HRESULT License([out, retval] BSTR *pVal);
+		[propput, id(12), helpstring("property License")] HRESULT License([in] BSTR newVal);
+		[propget, id(13), helpstring("property ScriptHelp")] HRESULT ScriptHelp([out, retval] BSTR *pVal);
+		[id(14), helpstring("Returns a Julian date")] HRESULT GetJDate([in] long Index, [out, retval] double *pRet);
+		[id(15), helpstring("Evaluates a script (AlertScript does not need to be set prior to calling)")] HRESULT Evaluate([in]BSTR EvaluateScript, [out, retval]VARIANT_BOOL *pRet);
+		[id(16), helpstring("Adds a record to the dataset but does not run the alert")] HRESULT AppendHistoryRecord([in] double JDate, [in] double OpenPrice, [in] double HighPrice, [in] double LowPrice, [in] double ClosePrice, [in] long Volume);
+	};
+
+
+	[
+		object,
+		uuid(6310CAB4-5528-4533-9AA8-37BD763FE109),
+		dual,
+		helpstring("IBacktest Interface"),
+		pointer_default(unique)
+	]
+	interface IBacktest : IDispatch
+	{
+		[id(1), helpstring("Adds a record to the dataset")] HRESULT AppendRecord([in] double JDate, [in] double OpenPrice, [in] double HighPrice, [in] double LowPrice, [in] double ClosePrice, [in] long Volume);
+		[id(2), helpstring("Edits a record in the dataset")] HRESULT EditRecord([in] double JDate, [in] double OpenPrice, [in] double HighPrice, [in] double LowPrice, [in] double ClosePrice, [in] long Volume, [out, retval] VARIANT_BOOL *pRet);
+		[id(3), helpstring("Returns a record from the dataset")] HRESULT GetRecordByJDate([in] double JDate, [in] double *OpenPrice, [in] double *HighPrice, [in] double *LowPrice, [in] double* ClosePrice, [in] long* Volume, [out, retval] VARIANT_BOOL *pRet);
+		[id(4), helpstring("Returns a record from the dataset")] HRESULT GetRecordByIndex([in] long Index, [in] double *JDate, [in] double *OpenPrice, [in] double *HighPrice, [in] double *LowPrice, [in] double* ClosePrice, [in] long* Volume, [out, retval] VARIANT_BOOL *pRet);
+		[id(5), helpstring("Removes all records")] HRESULT ClearRecords();
+		[propget, id(6), helpstring("Returns the record count")] HRESULT RecordCount([out, retval] long *pVal);
+		[id(7), helpstring("Converts a Gregorian date to a Julian date")] HRESULT ToJulianDate([in] int nYear, [in] int nMonth, [in] int nDay, [in] int nHour, [in] int nMinute, [in] int nSecond, [in] int nMillisecond, [out, retval] double *pRet);
+		[id(8), helpstring("Converts a Julian date to a Gregorian date")] HRESULT FromJulianDate([in] double JDate, [out, retval] BSTR *pRet);
+		[id(9), helpstring("Backtests the scripts")] HRESULT Backtest([in] BSTR BuyScript, [in] BSTR SellScript, [in] BSTR ExitLongScript, [in] BSTR ExitShortScript, [in] double SlipPct, [out, retval] BSTR *pRet);
+		[propget, id(10), helpstring("property License")] HRESULT License([out, retval] BSTR *pVal);
+		[propput, id(10), helpstring("property License")] HRESULT License([in] BSTR newVal);
+		[propget, id(11), helpstring("property ScriptHelp")] HRESULT ScriptHelp([out, retval] BSTR *pVal);
+		
+	};
+
+
+	[
+		object,
+		uuid(FD64E200-218C-4920-9CF4-E145AAFA718C),
+		dual,
+		helpstring("IScriptOutput Interface"),
+		pointer_default(unique)
+	]
+	interface IScriptOutput : IDispatch
+	{
+		[id(1), helpstring("Adds a record to the dataset")] HRESULT AppendRecord([in] double JDate, [in] double OpenPrice, [in] double HighPrice, [in] double LowPrice, [in] double ClosePrice, [in] long Volume);
+		[id(2), helpstring("Edits a record in the dataset")] HRESULT EditRecord([in] double JDate, [in] double OpenPrice, [in] double HighPrice, [in] double LowPrice, [in] double ClosePrice, [in] long Volume, [out, retval] VARIANT_BOOL *pRet);
+		[id(3), helpstring("Returns a record from the dataset")] HRESULT GetRecordByJDate([in] double JDate, [in] double *OpenPrice, [in] double *HighPrice, [in] double *LowPrice, [in] double* ClosePrice, [in] long* Volume, [out, retval] VARIANT_BOOL *pRet);
+		[id(4), helpstring("Returns a record from the dataset")] HRESULT GetRecordByIndex([in] long Index, [in] double *JDate, [in] double *OpenPrice, [in] double *HighPrice, [in] double *LowPrice, [in] double* ClosePrice, [in] long* Volume, [out, retval] VARIANT_BOOL *pRet);
+		[id(5), helpstring("Removes all records")] HRESULT ClearRecords();
+		[propget, id(6), helpstring("Returns the record count")] HRESULT RecordCount([out, retval] long *pVal);
+		[id(7), helpstring("Converts a Gregorian date to a Julian date")] HRESULT ToJulianDate([in] int nYear, [in] int nMonth, [in] int nDay, [in] int nHour, [in] int nMinute, [in] int nSecond, [in] int nMillisecond, [out, retval] double *pRet);
+		[id(8), helpstring("Converts a Julian date to a Gregorian date")] HRESULT FromJulianDate([in] double JDate, [out, retval] BSTR *pRet);
+		[id(9), helpstring("Runs the script and returns a CSV file with outputs")] HRESULT GetScriptOutput([in] BSTR DefaultScript, [out,retval] BSTR *pRet);
+		[propget, id(10), helpstring("property License")] HRESULT License([out, retval] BSTR *pVal);
+		[propput, id(10), helpstring("property License")] HRESULT License([in] BSTR newVal);
+		[propget, id(11), helpstring("property ScriptHelp")] HRESULT ScriptHelp([out, retval] BSTR *pVal);
+	};
+
+
+	[
+		object,
+		uuid(A8F448D8-D8FB-4991-835E-D8F5BD97741B),
+		dual,
+		helpstring("IValidate Interface"),
+		pointer_default(unique)
+	]
+	interface IValidate : IDispatch
+	{
+		[id(1), helpstring("Validates a script and sets properties")] HRESULT Validate([in] BSTR ValidateScript, [out, retval] BSTR *pRet);
+		[propget, id(2), helpstring("property License")] HRESULT License([out, retval] BSTR *pVal);
+		[propput, id(2), helpstring("property License")] HRESULT License([in] BSTR newVal);		
+		[propget, id(3), helpstring("property Constant")] HRESULT Constant(BSTR Name, [out, retval] BSTR *pVal);
+		[propget, id(4), helpstring("property ScriptHelp")] HRESULT ScriptHelp([out, retval] BSTR *pVal);
+	};
+
+
+
+[
+	uuid(67BFF05D-5B2C-4E33-AFE4-D6CE2BDD3121),
+	version(2008),
+	helpstring("Modulus TradeScript Engine Version 2008")
+]
+library TradeScriptLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(8EAE6DA6-5EDF-4B01-92F6-00D4F56E91D0),
+		helpstring("_IAlertEvents Interface")
+	]
+	dispinterface _IAlertEvents
+	{
+		properties:
+		methods:
+		[id(1), helpstring("Alert Event")] HRESULT Alert([in] BSTR Symbol, [in] BSTR AlertName);
+		[id(2), helpstring("Script Error Event")] HRESULT ScriptError([in] BSTR Symbol, [in] BSTR AlertName, [in] BSTR Description);
+	};
+	[
+		uuid(83392496-8720-4F6B-B906-984B587FDF74),
+		helpstring("Alert Class")
+	]
+	coclass Alert
+	{
+		[default] interface IAlert;
+		[default, source] dispinterface _IAlertEvents;
+	};
+
+
+
+	[
+		uuid(48E1FE57-167A-4BF1-A87F-1CDF759FA8B9),
+		helpstring("_IBacktestEvents Interface")
+	]
+	dispinterface _IBacktestEvents
+	{
+		properties:
+		methods:
+		[id(1), helpstring("Script Error Event")] HRESULT ScriptError([in] BSTR Description);
+	};
+
+	[
+		uuid(DDAF2F33-6E54-4161-AFCD-15058E0AA338),
+		helpstring("Backtest Class")
+	]
+	coclass Backtest
+	{
+		[default] interface IBacktest;
+		[default, source] dispinterface _IBacktestEvents;
+	};
+
+
+	[
+		uuid(95F45E4F-0588-45BB-A7BA-38E9CEFFBFDB),
+		helpstring("_IScriptOutputEvents Interface")
+	]
+	dispinterface _IScriptOutputEvents
+	{
+		properties:
+		methods:
+		[id(1), helpstring("Script Error Event")] HRESULT ScriptError([in] BSTR Description);
+	};
+	[
+		object,
+		uuid(B36744FF-29DA-4D1A-8EC5-FA28709150A9),
+		dual,
+		helpstring("IScanner Interface"),
+		pointer_default(unique)
+	]
+	interface IScanner : IDispatch
+	{		
+		[id(1), helpstring("Adds a record to the dataset")] HRESULT AppendRecord([in] BSTR Symbol, [in] double JDate, [in] double OpenPrice, [in] double HighPrice, [in] double LowPrice, [in] double ClosePrice, [in] long Volume);
+		[id(2), helpstring("Edits a record in the dataset")] HRESULT EditRecord([in] double JDate, [in] double OpenPrice, [in] double HighPrice, [in] double LowPrice, [in] double ClosePrice, [in] long Volume, [out, retval] VARIANT_BOOL *pRet);
+		[id(3), helpstring("Returns a record from the dataset")] HRESULT GetRecordByJDate([in] double JDate, [in] double *OpenPrice, [in] double *HighPrice, [in] double *LowPrice, [in] double* ClosePrice, [in] long* Volume, [out, retval] VARIANT_BOOL *pRet);
+		[id(4), helpstring("Returns a record from the dataset")] HRESULT GetRecordByIndex([in] long Index, [in] double *JDate, [in] double *OpenPrice, [in] double *HighPrice, [in] double *LowPrice, [in] double* ClosePrice, [in] long* Volume, [out, retval] VARIANT_BOOL *pRet);
+		[id(5), helpstring("Removes all records")] HRESULT ClearRecords();
+		[propget, id(6), helpstring("Returns the record count")] HRESULT RecordCount([out, retval] long *pVal);
+		[propget, id(8), helpstring("Scanner Script")] HRESULT ScannerScript([out, retval] BSTR *pVal);
+		[propput, id(8), helpstring("Scanner Script")] HRESULT ScannerScript([in] BSTR newVal);
+		[id(9), helpstring("Converts a Gregorian date to a Julian date")] HRESULT ToJulianDate([in] int nYear, [in] int nMonth, [in] int nDay, [in] int nHour, [in] int nMinute, [in] int nSecond, [in] int nMillisecond, [out, retval] double *pRet);
+		[id(10), helpstring("Converts a Julian date to a Gregorian date")] HRESULT FromJulianDate([in] double JDate, [out, retval] BSTR *pRet);		
+		[propget, id(11), helpstring("property License")] HRESULT License([out, retval] BSTR *pVal);
+		[propput, id(11), helpstring("property License")] HRESULT License([in] BSTR newVal);
+		[propget, id(12), helpstring("property ScriptHelp")] HRESULT ScriptHelp([out, retval] BSTR *pVal);
+		[id(13), helpstring("Returns a Julian date")] HRESULT GetJDate([in] long Index, [out, retval] double *pRet);
+		[id(14), helpstring("Evaluates a script (ScannerScript does not need to be set prior to calling)")] HRESULT Evaluate([in]BSTR EvaluateScript, [out, retval]VARIANT_BOOL *pRet);	
+	};
+
+	[
+		uuid(5CA7CD37-4019-427C-A5BF-4A8C82DD9537),
+		helpstring("ScriptOutput Class")
+	]
+	coclass ScriptOutput
+	{
+		[default] interface IScriptOutput;
+		[default, source] dispinterface _IScriptOutputEvents;
+	};
+	[
+		uuid(92347C5B-95EB-4C71-8CB6-7F1AE45A2726),
+		helpstring("Validate Class")
+	]
+	coclass Validate
+	{
+		[default] interface IValidate;
+	};
+	[
+		uuid(BAF35027-2DD5-4CCF-82CE-5B5388D74341),
+		helpstring("_IScannerEvents Interface")
+	]
+	dispinterface _IScannerEvents
+	{
+		properties:
+		methods:
+		[id(1), helpstring("Symbol Found Event")] HRESULT SymbolFound([in] BSTR Symbol);
+		[id(2), helpstring("Script Error Event")] HRESULT ScriptError([in] BSTR Symbol, [in] BSTR Description);
+	};
+
+	[
+		uuid(93FD1A72-C3AC-41B0-AAD7-D34C8083EED6),
+		helpstring("Scanner Class")
+	]
+	coclass Scanner
+	{
+		[default] interface IScanner;
+		[default, source] dispinterface _IScannerEvents;
+	};
+};

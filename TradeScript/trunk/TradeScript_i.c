@@ -1,0 +1,121 @@
+
+
+/* this ALWAYS GENERATED file contains the IIDs and CLSIDs */
+
+/* link this file in with the server and any clients */
+
+
+ /* File created by MIDL compiler version 8.00.0603 */
+/* at Wed Dec 03 15:29:12 2014
+ */
+/* Compiler settings for TradeScript.idl:
+    Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.00.0603 
+    protocol : dce , ms_ext, c_ext, robust
+    error checks: allocation ref bounds_check enum stub_data 
+    VC __declspec() decoration level: 
+         __declspec(uuid()), __declspec(selectany), __declspec(novtable)
+         DECLSPEC_UUID(), MIDL_INTERFACE()
+*/
+/* @@MIDL_FILE_HEADING(  ) */
+
+#pragma warning( disable: 4049 )  /* more than 64k source lines */
+
+
+#ifdef __cplusplus
+extern "C"{
+#endif 
+
+
+#include <rpc.h>
+#include <rpcndr.h>
+
+#ifdef _MIDL_USE_GUIDDEF_
+
+#ifndef INITGUID
+#define INITGUID
+#include <guiddef.h>
+#undef INITGUID
+#else
+#include <guiddef.h>
+#endif
+
+#define MIDL_DEFINE_GUID(type,name,l,w1,w2,b1,b2,b3,b4,b5,b6,b7,b8) \
+        DEFINE_GUID(name,l,w1,w2,b1,b2,b3,b4,b5,b6,b7,b8)
+
+#else // !_MIDL_USE_GUIDDEF_
+
+#ifndef __IID_DEFINED__
+#define __IID_DEFINED__
+
+typedef struct _IID
+{
+    unsigned long x;
+    unsigned short s1;
+    unsigned short s2;
+    unsigned char  c[8];
+} IID;
+
+#endif // __IID_DEFINED__
+
+#ifndef CLSID_DEFINED
+#define CLSID_DEFINED
+typedef IID CLSID;
+#endif // CLSID_DEFINED
+
+#define MIDL_DEFINE_GUID(type,name,l,w1,w2,b1,b2,b3,b4,b5,b6,b7,b8) \
+        const type name = {l,w1,w2,{b1,b2,b3,b4,b5,b6,b7,b8}}
+
+#endif !_MIDL_USE_GUIDDEF_
+
+MIDL_DEFINE_GUID(IID, IID_IAlert,0x7E2BD722,0xEBC5,0x481B,0xB6,0x90,0x01,0x21,0x5E,0x0B,0x03,0x48);
+
+
+MIDL_DEFINE_GUID(IID, IID_IBacktest,0x6310CAB4,0x5528,0x4533,0x9A,0xA8,0x37,0xBD,0x76,0x3F,0xE1,0x09);
+
+
+MIDL_DEFINE_GUID(IID, IID_IScriptOutput,0xFD64E200,0x218C,0x4920,0x9C,0xF4,0xE1,0x45,0xAA,0xFA,0x71,0x8C);
+
+
+MIDL_DEFINE_GUID(IID, IID_IValidate,0xA8F448D8,0xD8FB,0x4991,0x83,0x5E,0xD8,0xF5,0xBD,0x97,0x74,0x1B);
+
+
+MIDL_DEFINE_GUID(IID, LIBID_TradeScriptLib,0x67BFF05D,0x5B2C,0x4E33,0xAF,0xE4,0xD6,0xCE,0x2B,0xDD,0x31,0x21);
+
+
+MIDL_DEFINE_GUID(IID, DIID__IAlertEvents,0x8EAE6DA6,0x5EDF,0x4B01,0x92,0xF6,0x00,0xD4,0xF5,0x6E,0x91,0xD0);
+
+
+MIDL_DEFINE_GUID(CLSID, CLSID_Alert,0x83392496,0x8720,0x4F6B,0xB9,0x06,0x98,0x4B,0x58,0x7F,0xDF,0x74);
+
+
+MIDL_DEFINE_GUID(IID, DIID__IBacktestEvents,0x48E1FE57,0x167A,0x4BF1,0xA8,0x7F,0x1C,0xDF,0x75,0x9F,0xA8,0xB9);
+
+
+MIDL_DEFINE_GUID(CLSID, CLSID_Backtest,0xDDAF2F33,0x6E54,0x4161,0xAF,0xCD,0x15,0x05,0x8E,0x0A,0xA3,0x38);
+
+
+MIDL_DEFINE_GUID(IID, DIID__IScriptOutputEvents,0x95F45E4F,0x0588,0x45BB,0xA7,0xBA,0x38,0xE9,0xCE,0xFF,0xBF,0xDB);
+
+
+MIDL_DEFINE_GUID(IID, IID_IScanner,0xB36744FF,0x29DA,0x4D1A,0x8E,0xC5,0xFA,0x28,0x70,0x91,0x50,0xA9);
+
+
+MIDL_DEFINE_GUID(CLSID, CLSID_ScriptOutput,0x5CA7CD37,0x4019,0x427C,0xA5,0xBF,0x4A,0x8C,0x82,0xDD,0x95,0x37);
+
+
+MIDL_DEFINE_GUID(CLSID, CLSID_Validate,0x92347C5B,0x95EB,0x4C71,0x8C,0xB6,0x7F,0x1A,0xE4,0x5A,0x27,0x26);
+
+
+MIDL_DEFINE_GUID(IID, DIID__IScannerEvents,0xBAF35027,0x2DD5,0x4CCF,0x82,0xCE,0x5B,0x53,0x88,0xD7,0x43,0x41);
+
+
+MIDL_DEFINE_GUID(CLSID, CLSID_Scanner,0x93FD1A72,0xC3AC,0x41B0,0xAA,0xD7,0xD3,0x4C,0x80,0x83,0xEE,0xD6);
+
+#undef MIDL_DEFINE_GUID
+
+#ifdef __cplusplus
+}
+#endif
+
+
+

@@ -1,0 +1,26 @@
+HKCR
+{
+	TradeScript.TestClass.1 = s 'TestClass Class'
+	{
+		CLSID = s '{925CEC1C-90E0-4A18-80B6-63892D47E399}'
+	}
+	TradeScript.TestClass = s 'TestClass Class'
+	{
+		CLSID = s '{925CEC1C-90E0-4A18-80B6-63892D47E399}'
+		CurVer = s 'TradeScript.TestClass.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {925CEC1C-90E0-4A18-80B6-63892D47E399} = s 'TestClass Class'
+		{
+			ProgID = s 'TradeScript.TestClass.1'
+			VersionIndependentProgID = s 'TradeScript.TestClass'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{67BFF05D-5B2C-4E33-AFE4-D6CE2BDD3121}'
+		}
+	}
+}
