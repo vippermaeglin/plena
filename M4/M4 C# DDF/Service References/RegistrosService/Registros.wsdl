@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="AtualizarRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="identificacao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="crc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codigo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="primeiroRegistro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ultimoRegistro" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AtualizarRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AtualizarRegistrosResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegistrosPorAtivo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="identificacao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codigo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegistrosPorAtivoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegistrosPorAtivoResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AtualizarRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:AtualizarRegistros" />
+  </wsdl:message>
+  <wsdl:message name="AtualizarRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:AtualizarRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegistrosPorAtivoSoapIn">
+    <wsdl:part name="parameters" element="tns:RegistrosPorAtivo" />
+  </wsdl:message>
+  <wsdl:message name="RegistrosPorAtivoSoapOut">
+    <wsdl:part name="parameters" element="tns:RegistrosPorAtivoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="RegistrosSoap">
+    <wsdl:operation name="AtualizarRegistros">
+      <wsdl:input message="tns:AtualizarRegistrosSoapIn" />
+      <wsdl:output message="tns:AtualizarRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrosPorAtivo">
+      <wsdl:input message="tns:RegistrosPorAtivoSoapIn" />
+      <wsdl:output message="tns:RegistrosPorAtivoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RegistrosSoap" type="tns:RegistrosSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AtualizarRegistros">
+      <soap:operation soapAction="http://tempuri.org/AtualizarRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrosPorAtivo">
+      <soap:operation soapAction="http://tempuri.org/RegistrosPorAtivo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RegistrosSoap12" type="tns:RegistrosSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AtualizarRegistros">
+      <soap12:operation soapAction="http://tempuri.org/AtualizarRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrosPorAtivo">
+      <soap12:operation soapAction="http://tempuri.org/RegistrosPorAtivo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Registros">
+    <wsdl:port name="RegistrosSoap" binding="tns:RegistrosSoap">
+      <soap:address location="http://192.168.1.9/PlenaServer/Registros.asmx" />
+    </wsdl:port>
+    <wsdl:port name="RegistrosSoap12" binding="tns:RegistrosSoap12">
+      <soap12:address location="http://192.168.1.9/PlenaServer/Registros.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

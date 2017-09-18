@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ATIVOS>
+  <ATIVO>
+    <NOME>Ambev PN</NOME>
+    <COD>AMBV4</COD>
+    <SETOR>X1</SETOR>
+  </ATIVO>
+  <ATIVO>
+    <NOME>BRASIL ON</NOME>
+    <COD>BBAS3</COD>
+    <SETOR>X2</SETOR>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Ibovespa</NOME>
+    <COD>IBOV</COD>
+    <SETOR>X3</SETOR>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Fibria ON</NOME>
+    <COD>FIBR3</COD>
+    <SETOR>X4</SETOR>
+  </ATIVO>
+  <ATIVO>
+    <NOME>PETROBRAS PN</NOME>
+    <COD>PETR4</COD>
+    <SETOR>X5</SETOR>
+  </ATIVO>
+</ATIVOS>

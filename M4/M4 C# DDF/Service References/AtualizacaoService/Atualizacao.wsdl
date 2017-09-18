@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="DetalhesAtualizacao">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="identificacao" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DetalhesAtualizacaoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DetalhesAtualizacaoResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="DetalhesAtualizacaoSoapIn">
+    <wsdl:part name="parameters" element="tns:DetalhesAtualizacao" />
+  </wsdl:message>
+  <wsdl:message name="DetalhesAtualizacaoSoapOut">
+    <wsdl:part name="parameters" element="tns:DetalhesAtualizacaoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AtualizacaoSoap">
+    <wsdl:operation name="DetalhesAtualizacao">
+      <wsdl:input message="tns:DetalhesAtualizacaoSoapIn" />
+      <wsdl:output message="tns:DetalhesAtualizacaoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AtualizacaoSoap" type="tns:AtualizacaoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DetalhesAtualizacao">
+      <soap:operation soapAction="http://tempuri.org/DetalhesAtualizacao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AtualizacaoSoap12" type="tns:AtualizacaoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DetalhesAtualizacao">
+      <soap12:operation soapAction="http://tempuri.org/DetalhesAtualizacao" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Atualizacao">
+    <wsdl:port name="AtualizacaoSoap" binding="tns:AtualizacaoSoap">
+      <soap:address location="http://192.168.1.9/PlenaServer/Atualizacao.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AtualizacaoSoap12" binding="tns:AtualizacaoSoap12">
+      <soap12:address location="http://192.168.1.9/PlenaServer/Atualizacao.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

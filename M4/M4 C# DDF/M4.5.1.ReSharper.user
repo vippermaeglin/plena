@@ -1,0 +1,716 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="Color`0" priority="12" />
+      <Item value="Settings`0" priority="7" />
+      <Item value="Settings" priority="4" />
+      <Item value="Properties" priority="6" />
+      <Item value="SettingsServer`0" priority="0" />
+      <Item value="try" priority="20" />
+      <Item value="finally" priority="2" />
+      <Item value="if" priority="36" />
+      <Item value="ex" priority="13" />
+      <Item value="throw" priority="1" />
+      <Item value="new" priority="8" />
+      <Item value="Exception" priority="0" />
+      <Item value="string" priority="8" />
+      <Item value="bool" priority="4" />
+      <Item value="remember" priority="3" />
+      <Item value="IsConnectedToInternet`0" priority="0" />
+      <Item value="Exception`0" priority="7" />
+      <Item value="VerifyConnection`0" priority="0" />
+      <Item value="address" priority="0" />
+      <Item value="private" priority="1" />
+      <Item value="int" priority="4" />
+      <Item value="M4Data" priority="1" />
+      <Item value="VerifyInternet`0" priority="0" />
+      <Item value="FlowLayoutSettings`0" priority="0" />
+      <Item value="DefiniServer`0" priority="0" />
+      <Item value="Console`0" priority="5" />
+      <Item value="else" priority="6" />
+      <Item value="request" priority="5" />
+      <Item value="null" priority="12" />
+      <Item value="false" priority="10" />
+      <Item value="true" priority="17" />
+      <Item value="DateTime`0" priority="1" />
+      <Item value="loginAuthentication" priority="3" />
+      <Item value="List&lt;Features&gt;" priority="0" />
+      <Item value="String`0" priority="1" />
+      <Item value="p" priority="1" />
+      <Item value="foreach" priority="7" />
+      <Item value="break" priority="5" />
+      <Item value="feature" priority="1" />
+      <Item value="efeature" priority="1" />
+      <Item value="Label2" priority="0" />
+      <Item value="Program" priority="0" />
+      <Item value="cbxOffline" priority="2" />
+      <Item value="public" priority="4" />
+      <Item value="return" priority="12" />
+      <Item value="LoginOffline`0" priority="0" />
+      <Item value="login" priority="0" />
+      <Item value="password" priority="0" />
+      <Item value="exception" priority="1" />
+      <Item value="addressBox" priority="1" />
+      <Item value="e" priority="10" />
+      <Item value="_templateText" priority="0" />
+      <Item value="radTreeNode" priority="0" />
+      <Item value="_frmMain" priority="0" />
+      <Item value="BackColor" priority="1" />
+      <Item value="twTemplates" priority="2" />
+      <Item value="twSumary" priority="2" />
+      <Item value="trvTemplates" priority="0" />
+      <Item value="radListControl2" priority="0" />
+      <Item value="this" priority="7" />
+      <Item value="SchedulerResourcesHeaderElement`0" priority="0" />
+      <Item value="Resources`0" priority="0" />
+      <Item value="static" priority="1" />
+      <Item value="var" priority="1" />
+      <Item value="rgb" priority="0" />
+      <Item value="M4" priority="1" />
+      <Item value="Utils`0" priority="0" />
+      <Item value="Keys`0" priority="0" />
+      <Item value="Close`0" priority="0" />
+      <Item value="mnuDefaultWorkspace" priority="0" />
+      <Item value="mnuLoadWorkspace" priority="0" />
+      <Item value="mnuRenameWorkspace" priority="0" />
+      <Item value="toolTabStrip4" priority="3" />
+      <Item value="menuService" priority="0" />
+      <Item value="radDock1" priority="1" />
+      <Item value="DockAreaMask`0" priority="0" />
+      <Item value="frmMain`0" priority="2" />
+      <Item value="Chart" priority="2" />
+      <Item value="MActiveChart" priority="9" />
+      <Item value="Focus`0" priority="3" />
+      <Item value="popout" priority="3" />
+      <Item value="IList" priority="0" />
+      <Item value="List&lt;frmPopoutChart&gt;" priority="1" />
+      <Item value="frmPopoutChart`0" priority="0" />
+      <Item value="chart" priority="11" />
+      <Item value="cada" priority="1" />
+      <Item value="chartExist" priority="0" />
+      <Item value="Linq" priority="0" />
+      <Item value="ShowFocusCues" priority="0" />
+      <Item value="ShowInTaskbar" priority="0" />
+      <Item value="ShowWithoutActivation" priority="0" />
+      <Item value="document" priority="1" />
+      <Item value="MachineInfo`0" priority="0" />
+      <Item value="tabChart" priority="0" />
+      <Item value="tabProxy" priority="1" />
+      <Item value="tabServer" priority="0" />
+      <Item value="tabStudies" priority="0" />
+      <Item value="btnApplyPrice" priority="1" />
+      <Item value="btnApplyChart" priority="0" />
+      <Item value="tabPrice" priority="0" />
+      <Item value="enum" priority="0" />
+      <Item value="List&lt;ItemChart&gt;" priority="0" />
+      <Item value="items" priority="0" />
+      <Item value="ItemChart" priority="0" />
+      <Item value="Equals`0" priority="0" />
+      <Item value="DockTransactionType`0" priority="1" />
+      <Item value="Dock" priority="0" />
+      <Item value="DockPosition`0" priority="0" />
+      <Item value="void" priority="1" />
+      <Item value="radMenuSeparatorItem10" priority="0" />
+      <Item value="case" priority="2" />
+      <Item value="PageBreakMode`0" priority="0" />
+      <Item value="mnuDeltaCursor" priority="0" />
+      <Item value="protected" priority="0" />
+      <Item value="studieInfo" priority="1" />
+      <Item value="StudieInfo" priority="0" />
+      <Item value="LineThickness" priority="0" />
+      <Item value="decimal" priority="0" />
+      <Item value="Color" priority="0" />
+      <Item value="pgrdStudies" priority="2" />
+      <Item value="Retraction0" priority="0" />
+      <Item value="Retraction38" priority="0" />
+      <Item value="Retraction50" priority="0" />
+      <Item value="Retraction61" priority="0" />
+      <Item value="Projection0" priority="0" />
+      <Item value="Projection38" priority="0" />
+      <Item value="Projection50" priority="0" />
+      <Item value="Projection61" priority="0" />
+      <Item value="Projection100" priority="0" />
+      <Item value="Projection161" priority="0" />
+      <Item value="grpStudies" priority="0" />
+      <Item value="RadColorBox`0" priority="0" />
+      <Item value="StudieInfo`0" priority="0" />
+      <Item value="contextmenuopened" priority="1" />
+      <Item value="VARIABLE" priority="11" />
+      <Item value="RadDropDownMenu`0" priority="0" />
+      <Item value="RadMenu`0" priority="0" />
+      <Item value="continue" priority="1" />
+      <Item value="RadItem`0" priority="2" />
+      <Item value="item" priority="1" />
+      <Item value="menu" priority="0" />
+      <Item value="radGridView1" priority="0" />
+      <Item value="Theme`0" priority="0" />
+      <Item value="Themes" priority="0" />
+      <Item value="suspended" priority="0" />
+      <Item value="Collapsed" priority="0" />
+      <Item value="RadMenuSeparatorItem`0" priority="0" />
+      <Item value="RadMenuItem`0" priority="0" />
+      <Item value="count" priority="4" />
+      <Item value="MessageBox`0" priority="5" />
+      <Item value="ListWorkspace`0" priority="0" />
+      <Item value="_archiveNameWorkspace" priority="1" />
+      <Item value="mnuWorkspace" priority="0" />
+      <Item value="File`0" priority="1" />
+      <Item value="Fixed3D" priority="0" />
+      <Item value="radDock2" priority="0" />
+      <Item value="Symbol" priority="0" />
+      <Item value="transaction" priority="1" />
+      <Item value="CreateGhostWindow`0" priority="0" />
+      <Item value="Floating" priority="0" />
+      <Item value="Volumes" priority="6" />
+      <Item value="series" priority="2" />
+      <Item value="SeriesItemLabel" priority="0" />
+      <Item value="volumeText" priority="5" />
+      <Item value="pos" priority="0" />
+      <Item value="minValue" priority="2" />
+      <Item value="maxValue" priority="7" />
+      <Item value="double" priority="0" />
+      <Item value="Step" priority="4" />
+      <Item value="s" priority="0" />
+      <Item value="i" priority="1" />
+      <Item value="CtlPainelChart`0" priority="0" />
+      <Item value="ChartToolsPopOut" priority="1" />
+      <Item value="RadMessageBox`0" priority="0" />
+      <Item value="MessageBoxButtons`0" priority="0" />
+      <Item value="Question" priority="0" />
+      <Item value="xgrid" priority="0" />
+      <Item value="separators" priority="1" />
+      <Item value="crosshair" priority="0" />
+      <Item value="darvas" priority="0" />
+      <Item value="char" priority="1" />
+      <Item value="propriedades" priority="0" />
+      <Item value="m_SchemeColor" priority="0" />
+      <Item value="stockChartX1" priority="0" />
+      <Item value="ctlPainelChart" priority="0" />
+      <Item value="_actionChart" priority="0" />
+      <Item value="m_frmMain2" priority="1" />
+      <Item value="ctlPanel" priority="0" />
+      <Item value="catch" priority="7" />
+      <Item value="using" priority="1" />
+      <Item value="DataServer" priority="0" />
+      <Item value="Interface" priority="0" />
+      <Item value="Environment`0" priority="0" />
+      <Item value="DSForm" priority="0" />
+      <Item value="Nevron" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.Color">
+      <Item value="Black" priority="1" />
+      <Item value="FromArgb`0" priority="3" />
+      <Item value="FromName`0" priority="1" />
+      <Item value="White" priority="7" />
+      <Item value="Red" priority="1" />
+      <Item value="LightBlue" priority="0" />
+      <Item value="LightGoldenrodYellow" priority="0" />
+      <Item value="Goldenrod" priority="1" />
+      <Item value="Gray" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Nevron.UI.WinForm.Controls.NPalette">
+      <Item value="PressedLight" priority="0" />
+      <Item value="PressedDark" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@M4Data.Settings.Settings">
+      <Item value="Default" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@M4Data.Properties.Settings">
+      <Item value="Default" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="14" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Equals`0" priority="5" />
+      <Item value="ToUpper`0" priority="2" />
+      <Item value="Split`0" priority="0" />
+      <Item value="Trim`0" priority="3" />
+      <Item value="Contains`0" priority="3" />
+      <Item value="GetType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:M4Core.Entities.LoginAuthentication">
+      <Item value="Remember" priority="0" />
+      <Item value="Features" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.HttpStatusCode">
+      <Item value="RequestTimeout" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@M4Data.Settings.VerifyInternet">
+      <Item value="VerifyConnection`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@M4.Properties.Settings">
+      <Item value="Default" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:M4.Properties.Settings">
+      <Item value="Server1_Ip" priority="0" />
+      <Item value="DefaultBackColor" priority="0" />
+      <Item value="DefaultLabelGraphColor" priority="0" />
+      <Item value="StartPage" priority="1" />
+      <Item value="TabDataPosition" priority="1" />
+      <Item value="Style" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@M4.M4v2.UpdateService.DefiniServer">
+      <Item value="Instance`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:M4.M4v2.UpdateService.DefiniServer">
+      <Item value="GetUrlConnected`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="WriteLine`0" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.HttpWebRequest">
+      <Item value="ReadWriteTimeout" priority="0" />
+      <Item value="ServicePoint" priority="1" />
+      <Item value="Proxy" priority="0" />
+      <Item value="KeepAlive" priority="0" />
+      <Item value="RequestUri" priority="0" />
+      <Item value="Connection" priority="0" />
+      <Item value="Method" priority="0" />
+      <Item value="IfModifiedSince" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.ServicePoint">
+      <Item value="MaxIdleTime" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="0" />
+      <Item value="MinValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="IsInterned`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@M4Core.Enums.EFeatures">
+      <Item value="HISTORICDATA" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:M4Core.Entities.Features">
+      <Item value="Description" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:M4Core.Enums.EFeatures">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@M4Utils.StringValue">
+      <Item value="GetStringValue`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.RadCheckBox">
+      <Item value="Enabled" priority="0" />
+      <Item value="Text" priority="0" />
+      <Item value="ChangeUICues" priority="0" />
+      <Item value="Checked" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Boolean">
+      <Item value="ToString`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlDocument">
+      <Item value="Save`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Label">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@M4.Program">
+      <Item value="LanguageDefault" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:M4Data.List.ListLoginAuthentication">
+      <Item value="LoginOffline`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.Docking.ToolWindow">
+      <Item value="ContextMenu" priority="0" />
+      <Item value="BackColor" priority="2" />
+      <Item value="ToolCaptionButtons" priority="0" />
+      <Item value="Hide`0" priority="3" />
+      <Item value="AutoHide`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.RadListControl">
+      <Item value="ListElement" priority="1" />
+      <Item value="Height" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.KeyEventArgs">
+      <Item value="SuppressKeyPress" priority="0" />
+      <Item value="KeyValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.RadTreeNode">
+      <Item value="Selected" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.RadTreeViewCancelEventArgs">
+      <Item value="Cancel" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.RadItemOwnerCollection">
+      <Item value="Count" priority="1" />
+      <Item value="Where`1" priority="0" />
+      <Item value="Remove`0" priority="0" />
+      <Item value="Clear`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.ContextMenuOpeningEventArgs">
+      <Item value="Cancel" priority="0" />
+      <Item value="ContextMenu" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.RadTreeView">
+      <Item value="BackColor" priority="1" />
+      <Item value="TreeViewElement" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.RadTreeViewElement">
+      <Item value="BackColor" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.RadListElement">
+      <Item value="BackColor" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:M4.M4v2.Portfolio.EditPortfolio">
+      <Item value="BackColor" priority="0" />
+      <Item value="FormElement" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.RadFormElement">
+      <Item value="BackColor" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="Equals`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.Keys">
+      <Item value="Escape" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DialogResult">
+      <Item value="Cancel" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.RadMenuItem">
+      <Item value="Text" priority="1" />
+      <Item value="Items" priority="4" />
+      <Item value="Click" priority="2" />
+      <Item value="Name" priority="1" />
+      <Item value="Visibility" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:M4.frmPopoutChart">
+      <Item value="ShowDialog`0" priority="0" />
+      <Item value="Focus`0" priority="0" />
+      <Item value="Chart" priority="0" />
+      <Item value="MActiveChart" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:M4.M4v2.Chart.CtlPainelChart">
+      <Item value="toolTabStrip4" priority="0" />
+      <Item value="Parent" priority="3" />
+      <Item value="SaveChartImage`0" priority="0" />
+      <Item value="ReconfigureTabs`0" priority="1" />
+      <Item value="mnuPositionBottom" priority="1" />
+      <Item value="mnuPositionLess" priority="1" />
+      <Item value="mnuDeltaCursor" priority="2" />
+      <Item value="DeltaCursor" priority="0" />
+      <Item value="StateDummy" priority="0" />
+      <Item value="DeleteDrawings`0" priority="0" />
+      <Item value="StockChartX1" priority="5" />
+      <Item value="m_SchemeColor" priority="0" />
+      <Item value="UpdateMenus`0" priority="0" />
+      <Item value="Visible" priority="0" />
+      <Item value="_actionChart" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.Docking.ContextMenuDisplayingEventArgs">
+      <Item value="Cancel" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Telerik.WinControls.UI.Docking.ToolStripCaptionButtons">
+      <Item value="None" priority="0" />
+      <Item value="Close" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.Docking.RadDock">
+      <Item value="FloatingWindowCreated" priority="0" />
+      <Item value="DockWindow`0" priority="0" />
+      <Item value="ActiveWindow" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Nevron.UI.WinForm.Docking.NDockingPanelPermissions">
+      <Item value="Editable" priority="0" />
+      <Item value="ExposedDockAreas" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Nevron.UI.WinForm.Docking.DockAreaMask">
+      <Item value="None" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.RadLabel">
+      <Item value="BackColor" priority="0" />
+      <Item value="LabelElement" priority="1" />
+      <Item value="ForeColor" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.RadLabelElement">
+      <Item value="BackColor" priority="0" />
+      <Item value="LabelText" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.Primitives.TextPrimitive">
+      <Item value="BackColor" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@M4.Utils">
+      <Item value="GetDefaultLabelGraphColor`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@M4.frmMain">
+      <Item value="GInstance" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:M4.frmMain">
+      <Item value="popout" priority="0" />
+      <Item value="ListPopout" priority="0" />
+      <Item value="ReconfigureTabsChart`0" priority="0" />
+      <Item value="cmdDeltaCursor" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
+      <Item value="Add`0" priority="1" />
+      <Item value="Remove`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Nevron.UI.WinForm.Controls.DocumentEventArgs">
+      <Item value="Document" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Nevron.UI.WinForm.Controls.NUIDocument">
+      <Item value="Client" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Control">
+      <Item value="Focus`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Nevron.UI.WinForm.Docking.NDocumentManager">
+      <Item value="Documents" priority="0" />
+      <Item value="ActiveDocument" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.GroupBox">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.RadButton">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:M4.M4v2.Settings.ChartInfo">
+      <Item value="Position" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.Docking.ToolTabStrip">
+      <Item value="DockType" priority="0" />
+      <Item value="Dock" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.DockStyle">
+      <Item value="Bottom" priority="0" />
+      <Item value="Left" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Telerik.WinControls.UI.Docking.DockPosition">
+      <Item value="Left" priority="0" />
+      <Item value="Fill" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:M4.M4v2.Settings.StudieInfo">
+      <Item value="Color" priority="0" />
+      <Item value="LineThickness" priority="0" />
+      <Item value="Retraction0" priority="0" />
+      <Item value="Retraction38" priority="0" />
+      <Item value="Retraction50" priority="0" />
+      <Item value="Retraction61" priority="0" />
+      <Item value="Retraction100" priority="0" />
+      <Item value="Projection0" priority="0" />
+      <Item value="Projection38" priority="0" />
+      <Item value="Projection50" priority="0" />
+      <Item value="Projection61" priority="0" />
+      <Item value="Projection100" priority="0" />
+      <Item value="Projection161" priority="0" />
+      <Item value="Projection261" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.RadDropDownMenu">
+      <Item value="Click" priority="1" />
+      <Item value="Children" priority="1" />
+      <Item value="Controls" priority="0" />
+      <Item value="ActiveItems" priority="0" />
+      <Item value="Items" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.RadMenu">
+      <Item value="Controls" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Control+ControlCollection">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.RadItem">
+      <Item value="ChildrenHierarchy" priority="0" />
+      <Item value="GetType`0" priority="1" />
+      <Item value="Text" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="ToString`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.RadGridView">
+      <Item value="ThemeName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.RowFormattingEventArgs">
+      <Item value="RowElement" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.GridRowElement">
+      <Item value="BackColor4" priority="0" />
+      <Item value="BorderColor" priority="0" />
+      <Item value="ViewTemplate" priority="0" />
+      <Item value="BackColor" priority="0" />
+      <Item value="RowInfo" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.GridViewTemplate">
+      <Item value="Caption" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.CellFormattingEventArgs">
+      <Item value="CellElement" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.GridCellElement">
+      <Item value="ColumnInfo" priority="1" />
+      <Item value="RowInfo" priority="0" />
+      <Item value="RowElement" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
+      <Item value="Show`0" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@M4Data.List.ListWorkspace">
+      <Item value="Instance`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:M4Data.List.ListWorkspace">
+      <Item value="Delete`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="Encrypt`0" priority="0" />
+      <Item value="Delete`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.GridViewRowInfo">
+      <Item value="Height" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:M4.frmHelp2">
+      <Item value="FormBorderStyle" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.FormBorderStyle">
+      <Item value="FixedDialog" priority="0" />
+      <Item value="Fixed3D" priority="0" />
+      <Item value="FixedToolWindow" priority="0" />
+      <Item value="FixedSingle" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.Docking.RedockTransaction">
+      <Item value="TransactionType" priority="0" />
+      <Item value="AssociatedWindows" priority="0" />
+      <Item value="TargetState" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Telerik.WinControls.UI.Docking.DockTransactionType">
+      <Item value="Float" priority="0" />
+      <Item value="Redock" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.Docking.DockWindow">
+      <Item value="AccessibleName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Charting.ChartSeries">
+      <Item value="Items" priority="1" />
+      <Item value="YAxisType" priority="0" />
+      <Item value="PlotArea" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Charting.ChartSeriesItem">
+      <Item value="Label" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.WinControls.UI.RadChart">
+      <Item value="PlotArea" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Charting.ChartPlotArea">
+      <Item value="YAxis" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Charting.ChartYAxis">
+      <Item value="Indexer" priority="0" />
+      <Item value="AddItem`0" priority="0" />
+      <Item value="AddRange`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Charting.ChartAxisItem">
+      <Item value="TextBlock" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Telerik.Charting.TextBlock">
+      <Item value="Text" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Double">
+      <Item value="ToString`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:M4.M4v2.Chart.ndtChartTools">
+      <Item value="MActiveChart" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBoxButtons">
+      <Item value="YesNo" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AxSTOCKCHARTXLib.AxStockChartX">
+      <Item value="XGrid" priority="0" />
+      <Item value="HorizontalSeparators" priority="0" />
+      <Item value="CrossHairs" priority="0" />
+      <Item value="DarvasBoxes" priority="0" />
+      <Item value="Symbol" priority="0" />
+      <Item value="ValuePanelColor" priority="0" />
+      <Item value="Visible" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlElement">
+      <Item value="InnerText" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:M4.frmMain2">
+      <Item value="_actionChart" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@M4.frmMain2+ActionChart">
+      <Item value="CHANNEL" priority="0" />
+      <Item value="YLINE" priority="0" />
+      <Item value="RECTANGLE" priority="0" />
+      <Item value="SELLSYMBOL" priority="0" />
+      <Item value="ELIPSE" priority="0" />
+      <Item value="ARROW" priority="0" />
+      <Item value="POLYLINE" priority="0" />
+      <Item value="FIBONACCIRETRACEMENTS" priority="0" />
+      <Item value="FIBONACCIPROJECTIONS" priority="0" />
+      <Item value="FIBONACCIARCS" priority="0" />
+      <Item value="FIBONACCIFAN" priority="0" />
+      <Item value="XLINE" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Environment">
+      <Item value="SpecialFolder`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Environment+SpecialFolder">
+      <Item value="ApplicationData" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Globalization.CultureInfo">
+      <Item value="CurrentCulture" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Microsoft.Win32.Registry">
+      <Item value="CurrentUser" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="79F0A10A-6879-4495-92E7-C5FB42339A60/d:List/f:ListLog.cs" caret="302" fromTop="13" />
+      <File id="79F0A10A-6879-4495-92E7-C5FB42339A60/d:List/f:ListConfigStudies.cs" caret="303" fromTop="13" />
+      <File id="79F0A10A-6879-4495-92E7-C5FB42339A60/d:List/f:ListFeatures.cs" caret="363" fromTop="16" />
+      <File id="6B8E0B62-EE14-4FBC-BB14-809FA31A113E/f:DSPlena.cs" caret="3242" fromTop="17" />
+      <File id="79F0A10A-6879-4495-92E7-C5FB42339A60/d:List/f:ListWorkspace.cs" caret="3598" fromTop="17" />
+      <File id="79F0A10A-6879-4495-92E7-C5FB42339A60/d:MessageService/f:MessageService.cs" caret="2837" fromTop="26" />
+      <File id="79F0A10A-6879-4495-92E7-C5FB42339A60/d:List/f:ListLoginAuthentication.cs" caret="8128" fromTop="18" />
+      <File id="C0B4FEC6-275A-4574-BCC4-A06CDCEDCA3F/f:DBManagerShared.cs" caret="109339" fromTop="462" />
+      <File id="6B8E0B62-EE14-4FBC-BB14-809FA31A113E/f:SeamusLog.cs" caret="1301" fromTop="15" />
+      <File id="9A7C5F5D-134D-485B-BAFC-DC1DF32EF612/f:Client.cs" caret="12534" fromTop="5" />
+      <File id="79F0A10A-6879-4495-92E7-C5FB42339A60/d:List/f:ListTemplates.cs" caret="263" fromTop="14" />
+      <File id="D3EBF03F-16BC-4BE6-9BD2-36E27B8ED743/d:AsyncOperations/f:ProgressDialog.cs" caret="472" fromTop="8" />
+      <File id="D3EBF03F-16BC-4BE6-9BD2-36E27B8ED743/f:frmActivate.Designer.cs" caret="4118" fromTop="10" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="79F0A10A-6879-4495-92E7-C5FB42339A60/d:MessageService/f:MessageService.cs" caret="2837" fromTop="26" />
+      <File id="C0B4FEC6-275A-4574-BCC4-A06CDCEDCA3F/f:DBManagerShared.cs" caret="109339" fromTop="21" />
+      <File id="79F0A10A-6879-4495-92E7-C5FB42339A60/d:List/f:ListLoginAuthentication.cs" caret="12918" fromTop="7" />
+      <File id="79F0A10A-6879-4495-92E7-C5FB42339A60/d:List/f:ListLoginAuthentication.cs" caret="13070" fromTop="26" />
+      <File id="79F0A10A-6879-4495-92E7-C5FB42339A60/d:List/f:ListLoginAuthentication.cs" caret="11200" fromTop="23" />
+      <File id="79F0A10A-6879-4495-92E7-C5FB42339A60/d:List/f:ListLoginAuthentication.cs" caret="11629" fromTop="21" />
+      <File id="79F0A10A-6879-4495-92E7-C5FB42339A60/d:List/f:ListLoginAuthentication.cs" caret="12235" fromTop="20" />
+      <File id="79F0A10A-6879-4495-92E7-C5FB42339A60/d:List/f:ListLoginAuthentication.cs" caret="12707" fromTop="27" />
+      <File id="79F0A10A-6879-4495-92E7-C5FB42339A60/d:List/f:ListLoginAuthentication.cs" caret="8201" fromTop="18" />
+      <File id="D3EBF03F-16BC-4BE6-9BD2-36E27B8ED743/d:AsyncOperations/f:ProgressDialog.cs" caret="472" fromTop="8" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <Bookmarks>
+    <Bookmark owner="NumberedBookmarkManager" id="Bookmark5" file-id="D3EBF03F-16BC-4BE6-9BD2-36E27B8ED743/d:M4v2/d:Chart/f:CtlPainelChart.cs" coords="(Doc Ln 4406 Col 29)" />
+    <Bookmark owner="NumberedBookmarkManager" id="Bookmark2" file-id="D3EBF03F-16BC-4BE6-9BD2-36E27B8ED743/d:M4v2/d:Chart/f:CtlPainelChart.cs" coords="(Doc Ln 3070 Col 45)" />
+    <Bookmark owner="NumberedBookmarkManager" id="Bookmark3" file-id="D3EBF03F-16BC-4BE6-9BD2-36E27B8ED743/d:M4v2/d:Chart/f:CtlPainelChart.cs" coords="(Doc Ln 85 Col 36)" />
+  </Bookmarks>
+</Configuration>

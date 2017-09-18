@@ -1,0 +1,55 @@
+<!DOCTYPE APR-Definition PUBLIC "-//ModulusFE//DTD APR 4.0//EN" "">
+<APR-Definition-File>
+  <designer>
+    <Title>Wedge - Downtrend</Title>
+    <Notes>
+    </Notes>
+    <MaxBars>50</MaxBars>
+    <MinBars>10</MinBars>
+    <FitnessThreshold>0.3</FitnessThreshold>
+    <BreakoutErrorThreshold>0.3</BreakoutErrorThreshold>
+    <PointBreakoutErrorThreshold>0.25</PointBreakoutErrorThreshold>
+    <ChannelError>0.3</ChannelError>
+    <PointError>0.2</PointError>
+    <LogicalHigh>
+      <Point>
+        <X>3</X>
+        <Y>100</Y>
+      </Point>
+      <Point>
+        <X>99</X>
+        <Y>10</Y>
+      </Point>
+    </LogicalHigh>
+    <LogicalLow>
+      <Point>
+        <X>3</X>
+        <Y>39</Y>
+      </Point>
+      <Point>
+        <X>99</X>
+        <Y>0</Y>
+      </Point>
+    </LogicalLow>
+    <High>
+      <Point>
+        <X>0.19478527607362</X>
+        <Y>0.0773618139625912</Y>
+      </Point>
+      <Point>
+        <X>0.575153374233129</X>
+        <Y>0.861604272094389</Y>
+      </Point>
+    </High>
+    <Low>
+      <Point>
+        <X>0.19478527607362</X>
+        <Y>0.605781865965834</Y>
+      </Point>
+      <Point>
+        <X>0.575153374233129</X>
+        <Y>0.95386809069813</Y>
+      </Point>
+    </Low>
+  </designer>
+</APR-Definition-File>

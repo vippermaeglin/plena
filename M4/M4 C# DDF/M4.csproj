@@ -1,0 +1,1159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D3EBF03F-16BC-4BE6-9BD2-36E27B8ED743}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>M4</RootNamespace>
+    <AssemblyName>M4</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>http://localhost/M4 Platform - DDF Data/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2A1F8B03444695A2BD7401019913A1058141F70D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>PlenaIco.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Facebook.5.0.5\lib\net40-client\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.WinControls, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.ChartView, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.ChartView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.PdfViewer, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.PdfViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.PivotGrid, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.PivotGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadChart, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.RadChart.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.RadDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.RadMarkupEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RichTextBox, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.RichTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Scheduler, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.Scheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.SpellChecker, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.SpellChecker.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Aqua, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.Themes.Aqua.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.Themes.Breeze.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Desert, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.Themes.Desert.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.HighContrastBlack, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.Themes.HighContrastBlack.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2007Black, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.Themes.Office2007Black.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2007Silver, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.Themes.Office2007Silver.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.Themes.Office2010Black.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Blue, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.Themes.Office2010Blue.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.Themes.Office2010Silver.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.Themes.TelerikMetro.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.Themes.TelerikMetroBlue.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroTouch, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.Themes.TelerikMetroTouch.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.Themes.VisualStudio2012Dark.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.Themes.VisualStudio2012Light.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows7, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.Themes.Windows7.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows8">
+      <HintPath>libs\Telerik.WinControls.Themes.Windows8.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI.Design, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\Telerik.WinControls.UI.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\TelerikCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikData, Version=2013.1.220.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>libs\TelerikData.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ToolStripSpringTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DDFDataManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DDFDataManager.Designer.cs" />
+    <Compile Include="frmHelp2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHelp2.Designer.cs">
+      <DependentUpon>frmHelp2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain2.designer.cs">
+      <DependentUpon>frmMain2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guage\AGauge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Guage\AGauge.Designer.cs">
+      <DependentUpon>AGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsyncOperations\AsyncHelper.cs" />
+    <Compile Include="AsyncOperations\DefaultProgressService.cs" />
+    <Compile Include="AsyncOperations\IProgressService.cs" />
+    <Compile Include="AsyncOperations\IProgressVisualizer.cs" />
+    <Compile Include="AsyncOperations\ProgressWorker.cs" />
+    <Compile Include="AsyncOperations\ProgressWorkerParams.cs" />
+    <Compile Include="ctlData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlData.Designer.cs">
+      <DependentUpon>ctlData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctlForex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlForex.Designer.cs">
+      <DependentUpon>ctlForex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctlForexPair.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlForexPair.Designer.cs">
+      <DependentUpon>ctlForexPair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctlPortfolio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlPortfolio.Designer.cs">
+      <DependentUpon>ctlPortfolio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctlWeb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlWeb.Designer.cs">
+      <DependentUpon>ctlWeb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridViewBarGraphCell.cs" />
+    <Compile Include="DataGridViewBarGraphColumn.cs" />
+    <Compile Include="DataGridViewImageButtonCell.cs" />
+    <Compile Include="DataGridViewImageButtonColumn.cs" />
+    <Compile Include="DataGridViewTextBoxColorCell.cs" />
+    <Compile Include="DataGridViewTextBoxScannerColorCell.cs" />
+    <Compile Include="DataGridViewTextBoxScannerColorColumn.cs" />
+    <Compile Include="DataGridViewTickChartCell.cs" />
+    <Compile Include="DataManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataManager.Designer.cs">
+      <DependentUpon>DataManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateTimeEx.cs" />
+    <Compile Include="frmActivate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActivate.Designer.cs">
+      <DependentUpon>frmActivate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IBootTimeInformer.cs" />
+    <Compile Include="LocalizationProvider.cs" />
+    <Compile Include="M4v2\Alerts\ctlAlert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="M4v2\Alerts\ctlAlert.Designer.cs" />
+    <Compile Include="M4v2\Authentication\Login\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Authentication\Login\FrmLogin.designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\Authentication\Login\FrmRecovery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Authentication\Login\FrmRecovery.Designer.cs">
+      <DependentUpon>FrmRecovery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\Authentication\Login\FrmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Authentication\Login\FrmRegister.Designer.cs">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\Authentication\Login\Guest.cs" />
+    <Compile Include="M4v2\BackTest\ctlBackTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="M4v2\BackTest\ctlBackTest.Designer.cs">
+      <DependentUpon>ctlBackTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\BackTest\ORIGINAL\ctlBacktest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="M4v2\BackTest\ORIGINAL\ctlBacktest.Designer.cs" />
+    <Compile Include="M4v2\Base\DdfLocalData.cs" />
+    <Compile Include="M4v2\Base\ListPortfolio.cs" />
+    <Compile Include="M4v2\Base\Portfolios.cs" />
+    <Compile Include="M4v2\Base\Source.cs" />
+    <Compile Include="M4v2\Base\RegCandle.cs" />
+    <Compile Include="M4v2\Chart\Averages\MovingAverage.cs" />
+    <Compile Include="M4v2\Chart\CtlPainelChartList.cs" />
+    <Compile Include="M4v2\Chart\LineStudy\FrmSelectStudy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Chart\LineStudy\FrmSelectStudy.Designer.cs">
+      <DependentUpon>FrmSelectStudy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\Chart\CtlPainelChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="M4v2\Chart\CtlPainelChart.Designer.cs">
+      <DependentUpon>CtlPainelChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\Chart\FrmSelectChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Chart\FrmSelectChart.Designer.cs">
+      <DependentUpon>FrmSelectChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\Chart\LineStudy\StudyInfo.cs" />
+    <Compile Include="M4v2\Chart\ndtChartTools.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="M4v2\Chart\ndtChartTools.Designer.cs">
+      <DependentUpon>ndtChartTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\Chart\ObjectPool.cs" />
+    <Compile Include="M4v2\Chart\PriceSettings\FrmPriceSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Chart\PriceSettings\FrmPriceSettings.Designer.cs">
+      <DependentUpon>FrmPriceSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\Chart\PriceSettings\PriceInfo.cs" />
+    <Compile Include="M4v2\Chart\Templates\AlterTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Chart\Templates\AlterTemplate.Designer.cs">
+      <DependentUpon>AlterTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\Chart\Templates\FrmTemplates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Chart\Templates\FrmTemplates.Designer.cs">
+      <DependentUpon>FrmTemplates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\Chart\IndicatorElements\Enums.cs" />
+    <Compile Include="M4v2\Chart\IndicatorElements\IndicatorInfo.cs" />
+    <Compile Include="M4v2\Chart\IndicatorElements\Surface.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="M4v2\Chart\IndicatorElements\SurfaceElement.cs" />
+    <Compile Include="M4v2\Chart\IndicatorElements\SurfaceObject.cs" />
+    <Compile Include="M4v2\Chart\Mock\Indicator.cs" />
+    <Compile Include="M4v2\Chart\Mock\IndicatorMock.cs" />
+    <Compile Include="M4v2\Chart\Mock\Mock.cs" />
+    <Compile Include="M4v2\Chart\TechnicalAnalysis\FrmSelectColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Chart\TechnicalAnalysis\FrmSelectColor.Designer.cs">
+      <DependentUpon>FrmSelectColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\Chart\TechnicalAnalysis\FrmSelectIndicator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Chart\TechnicalAnalysis\FrmSelectIndicator.Designer.cs">
+      <DependentUpon>FrmSelectIndicator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\Chart\Templates\Manager.cs" />
+    <Compile Include="M4v2\Facebook\FacebookLoginDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Facebook\FacebookLoginDialog.Designer.cs" />
+    <Compile Include="M4v2\GridviewRowDetailsExtended\CustomDetailViewCellElement.cs" />
+    <Compile Include="M4v2\GridviewRowDetailsExtended\DataAssetsInfo.cs" />
+    <Compile Include="M4v2\GridviewRowDetailsExtended\GridViewRowDetailsExtended.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="M4v2\GridviewRowDetailsExtended\GridViewRT\CustomDetailViewCellElement.cs" />
+    <Compile Include="M4v2\GridviewRowDetailsExtended\GridViewRT\Form1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="M4v2\GridviewRowDetailsExtended\GridViewRT\Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\GridviewRowDetailsExtended\GridViewRT\PlenaDataSet.cs" />
+    <Compile Include="M4v2\GridviewRowDetailsExtended\GridViewRT\RTAssetsInfo.cs" />
+    <Compile Include="M4v2\GridviewRowDetailsExtended\RadGridBehavior.cs" />
+    <Compile Include="M4v2\GridviewRowDetailsExtended\RowDetailsBehavior.cs" />
+    <Compile Include="M4v2\GridviewRowDetailsExtended\RowDetailsLayout.cs" />
+    <Compile Include="M4v2\GridviewRowDetailsExtended\RowDetailsRowElement.cs" />
+    <Compile Include="M4v2\GridviewRowDetailsExtended\RowDetailsViewDefinition.cs" />
+    <Compile Include="M4v2\GridviewRowDetailsExtended\SelectView1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="M4v2\GridviewRowDetailsExtended\SelectView1.designer.cs">
+      <DependentUpon>SelectView1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\Portfolio\DataManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="M4v2\Portfolio\DataManager.designer.cs" />
+    <Compile Include="M4v2\Portfolio\EditPortfolio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Portfolio\EditPortfolio.designer.cs" />
+    <Compile Include="M4v2\Portfolio\NewPortfolio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Portfolio\NewPortfolio.Designer.cs" />
+    <Compile Include="M4v2\Portfolio\OutputWindowV2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="M4v2\Portfolio\OutputWindowV2.designer.cs" />
+    <Compile Include="M4v2\Portfolio\RenameTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Portfolio\RenameTab.Designer.cs" />
+    <Compile Include="M4v2\Portfolio\StatusManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="M4v2\Portfolio\StatusManager.Designer.cs" />
+    <Compile Include="M4v2\Scanner\ctlScanner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="M4v2\Scanner\ctlScanner.Designer.cs" />
+    <Compile Include="M4v2\Scanner\frmScannerMainSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Scanner\frmScannerMainSettings.Designer.cs" />
+    <Compile Include="M4v2\Scanner\frmScannerScript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Scanner\frmScannerScript.Designer.cs" />
+    <Compile Include="M4v2\Scripts\ctlScripts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="M4v2\Scripts\ctlScripts.Designer.cs">
+      <DependentUpon>ctlScripts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\Scripts\frmConnector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Scripts\frmConnector.Designer.cs" />
+    <Compile Include="M4v2\Scripts\ctlPalette.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="M4v2\Scripts\ctlPalette.Designer.cs" />
+    <Compile Include="M4v2\Scripts\frmTreeLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Scripts\frmTreeLine.Designer.cs" />
+    <Compile Include="M4v2\Scripts\ScriptDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Scripts\ScriptDialog.Designer.cs">
+      <DependentUpon>ScriptDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\Scripts\ScriptManager.cs" />
+    <Compile Include="M4v2\Settings\ChartInfo.cs" />
+    <Compile Include="M4v2\Settings\FrmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Settings\FrmSettings.designer.cs">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\Settings\ListConfigStudies.cs" />
+    <Compile Include="M4v2\Settings\UserInfo.cs" />
+    <Compile Include="M4v2\Settings\PriceInfo.cs" />
+    <Compile Include="M4v2\Settings\Scheme.cs" />
+    <Compile Include="M4v2\Settings\StudieInfo.cs" />
+    <Compile Include="M4v2\Themes\ChangeTheme.cs" />
+    <Compile Include="M4v2\Workspace\FrmDescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Workspace\FrmDescription.Designer.cs">
+      <DependentUpon>FrmDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\Workspace\FrmWorkspace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M4v2\Workspace\FrmWorkspace.Designer.cs">
+      <DependentUpon>FrmWorkspace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M4v2\Workspace\ManagerWorkspace.cs" />
+    <Compile Include="MachineInfo.cs" />
+    <Compile Include="MissingSymbolException.cs" />
+    <Compile Include="OutputWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutputWindow.Designer.cs">
+      <DependentUpon>OutputWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlenaDataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlenaDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="AsyncOperations\ProgressDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsyncOperations\ProgressDialog.Designer.cs">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ctlData.resx">
+      <DependentUpon>ctlData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlForex.resx">
+      <DependentUpon>ctlForex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlForexPair.resx">
+      <DependentUpon>ctlForexPair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlPortfolio.resx">
+      <DependentUpon>ctlPortfolio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlWeb.resx">
+      <DependentUpon>ctlWeb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DDFDataManager.resx" />
+    <EmbeddedResource Include="frmActivate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmActivate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHelp2.resx">
+      <DependentUpon>frmHelp2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain2.resx">
+      <DependentUpon>frmMain2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\Alerts\ctlAlert.resx" />
+    <EmbeddedResource Include="M4v2\Authentication\Login\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\Authentication\Login\FrmRecovery.resx">
+      <DependentUpon>FrmRecovery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\Authentication\Login\FrmRegister.resx">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\BackTest\ctlBackTest.resx">
+      <DependentUpon>ctlBackTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\BackTest\ORIGINAL\ctlBacktest.resx" />
+    <EmbeddedResource Include="M4v2\Chart\LineStudy\FrmSelectStudy.resx">
+      <DependentUpon>FrmSelectStudy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\Chart\CtlPainelChart.resx">
+      <DependentUpon>CtlPainelChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\Chart\FrmSelectChart.resx">
+      <DependentUpon>FrmSelectChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\Chart\ndtChartTools.resx">
+      <DependentUpon>ndtChartTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\Chart\PriceSettings\FrmPriceSettings.resx">
+      <DependentUpon>FrmPriceSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\Chart\Templates\AlterTemplate.resx">
+      <DependentUpon>AlterTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\Chart\Templates\FrmTemplates.resx">
+      <DependentUpon>FrmTemplates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\Chart\TechnicalAnalysis\FrmSelectColor.resx">
+      <DependentUpon>FrmSelectColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\Chart\TechnicalAnalysis\FrmSelectIndicator.resx">
+      <DependentUpon>FrmSelectIndicator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\Facebook\FacebookLoginDialog.resx" />
+    <EmbeddedResource Include="M4v2\GridviewRowDetailsExtended\GridViewRT\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\GridviewRowDetailsExtended\SelectView1.resx">
+      <DependentUpon>SelectView1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\Portfolio\DataManager.resx" />
+    <EmbeddedResource Include="M4v2\Portfolio\EditPortfolio.resx" />
+    <EmbeddedResource Include="M4v2\Portfolio\NewPortfolio.resx" />
+    <EmbeddedResource Include="M4v2\Portfolio\OutputWindowV2.resx" />
+    <EmbeddedResource Include="M4v2\Portfolio\PortfolioView1.resx" />
+    <EmbeddedResource Include="M4v2\Portfolio\RenameTab.resx" />
+    <EmbeddedResource Include="M4v2\Portfolio\StatusManager.resx" />
+    <EmbeddedResource Include="M4v2\Scanner\ctlScanner.resx" />
+    <EmbeddedResource Include="M4v2\Scanner\frmScannerMainSettings.resx" />
+    <EmbeddedResource Include="M4v2\Scanner\frmScannerScript.resx" />
+    <EmbeddedResource Include="M4v2\Scripts\ctlScripts.resx">
+      <DependentUpon>ctlScripts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\Scripts\frmConnector.resx" />
+    <EmbeddedResource Include="M4v2\Scripts\ctlPalette.resx" />
+    <EmbeddedResource Include="M4v2\Scripts\frmTreeLine.resx" />
+    <EmbeddedResource Include="M4v2\Scripts\ScriptDialog.resx">
+      <DependentUpon>ScriptDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\Settings\FrmSettings.resx">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\Workspace\FrmDescription.resx">
+      <DependentUpon>FrmDescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M4v2\Workspace\FrmWorkspace.resx">
+      <DependentUpon>FrmWorkspace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutputWindow.resx">
+      <DependentUpon>OutputWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="bin\x86\Debug\RichTextBox for WinForms Beta.docx" />
+    <None Include="packages.config" />
+    <None Include="PlenaDataDataSet.xsc">
+      <DependentUpon>PlenaDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PlenaDataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PlenaDataDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PlenaDataDataSet.xss">
+      <DependentUpon>PlenaDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\M4Core.Entities.Stock.datasource" />
+    <None Include="Properties\DataSources\System.Xml.Linq.XElement.datasource" />
+    <None Include="Resources\RichTextBox for WinForms.docx" />
+    <None Include="Resources\RichTextBox_Overview.docx" />
+    <None Include="Service References\AtualizacaoService\Atualizacao.wsdl" />
+    <None Include="Service References\RegistrosService\Registros.wsdl" />
+    <None Include="Service References\RegistroUsuario\RegistroUsuario.wsdl" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Security.cs" />
+    <Compile Include="Service References\AtualizacaoService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RegistrosService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RegistroUsuario\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SumariosService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SymbolService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ValidacaoAcesso\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreenHelper.cs" />
+    <Compile Include="UnmanagedMethods.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="Utils\Format.cs" />
+    <Compile Include="Web References\modulusfe.platform.data\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\modulusfe.platform\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.11.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2012 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxSTOCKCHARTXLib">
+      <Guid>{6556E667-F828-4D0E-AF3E-C0FC768796CC}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>12</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="STOCKCHARTXLib">
+      <Guid>{6556E667-F828-4D0E-AF3E-C0FC768796CC}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>12</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="TradeScriptLib">
+      <Guid>{67BFF05D-5B2C-4E33-AFE4-D6CE2BDD3121}</Guid>
+      <VersionMajor>2008</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://platform.modulusfe.com/data/service.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\modulusfe.platform.data\</RelPath>
+      <UpdateFromURL>http://platform.modulusfe.com/data/service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>M4_modulusfe_platform_data_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/M4Inet/Service.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\modulusfe.platform\</RelPath>
+      <UpdateFromURL>http://localhost/M4Inet/Service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>M4_modulusfe_platform_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ValidacaoAcesso\ValidacaoAcesso.disco" />
+    <None Include="Service References\SymbolService\Symbol.disco" />
+    <None Include="Service References\SumariosService\Sumarios1.disco" />
+    <None Include="Service References\RegistroUsuario\RegistroUsuario.disco" />
+    <None Include="Service References\RegistrosService\Registros.disco" />
+    <None Include="Service References\AtualizacaoService\Atualizacao.disco" />
+    <None Include="Service References\SumariosService\Sumarios1.wsdl" />
+    <None Include="Service References\SymbolService\Symbol.wsdl" />
+    <None Include="Service References\ValidacaoAcesso\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ValidacaoAcesso\configuration.svcinfo" />
+    <None Include="Service References\ValidacaoAcesso\configuration91.svcinfo" />
+    <None Include="Service References\RegistroUsuario\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RegistroUsuario\configuration.svcinfo" />
+    <None Include="Service References\RegistroUsuario\configuration91.svcinfo" />
+    <None Include="Service References\SymbolService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SymbolService\configuration.svcinfo" />
+    <None Include="Service References\SymbolService\configuration91.svcinfo" />
+    <None Include="Service References\SumariosService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SumariosService\configuration.svcinfo" />
+    <None Include="Service References\SumariosService\configuration91.svcinfo" />
+    <None Include="Service References\AtualizacaoService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\AtualizacaoService\configuration.svcinfo" />
+    <None Include="Service References\AtualizacaoService\configuration91.svcinfo" />
+    <None Include="Service References\RegistrosService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RegistrosService\configuration.svcinfo" />
+    <None Include="Service References\RegistrosService\configuration91.svcinfo" />
+    <None Include="Resources\aligncenter.png" />
+    <None Include="Resources\alignjustify.png" />
+    <None Include="Resources\alignleft.png" />
+    <None Include="Resources\alignright.png" />
+    <None Include="Resources\bold.png" />
+    <None Include="Resources\ClearFormatting16.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\cut.png" />
+    <None Include="Resources\DocumentInfo.png" />
+    <None Include="Resources\EnableSpellCheck.png" />
+    <None Include="Resources\exit1.png" />
+    <None Include="Resources\fontcolor.png" />
+    <None Include="Resources\font-decreasesize.png" />
+    <None Include="Resources\font-increasesize.png" />
+    <None Include="Resources\formatting-symbols.png" />
+    <None Include="Resources\highlight.png" />
+    <None Include="Resources\Html.png" />
+    <None Include="Resources\indent.png" />
+    <None Include="Resources\italic.png" />
+    <None Include="Resources\list-bullets.png" />
+    <None Include="Resources\list-numbered.png" />
+    <None Include="Resources\MultilevelList.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\open.png" />
+    <None Include="Resources\outdent.png" />
+    <None Include="Resources\PageMarginModerate.png" />
+    <None Include="Resources\PageMarginNarrow.png" />
+    <None Include="Resources\PageMarginNormal.png" />
+    <None Include="Resources\PageOrientationLandscape.png" />
+    <None Include="Resources\PageOrientationPortrait.png" />
+    <None Include="Resources\PageOrientationRotate180.png" />
+    <None Include="Resources\PageOrientationRotate270.png" />
+    <None Include="Resources\PageSize.png" />
+    <None Include="Resources\ParagraphBackgroundColor.png" />
+    <None Include="Resources\paste.png" />
+    <None Include="Resources\Pdf.png" />
+    <None Include="Resources\PlainText.png" />
+    <None Include="Resources\redo.png" />
+    <None Include="Resources\Rtf.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\save1.png" />
+    <None Include="Resources\save-as1.png" />
+    <None Include="Resources\Strikethrough16.png" />
+    <None Include="Resources\subscript.png" />
+    <None Include="Resources\superscript.png" />
+    <None Include="Resources\superscript1.png" />
+    <None Include="Resources\Table_161.png" />
+    <None Include="Resources\underline.png" />
+    <None Include="Resources\undo.png" />
+    <None Include="Resources\worddoc.png" />
+    <None Include="Resources\Xaml.png" />
+    <None Include="Images\Login.bmp" />
+    <EmbeddedResource Include="Images\gradient_green.bmp" />
+    <EmbeddedResource Include="Images\gradient_office.bmp" />
+    <EmbeddedResource Include="Images\gradient_silver.bmp" />
+    <EmbeddedResource Include="Images\gradient_vista.bmp" />
+    <EmbeddedResource Include="Images\gradient_xp.bmp" />
+    <EmbeddedResource Include="AsyncOperations\ProgressDialog.resx">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\Lock.bmp" />
+    <None Include="Resources\Pause.bmp" />
+    <None Include="Resources\Play.bmp" />
+    <None Include="Resources\Unlock.bmp" />
+    <None Include="Images\ExpertAdvisorSmall.bmp" />
+    <None Include="Images\Help.bmp" />
+    <None Include="Images\HelpBox.png" />
+    <EmbeddedResource Include="Images\Close_Down.bmp" />
+    <EmbeddedResource Include="Images\Close_Normal.bmp" />
+    <EmbeddedResource Include="Images\Close_Over.bmp" />
+    <EmbeddedResource Include="Images\ExpertAdvisorAlert.bmp" />
+    <None Include="Resources\Test.png" />
+    <None Include="Images\NNSmall.png" />
+    <None Include="Images\twitter.PNG" />
+    <None Include="Images\twitter_highlight.png" />
+    <Content Include="Images\add.png" />
+    <None Include="Images\bg-pattern-grey.png" />
+    <None Include="Images\bg-pattern-grey-little.png" />
+    <Content Include="Images\bg-pattern.png" />
+    <Content Include="Images\chart.png" />
+    <Content Include="Images\delete.png" />
+    <Content Include="Images\deleteTab.png" />
+    <None Include="Images\facebook.png" />
+    <Content Include="Images\icones\1-CandleChart.png" />
+    <Content Include="Images\icones\10-ZoomReset.png" />
+    <Content Include="Images\icones\11-Daily.png" />
+    <Content Include="Images\icones\12-Weekly.png" />
+    <Content Include="Images\icones\13-Monthly.png" />
+    <Content Include="Images\icones\14-PeriodicityCustom.png" />
+    <Content Include="Images\icones\15-Indicators.png" />
+    <Content Include="Images\icones\16-NewChart.png" />
+    <Content Include="Images\icones\17-Crosshair.png" />
+    <Content Include="Images\icones\18-Select.png" />
+    <Content Include="Images\icones\19-Magnetic.png" />
+    <Content Include="Images\icones\2-StockLine.png" />
+    <Content Include="Images\icones\20-Text.png" />
+    <Content Include="Images\icones\21-BuySymbol.png" />
+    <Content Include="Images\icones\22-SellSymbol.png" />
+    <Content Include="Images\icones\23-ExitSymbol.png" />
+    <Content Include="Images\icones\24-TrendLine.png" />
+    <Content Include="Images\icones\25-Ray.png" />
+    <Content Include="Images\icones\26-Channel.png" />
+    <Content Include="Images\icones\27-HorizontalLine.png" />
+    <Content Include="Images\icones\28-VerticalLine.png" />
+    <Content Include="Images\icones\29-Rectangle.png" />
+    <Content Include="Images\icones\3-BarChart.png" />
+    <Content Include="Images\icones\30-Ellipse.png" />
+    <Content Include="Images\icones\31-Arrow.png" />
+    <Content Include="Images\icones\32-Polyline.png" />
+    <Content Include="Images\icones\33-FreehandDrawing.png" />
+    <Content Include="Images\icones\34-FibonacciRetracements.png" />
+    <Content Include="Images\icones\35-FibonacciProjecttions.png" />
+    <Content Include="Images\icones\36-FibonacciArcs.png" />
+    <Content Include="Images\icones\37-FibonacciFan.png" />
+    <Content Include="Images\icones\38-FibonacciTimeZones.png" />
+    <Content Include="Images\icones\39-GannFan.png" />
+    <Content Include="Images\icones\4-HeinkinAshi.png" />
+    <Content Include="Images\icones\40-SpeedLines.png" />
+    <Content Include="Images\icones\5-HeinkinAshiSuavizado.png" />
+    <Content Include="Images\icones\6-ZoomIn.png" />
+    <Content Include="Images\icones\7-ZoomOut.png" />
+    <Content Include="Images\icones\8-ZoomArea.png" />
+    <Content Include="Images\icones\9-Overview.png" />
+    <Content Include="Images\icones\exit.png" />
+    <None Include="Images\icones\Facebook.ico" />
+    <Content Include="Images\Info.png" />
+    <Content Include="Images\LogoPlena_Splash.png" />
+    <Content Include="Images\more.png" />
+    <Content Include="Images\open.png" />
+    <Content Include="Images\PageBack.png" />
+    <Content Include="Images\PageHome.png" />
+    <Content Include="Images\PageNavigate.png" />
+    <Content Include="Images\PageNext.png" />
+    <Content Include="Images\PageRedo.png" />
+    <Content Include="Images\PageRefresh.png" />
+    <Content Include="Images\PageRefresh1.png" />
+    <Content Include="Images\PageRefresh2.png" />
+    <Content Include="Images\PageUndo.png" />
+    <Content Include="Images\remove.png" />
+    <Content Include="Images\save.png" />
+    <None Include="Images\tab.png" />
+    <Content Include="Images\warning.png" />
+    <None Include="Resources\chart.png" />
+    <Content Include="M4v2\Authentication\Login\Features.xml" />
+    <Content Include="M4v2\Authentication\Login\Login.xml" />
+    <None Include="Resources\aalc11b.jpg" />
+    <Content Include="PlenaIco.ico" />
+    <Content Include="Resources\Ativos.xml" />
+    <None Include="Resources\new_icon.jpg" />
+    <None Include="Resources\edit_small_icon.jpg" />
+    <None Include="Resources\delete_small_icon.jpg" />
+    <None Include="Resources\new_small_icon.jpg" />
+    <None Include="Resources\plena_cinza.png" />
+    <None Include="Resources\bg-pattern - sample.png" />
+    <Content Include="Resources\ExcelIcon.gif" />
+    <Content Include="Resources\RegAtivos.xml" />
+    <None Include="Resources\Select.png" />
+    <None Include="Service References\ValidacaoAcesso\ValidacaoAcesso.wsdl" />
+    <None Include="Web References\modulusfe.platform\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\modulusfe.platform\service.disco" />
+    <None Include="Web References\modulusfe.platform.data\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\modulusfe.platform.data\service.disco" />
+    <None Include="Web References\modulusfe.platform.data\service.wsdl" />
+    <None Include="Web References\modulusfe.platform\service.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Crainiate Open Diagram 5.0\Crainiate.Diagramming.Forms\Crainiate.Diagramming.Forms.csproj">
+      <Project>{86fbcbda-52fd-4111-99f0-f6ebcc00ab06}</Project>
+      <Name>Crainiate.Diagramming.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Crainiate Open Diagram 5.0\Crainiate.Diagramming\Crainiate.Diagramming.csproj">
+      <Project>{8feedda0-185d-4f31-9920-503c014f5526}</Project>
+      <Name>Crainiate.Diagramming</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DSPlena\DSPlena.csproj">
+      <Project>{6B8E0B62-EE14-4FBC-BB14-809FA31A113E}</Project>
+      <Name>DSPlena</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DSPlena\M4.DataServer.Interface\M4.DataServer.Interface.csproj">
+      <Project>{C0B4FEC6-275A-4574-BCC4-A06CDCEDCA3F}</Project>
+      <Name>M4.DataServer.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DSPlena\ModulusFE.Sockets\ModulusFE.Sockets.csproj">
+      <Project>{9A7C5F5D-134D-485B-BAFC-DC1DF32EF612}</Project>
+      <Name>ModulusFE.Sockets</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VersionChecker\VersionChecker.csproj">
+      <Project>{4051eb73-31a4-44e8-aae6-85e936d34247}</Project>
+      <Name>VersionChecker</Name>
+    </ProjectReference>
+    <ProjectReference Include="M4Core\M4Core.csproj">
+      <Project>{63BD7DAA-97F5-46F1-94AE-B948727005A0}</Project>
+      <Name>M4Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="M4Data\M4Data.csproj">
+      <Project>{79F0A10A-6879-4495-92E7-C5FB42339A60}</Project>
+      <Name>M4Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="M4Utils\M4Utils.csproj">
+      <Project>{EEE8F291-0E5B-4DDA-A2B2-E7A1AC01E17B}</Project>
+      <Name>M4Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AtualizacaoService\" />
+    <WCFMetadataStorage Include="Service References\RegistrosService\" />
+    <WCFMetadataStorage Include="Service References\RegistroUsuario\" />
+    <WCFMetadataStorage Include="Service References\SumariosService\" />
+    <WCFMetadataStorage Include="Service References\SymbolService\" />
+    <WCFMetadataStorage Include="Service References\ValidacaoAcesso\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

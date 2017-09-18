@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="M4">
+</Property><Property Name="Solution File" Value="C:\MFE\M4 FROEDE 2011\M4 C# DDF\M4.sln">
+</Property><Property Name="Date" Value="sexta-feira, 20 de maio de 2011">
+</Property><Property Name="Time" Value="07:56:52">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\M4Admin.vbproj" Description="Project file successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\M4Admin.vbproj">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\frmAccounts.Designer.vb" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\frmAccounts.Designer.vb">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\frmAccounts.vb" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\frmAccounts.vb">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\frmLicenseKeys.Designer.vb" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\frmLicenseKeys.Designer.vb">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\frmLicenseKeys.vb" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\frmLicenseKeys.vb">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\frmLogin.designer.vb" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\frmLogin.designer.vb">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\frmLogin.vb" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\frmLogin.vb">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\frmMain.vb" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\frmMain.vb">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\frmMain.Designer.vb" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\frmMain.Designer.vb">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\frmMessenger.Designer.vb" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\frmMessenger.Designer.vb">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\frmMessenger.vb" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\frmMessenger.vb">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\My Project\AssemblyInfo.vb" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\My Project\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\My Project\Application.Designer.vb" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\My Project\Application.Designer.vb">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\My Project\Resources.Designer.vb" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\My Project\Resources.Designer.vb">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\My Project\Settings.Designer.vb" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\My Project\Settings.Designer.vb">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\Security.vb" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\Security.vb">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\Web References\modulusfe.platform\Reference.vb" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\Web References\modulusfe.platform\Reference.vb">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\My Project\Application.myapp" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\My Project\Application.myapp">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\My Project\Settings.settings" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\My Project\Settings.settings">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\app.config" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\app.config">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\Web References\modulusfe.platform\Reference.map" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\Web References\modulusfe.platform\Reference.map">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\Web References\modulusfe.platform\service.disco" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\Web References\modulusfe.platform\service.disco">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\Web References\modulusfe.platform\service.wsdl" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\Web References\modulusfe.platform\service.wsdl">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\My Project\Login.bmp" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\My Project\Login.bmp">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\frmAccounts.resx" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\frmAccounts.resx">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\frmLicenseKeys.resx" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\frmLicenseKeys.resx">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\frmLogin.resx" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\frmLogin.resx">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\frmMain.resx" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\frmMain.resx">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\frmMessenger.resx" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\frmMessenger.resx">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\My Project\Resources.resx" Description="File successfully backed up as C:\MFE\M4 FROEDE 2011\M4 C# DDF\Backup\My Project\Resources.resx">
+</Event><Event ErrorLevel="1" Project="M4Admin" Source="..\M4 Admin\M4Admin.vbproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\M4Admin.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="M4Admin" Source="..\M4 Admin\M4Admin.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="M4Admin" Source="..\M4 Admin\M4Admin.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

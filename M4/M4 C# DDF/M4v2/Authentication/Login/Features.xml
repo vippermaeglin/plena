@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CONJUNTO>
+  <DATA>
+    <FEATURES>
+      <FEATURE>
+        <DESCRIPTION>NewChart</DESCRIPTION>
+        <PERMISSION>0</PERMISSION>
+      </FEATURE>
+    </FEATURES>
+    <FEATURES>
+      <FEATURE>
+        <DESCRIPTION>EditPortfolio</DESCRIPTION>
+        <PERMISSION>0</PERMISSION>
+      </FEATURE>
+    </FEATURES>
+  </DATA>
+</CONJUNTO>

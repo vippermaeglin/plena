@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="RegistroAtivos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="identificacao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="crc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegistroAtivosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegistroAtivosResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TodosRegistros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="identificacao" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TodosRegistrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TodosRegistrosResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllSymbolCript">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="identificacao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="crc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllSymbolCriptResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllSymbolCriptResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RegistroAtivosSoapIn">
+    <wsdl:part name="parameters" element="tns:RegistroAtivos" />
+  </wsdl:message>
+  <wsdl:message name="RegistroAtivosSoapOut">
+    <wsdl:part name="parameters" element="tns:RegistroAtivosResponse" />
+  </wsdl:message>
+  <wsdl:message name="TodosRegistrosSoapIn">
+    <wsdl:part name="parameters" element="tns:TodosRegistros" />
+  </wsdl:message>
+  <wsdl:message name="TodosRegistrosSoapOut">
+    <wsdl:part name="parameters" element="tns:TodosRegistrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSymbolCriptSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllSymbolCript" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSymbolCriptSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllSymbolCriptResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SymbolSoap">
+    <wsdl:operation name="RegistroAtivos">
+      <wsdl:input message="tns:RegistroAtivosSoapIn" />
+      <wsdl:output message="tns:RegistroAtivosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TodosRegistros">
+      <wsdl:input message="tns:TodosRegistrosSoapIn" />
+      <wsdl:output message="tns:TodosRegistrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSymbolCript">
+      <wsdl:input message="tns:GetAllSymbolCriptSoapIn" />
+      <wsdl:output message="tns:GetAllSymbolCriptSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SymbolSoap" type="tns:SymbolSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RegistroAtivos">
+      <soap:operation soapAction="http://tempuri.org/RegistroAtivos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TodosRegistros">
+      <soap:operation soapAction="http://tempuri.org/TodosRegistros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSymbolCript">
+      <soap:operation soapAction="http://tempuri.org/GetAllSymbolCript" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SymbolSoap12" type="tns:SymbolSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RegistroAtivos">
+      <soap12:operation soapAction="http://tempuri.org/RegistroAtivos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TodosRegistros">
+      <soap12:operation soapAction="http://tempuri.org/TodosRegistros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSymbolCript">
+      <soap12:operation soapAction="http://tempuri.org/GetAllSymbolCript" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Symbol">
+    <wsdl:port name="SymbolSoap" binding="tns:SymbolSoap">
+      <soap:address location="http://192.168.1.9/PlenaServer/Symbol.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SymbolSoap12" binding="tns:SymbolSoap12">
+      <soap12:address location="http://192.168.1.9/PlenaServer/Symbol.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

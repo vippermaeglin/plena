@@ -1,0 +1,55 @@
+<!DOCTYPE APR-Definition PUBLIC "-//ModulusFE//DTD APR 4.0//EN" "">
+<APR-Definition-File>
+  <designer>
+    <Title>Downtrend - Steep</Title>
+    <Notes>
+    </Notes>
+    <MaxBars>50</MaxBars>
+    <MinBars>10</MinBars>
+    <FitnessThreshold>0.3</FitnessThreshold>
+    <BreakoutErrorThreshold>0.3</BreakoutErrorThreshold>
+    <PointBreakoutErrorThreshold>0.25</PointBreakoutErrorThreshold>
+    <ChannelError>0.3</ChannelError>
+    <PointError>0.2</PointError>
+    <LogicalHigh>
+      <Point>
+        <X>1</X>
+        <Y>100</Y>
+      </Point>
+      <Point>
+        <X>98</X>
+        <Y>24</Y>
+      </Point>
+    </LogicalHigh>
+    <LogicalLow>
+      <Point>
+        <X>1</X>
+        <Y>74</Y>
+      </Point>
+      <Point>
+        <X>98</X>
+        <Y>0</Y>
+      </Point>
+    </LogicalLow>
+    <High>
+      <Point>
+        <X>0.207055214723926</X>
+        <Y>0.0729319500889414</Y>
+      </Point>
+      <Point>
+        <X>0.46319018404908</X>
+        <Y>0.750704389939883</Y>
+      </Point>
+    </High>
+    <Low>
+      <Point>
+        <X>0.207055214723926</X>
+        <Y>0.298856096705922</Y>
+      </Point>
+      <Point>
+        <X>0.46319018404908</X>
+        <Y>0.968838048742485</Y>
+      </Point>
+    </Low>
+  </designer>
+</APR-Definition-File>

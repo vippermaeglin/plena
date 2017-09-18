@@ -1,0 +1,55 @@
+<!DOCTYPE APR-Definition PUBLIC "-//ModulusFE//DTD APR 4.0//EN" "">
+<APR-Definition-File>
+  <designer>
+    <Title>Narrow Channel</Title>
+    <Notes>
+    </Notes>
+    <MaxBars>50</MaxBars>
+    <MinBars>10</MinBars>
+    <FitnessThreshold>0.1</FitnessThreshold>
+    <BreakoutErrorThreshold>0.5</BreakoutErrorThreshold>
+    <PointBreakoutErrorThreshold>0.5</PointBreakoutErrorThreshold>
+    <ChannelError>0.5</ChannelError>
+    <PointError>0.2</PointError>
+    <LogicalHigh>
+      <Point>
+        <X>0</X>
+        <Y>100</Y>
+      </Point>
+      <Point>
+        <X>99</X>
+        <Y>96</Y>
+      </Point>
+    </LogicalHigh>
+    <LogicalLow>
+      <Point>
+        <X>0</X>
+        <Y>0</Y>
+      </Point>
+      <Point>
+        <X>99</X>
+        <Y>0</Y>
+      </Point>
+    </LogicalLow>
+    <High>
+      <Point>
+        <X>0.0674846625766871</X>
+        <Y>0.271589389355597</Y>
+      </Point>
+      <Point>
+        <X>0.880368098159509</X>
+        <Y>0.279379877169975</Y>
+      </Point>
+    </High>
+    <Low>
+      <Point>
+        <X>0.0674846625766871</X>
+        <Y>0.466351584715063</Y>
+      </Point>
+      <Point>
+        <X>0.880368098159509</X>
+        <Y>0.466351584715063</Y>
+      </Point>
+    </Low>
+  </designer>
+</APR-Definition-File>
