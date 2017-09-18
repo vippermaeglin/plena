@@ -1,0 +1,4 @@
+C:\Projeto Plena\M4\M4 C# DDF\bin\Release\M4.exe.config
+C:\Projeto Plena\M4\M4 C# DDF\obj\Release\Interop.STOCKCHARTXLib.dll
+C:\Projeto Plena\M4\M4 C# DDF\obj\Release\AxInterop.STOCKCHARTXLib.dll
+C:\Projeto Plena\M4\M4 C# DDF\obj\Release\M4.csproj.ResolveComReference.cache

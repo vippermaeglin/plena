@@ -1,0 +1,10 @@
+<Modules>
+  <Module PersistentId="d:Miscellaneous Files" ModuleId="System.Windows.Forms" />
+  <Module PersistentId="D3EBF03F-16BC-4BE6-9BD2-36E27B8ED743" ModuleId="M4" />
+  <Module PersistentId="79F0A10A-6879-4495-92E7-C5FB42339A60" ModuleId="M4Data" />
+  <Module PersistentId="EEE8F291-0E5B-4DDA-A2B2-E7A1AC01E17B" ModuleId="M4Utils_1" />
+  <Module PersistentId="63BD7DAA-97F5-46F1-94AE-B948727005A0" ModuleId="M4Core_1" />
+  <Module PersistentId="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="System.Drawing" />
+  <Module PersistentId="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib" />
+  <Module PersistentId="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Windows.Forms_1" />
+</Modules>
