@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ATIVOS>
+  <ATIVO>
+    <NOME>AMBEV SA</NOME>
+    <COD>AMBV4</COD>
+    <SETOR>X5</SETOR>
+    <FONTE>Plena</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Indice Bovespa</NOME>
+    <COD>IBOV</COD>
+    <SETOR>X5</SETOR>
+    <FONTE>Plena</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>FIBRIA</NOME>
+    <COD>FIBR3</COD>
+    <SETOR>X5</SETOR>
+    <FONTE>Plena</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Dolar Futuro</NOME>
+    <COD>DOLFUT</COD>
+    <SETOR>X5</SETOR>
+    <FONTE>Plena</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>ABC Brasil</NOME>
+    <COD>ABCB4</COD>
+    <SETOR>X5</SETOR>
+    <FONTE>Plena</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Autometal</NOME>
+    <COD>AUTM3</COD>
+    <SETOR>X5</SETOR>
+    <FONTE>Plena</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Arezzo</NOME>
+    <COD>ARZZ3</COD>
+    <SETOR>X5</SETOR>
+    <FONTE>Plena</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Amil Participacoes</NOME>
+    <COD>AMIL3</COD>
+    <SETOR>X5</SETOR>
+    <FONTE>Plena</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Boi Futuro</NOME>
+    <COD>BGIFUT</COD>
+    <SETOR>X5</SETOR>
+    <FONTE>Plena</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>BICBanco</NOME>
+    <COD>BICB4</COD>
+    <SETOR>X5</SETOR>
+    <FONTE>Plena</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Banco PanAmericano</NOME>
+    <COD>BPNM4</COD>
+    <SETOR>X5</SETOR>
+    <FONTE>Plena</FONTE>
+  </ATIVO>
+  
+  <ATIVO>
+    <NOME>Banco do Brasil</NOME>
+    <COD>BBAS3</COD>
+    <SETOR>X5</SETOR>
+    <FONTE>Plena</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Itau Unibanco</NOME>
+    <COD>ITUB4</COD>
+    <SETOR>X5</SETOR>
+    <FONTE>Plena</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Abril Educacao</NOME>
+    <COD>ABRE11</COD>
+    <SETOR>X5</SETOR>
+    <FONTE>Plena</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>HRT Petroleo</NOME>
+    <COD>HRTP3</COD>
+    <SETOR>X5</SETOR>
+    <FONTE>Plena</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Eztec</NOME>
+    <COD>EZTC3</COD>
+    <SETOR>X5</SETOR>
+    <FONTE>Plena</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Alcatel Lucent</NOME>
+    <COD>ALU</COD>
+    <SETOR>X5</SETOR>
+    <FONTE>BarChart</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Bank of America</NOME>
+    <COD>BAC</COD>
+    <SETOR>X5</SETOR>
+    <FONTE>BarChart</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Down Industries</NOME>
+    <COD>$DOWI</COD>
+    <SETOR>X5</SETOR>
+    <FONTE>BarChart</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Google</NOME>
+    <COD>GOOG</COD>
+    <SETOR>X6</SETOR>
+    <FONTE>BarChart</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Intel</NOME>
+    <COD>INTC</COD>
+    <SETOR>X6</SETOR>
+    <FONTE>BarChart</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Microsoft</NOME>
+    <COD>MSFT</COD>
+    <SETOR>X6</SETOR>
+    <FONTE>BarChart</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>NetFlix</NOME>
+    <COD>NFLX</COD>
+    <SETOR>X6</SETOR>
+    <FONTE>BarChart</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Powersecure Internat</NOME>
+    <COD>POWR</COD>
+    <SETOR>X6</SETOR>
+    <FONTE>BarChart</FONTE>
+  </ATIVO>
+  <ATIVO>
+    <NOME>Starbucks Corp.</NOME>
+    <COD>SBUX</COD>
+    <SETOR>X6</SETOR>
+    <FONTE>BarChart</FONTE>
+  </ATIVO>
+</ATIVOS>

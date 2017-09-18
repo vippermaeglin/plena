@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="FinalizarSessao">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigoSessao" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FinalizarSessaoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FinalizarSessaoResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidarUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="senha" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codigoSessao" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidarUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidarUsuarioResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RevalidarUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="senha" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codigoSessao" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RevalidarUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RevalidarUsuarioResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="FinalizarSessaoSoapIn">
+    <wsdl:part name="parameters" element="tns:FinalizarSessao" />
+  </wsdl:message>
+  <wsdl:message name="FinalizarSessaoSoapOut">
+    <wsdl:part name="parameters" element="tns:FinalizarSessaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidarUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="ValidarUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="RevalidarUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:RevalidarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="RevalidarUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:RevalidarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ValidacaoAcessoSoap">
+    <wsdl:operation name="FinalizarSessao">
+      <wsdl:input message="tns:FinalizarSessaoSoapIn" />
+      <wsdl:output message="tns:FinalizarSessaoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarUsuario">
+      <wsdl:input message="tns:ValidarUsuarioSoapIn" />
+      <wsdl:output message="tns:ValidarUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RevalidarUsuario">
+      <wsdl:input message="tns:RevalidarUsuarioSoapIn" />
+      <wsdl:output message="tns:RevalidarUsuarioSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ValidacaoAcessoSoap" type="tns:ValidacaoAcessoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="FinalizarSessao">
+      <soap:operation soapAction="http://tempuri.org/FinalizarSessao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarUsuario">
+      <soap:operation soapAction="http://tempuri.org/ValidarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RevalidarUsuario">
+      <soap:operation soapAction="http://tempuri.org/RevalidarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ValidacaoAcessoSoap12" type="tns:ValidacaoAcessoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="FinalizarSessao">
+      <soap12:operation soapAction="http://tempuri.org/FinalizarSessao" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarUsuario">
+      <soap12:operation soapAction="http://tempuri.org/ValidarUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RevalidarUsuario">
+      <soap12:operation soapAction="http://tempuri.org/RevalidarUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ValidacaoAcesso">
+    <wsdl:port name="ValidacaoAcessoSoap" binding="tns:ValidacaoAcessoSoap">
+      <soap:address location="http://192.168.1.9/PlenaServer/ValidacaoAcesso.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ValidacaoAcessoSoap12" binding="tns:ValidacaoAcessoSoap12">
+      <soap12:address location="http://192.168.1.9/PlenaServer/ValidacaoAcesso.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

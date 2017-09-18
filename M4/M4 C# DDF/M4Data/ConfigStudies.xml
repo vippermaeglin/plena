@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CONFIG>
+  <STUDIES>
+    <LINETHICKNESS>2</LINETHICKNESS>
+    <COLOR>Blue</COLOR>
+    <RETRACEMENTS>true, true, true, true, true, true, true</RETRACEMENTS>
+    <PROJECTION>true, true, true, true, true, true, true</PROJECTION>
+  </STUDIES>
+</CONFIG>

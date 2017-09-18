@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="M4Data" GeneratedClassName="SettingsServer">
+  <Profiles />
+  <Settings>
+    <Setting Name="AccessedUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Server1_Ip" Type="System.String" Scope="User">
+      <Value Profile="(Default)">54.187.159.71</Value>
+    </Setting>
+    <Setting Name="Server2_Ip" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.1.9</Value>
+    </Setting>
+    <Setting Name="Server3_Ip" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.1.9</Value>
+    </Setting>
+    <Setting Name="Server1_Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">80</Value>
+    </Setting>
+    <Setting Name="Server2_Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">80</Value>
+    </Setting>
+    <Setting Name="Server3_Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">80</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

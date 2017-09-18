@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{79F0A10A-6879-4495-92E7-C5FB42339A60}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>M4Data</RootNamespace>
+    <AssemblyName>M4Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.STOCKCHARTXLib">
+      <HintPath>..\bin\x86\Debug\AxInterop.STOCKCHARTXLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.STOCKCHARTXLib">
+      <HintPath>..\bin\x86\Debug\Interop.STOCKCHARTXLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="List\ListAssets.cs" />
+    <Compile Include="List\ListFeatures.cs" />
+    <Compile Include="List\ListLog.cs" />
+    <Compile Include="List\ListLoginAuthentication.cs" />
+    <Compile Include="List\ListStocks.cs" />
+    <Compile Include="List\ListTemplates.cs" />
+    <Compile Include="List\ListWorkspace.cs" />
+    <Compile Include="List\Server.cs" />
+    <Compile Include="MessageService\MessageService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RegistroUsuario\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UpgradeVersion\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ValidacaoAcesso\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsServer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>SettingsServer.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\DefiniServer.cs" />
+    <Compile Include="Settings\VerifyInternet.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\VersionChecker\VersionChecker.csproj">
+      <Project>{4051eb73-31a4-44e8-aae6-85e936d34247}</Project>
+      <Name>VersionChecker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\M4Core\M4Core.csproj">
+      <Project>{63BD7DAA-97F5-46F1-94AE-B948727005A0}</Project>
+      <Name>M4Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\M4Utils\M4Utils.csproj">
+      <Project>{EEE8F291-0E5B-4DDA-A2B2-E7A1AC01E17B}</Project>
+      <Name>M4Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ativos.xml" />
+    <Content Include="ConfigStudies.xml" />
+    <Content Include="RegAtivos.xml" />
+    <Content Include="RegPortfolios.xml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\DataSources\System.Xml.Linq.XElement.datasource" />
+    <None Include="Service References\RegistroUsuario\RegistroUsuario.wsdl" />
+    <None Include="Service References\UpgradeVersion\M4Data.UpgradeVersion.CheckUpgradeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UpgradeVersion\UpgradeVersion.wsdl" />
+    <None Include="Service References\ValidacaoAcesso\configuration91.svcinfo" />
+    <None Include="Service References\ValidacaoAcesso\configuration.svcinfo" />
+    <None Include="Service References\ValidacaoAcesso\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RegistroUsuario\configuration91.svcinfo" />
+    <None Include="Service References\RegistroUsuario\configuration.svcinfo" />
+    <None Include="Service References\RegistroUsuario\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RegistroUsuario\RegistroUsuario.disco" />
+    <None Include="Service References\ValidacaoAcesso\ValidacaoAcesso1.disco" />
+    <None Include="Service References\UpgradeVersion\UpgradeVersion.disco" />
+    <None Include="Service References\UpgradeVersion\configuration91.svcinfo" />
+    <None Include="Service References\UpgradeVersion\configuration.svcinfo" />
+    <None Include="Service References\UpgradeVersion\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Templates.xml" />
+    <None Include="Service References\ValidacaoAcesso\ValidacaoAcesso1.wsdl" />
+    <None Include="SettingsServer.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>SettingsServer.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\RegistroUsuario\" />
+    <WCFMetadataStorage Include="Service References\UpgradeVersion\" />
+    <WCFMetadataStorage Include="Service References\ValidacaoAcesso\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
