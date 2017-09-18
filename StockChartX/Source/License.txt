@@ -1,0 +1,189 @@
+
+LICENSE AGREEMENT
+
+
+PLEASE READ THIS CAREFULLY! THIS IS NOT THE USUAL "YADA YADA"
+
+
+The following license agreement governs your use of Modulus 
+Financial Engineering products. Please read this agreement 
+carefully before using the software.
+
+
+THIS LICENSE AGREEMENT (the "Agreement") is entered by and 
+between Modulus Financial Engineering (herein referred to as 
+"MFE") and the Receiving Party (you).
+
+
+1. TERMS AND CONDITIONS
+
+BY COPYING OR OTHERWISE USING MFE SOURCE CODE FILES, YOU 
+AGREE TO BE BOUND BY ALL OF THE TERMS AND CONDITIONS OF THIS 
+LICENSE AGREEMENT. Upon your acceptance of the terms and 
+conditions of the License Agreement, you are granted the use 
+of the source code in the manner provided below. The source 
+code is the intellectual property of MFE and is protected by 
+copyright law and international copyright treaty. Therefore, 
+you must use this source code like any copyrighted material 
+(such as copyrighted music, art, or books). Except as 
+provided in the License Agreement, you may not transfer, 
+rent, lease, lend, modify, translate, sublicense, time-share 
+or electronically transmit or receive the source code, media 
+or documentation.
+
+
+
+2. USAGE AND REDISTRIBUTION
+
+YOU MAY NOT, UNDER ANY CIRCUMSTANCE, REDISTRIBUTE THE SOURCE 
+CODE, THE .LIC LICENSE FILE OR IN ANY WAY LICENSE THE PRODUCT 
+FOR THE DEVELOPMENT ENVIRONMENT ON MORE THAN ONE MACHINE! 
+
+AGAIN: YOU MAY *NOT* REDISTRIBUTE THE .LIC LICENSE FILE OR 
+SOURCE CODE. CIVIL AND/OR CRIMINAL PENALTIES WILL BE ENFORCED.
+
+You may include the source in COMPILED form (*.exe, *.dll, 
+*.ocx, *.so, *.jar and *.class files). You may not distribute 
+image files of the output from any of our products via the 
+Internet or by means of any other network. To do so, you must 
+acquire a separate ENTERPRISE license from MFE. If you own a 
+license to the product's source code, you may modify the 
+source code to adapt it to your needs, however you may only 
+redistribute the compiled form of the modified source code. 
+You are not allowed to redistribute any original or modified 
+source code file. You are not allowed to copy and paste source 
+code into external classes. All source code is copyrighted and 
+may only be used within the original classes!
+
+You may not resell, rent, lease or distribute the source code 
+OR compiled components alone, they must be distributed as a 
+component of an application and bundled with an application or 
+with the application's installation files. You may not call the 
+source code or compiled components from a scripting language or 
+wrap the component using a wrapper object (for this purpose, to 
+"wrap" or use a "wrapper" means that in which an object is 
+wrapped in other code as an interface between the caller, the 
+MFE product, and the wrapped code) You may not resell, rent, 
+lease or distribute the source code or components in any way 
+that would directly compete with MFE. All source code provided 
+by MFE that is distributed with an application must be compiled 
+or password protected to the extent that only the licensed 
+software developer(s) may obtain access to it. Reverse 
+engineering, reverse compiling, or disassembly of the Software 
+is expressly prohibited.
+
+
+
+3. DEVELOPMENT ENVIRONMENT
+
+The development environment requires one (1) license per 
+developer, and at least one license per client, company, or 
+distributor. You may not use the MFE source code or MFE 
+components for consulting purposes. Additional developer and 
+client licenses may be purchased at a discount from MFE. 
+Contact sales@modulusfe.com for details.
+
+
+
+4. NON-COMPETE
+
+You shall not own, manage, operate, consult or be employed in 
+a business substantially similar to, or competitive with the 
+present business of MFE or such other business activity in which 
+MFE may substantially engage during the term of this agreement.
+
+
+
+5. TRADE SECRETS
+
+You acknowledge and agree that the structure, sequence and 
+organization of the source code contains valuable trade secrets 
+of MFE. You agree to hold such trade secrets in confidence.
+
+
+
+6. INTELLECTUAL PROPERTY
+
+The software, including without limitation all design, text, 
+images, white papers, press releases, and other information, 
+is protected under United States and international copyright 
+laws and is owned by MFE or used under license from the copyright 
+owner. The information may not, except under written license 
+from MFE, be copied, reproduced, transmitted, displayed, 
+performed, distributed, rented, sublicensed, altered, stored 
+for subsequent use or otherwise used in whole or in part in any 
+manner without MFE's prior written consent, except to the extent 
+that such use is authorized under the United States copyright 
+laws. MFE trademarks, logos, images, and service marks used in 
+the software are the property of MFE and may not be used without 
+permission from MFE and then only with proper acknowledgment.
+
+
+
+7. NO REPRESENTATIONS OR WARRANTIES
+
+MFE assumes no responsibility for, and makes no representations 
+with respect to, the accuracy of the software. Therefore, all 
+data displayed by MFE products are presented "AS IS" and MFE 
+EXPRESSLY DISCLAIMS ANY IMPLIED OR EXPRESS WARRANTIES OF 
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR 
+NON-INFRINGEMENT OF INTELLECTUAL PROPERTY RELATING TO SUCH 
+MATERIAL. IN NO EVENT SHALL MFE BE LIABLE FOR ANY DAMAGES 
+WHATSOEVER, INCLUDING WITHOUT LIMITATION SPECIAL, INDIRECT, 
+CONSEQUENTIAL, OR INCIDENTAL DAMAGES, INCLUDING WITHOUT 
+LIMITATION, DAMAGES RESULTING FROM THE USE OF, OR RELIANCE ON, 
+THE INFORMATION PRESENTED, OR LOSS OF PROFITS OR REVENUES. 
+THE SOURCE CODE AND DOCUMENTATION ARE PROVIDED "AS IS". 
+MFE MAKES NO REPRESENTATIONS OR WARRANTIES THAT THE SOURCE CODE, 
+SOFTWARE AND DOCUMENTATION PROVIDED ARE FREE OF ERRORS OR 
+VIRUSES OR THAT THE SOFTWARE AND DOCUMENTATION ARE SUITABLE FOR 
+YOUR INTENDED USE. LIMITATION OF LIABILITY: IN NO EVENT SHALL 
+MFE OR ITS SUPPLIERS BE LIABLE TO YOU OR ANY OTHER PARTY FOR 
+ANY INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES, LOSS OF DATA 
+OR DATA BEING RENDERED INACCURATE, LOSS OF PROFITS OR REVENUE, 
+OR INTERRUPTION OF BUSINESS IN ANY WAY ARISING OUT OF OR RELATED 
+TO THE USE OR INABILITY TO USE THE SOFTWARE AND/OR DOCUMENTATION, 
+REGARDLESS OF THE FORM OF ACTION, WHETHER IN CONTRACT, TORT 
+(INCLUDING NEGLIGENCE), STRICT PRODUCT LIABILITY OR OTHERWISE, 
+EVEN IF ANY REPRESENTATIVE OF MFE OR ITS SUPPLIERS HAS BEEN 
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THIS DISCLAIMER OF 
+LIABILITY FOR DAMAGES WILL NOT BE AFFECTED BY ANY FAILURE OF 
+THE SOLE AND EXCLUSIVE REMEDIES HEREUNDER.
+
+
+
+8. GOVERNING LAW 
+
+The internal laws of the State of Arizona, without reference to 
+any choice of law provisions, shall govern any claims relating 
+to MFE. MFE may:
+(a) revise the terms and conditions of this Agreement; 
+(b) revise its license billing rates and surcharges; and 
+(c) modify the services provided under this Agreement at any time. 
+Any such revisions and modifications shall be binding and 
+effective immediately on posting the revised Agreement on MFE's 
+home page, or on notification to you by e-mail or United States 
+postal mail.
+
+
+
+9. TERM OF AGREEMENT
+
+This Agreement shall be binding and effective immediately, and 
+continue until you cease to use the software and all copies or 
+original software are completely destroyed, unless otherwise 
+specifically provided herein.
+
+
+
+10. LICENSE TERMINATION
+
+If MFE determines that you are in violation of this Agreement, any 
+restriction or termination of your license will be effective 
+immediately, without prior notice. You agree that MFE will have no 
+liability to you for any restriction or termination of your license 
+or refund of monies paid for the license pursuant to such violation. 
+YOU AGREE THAT IF MFE TERMINATES YOUR LICENSE AS A RESULT OF YOUR 
+VIOLATION OF THIS AGREEMENT, YOU FORFEIT ANY RIGHT TO A REFUND OF 
+ANY LICENSE CHARGES, SUCH FORFEITURE BEING AGREED TO BY YOU AND MFE 
+AS LIQUIDATED DAMAGES AND NOT AS A PENALTY.

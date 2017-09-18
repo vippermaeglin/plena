@@ -1,0 +1,304 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include <afxctl.rc> 
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include <afxctl.rc> \0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""StockChartX.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 5,9,6,10
+ PRODUCTVERSION 5,9,6,10
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Modulus Financial Engineering\0"
+            VALUE "FileDescription", "StockChartX ActiveX Control Module\0"
+            VALUE "FileVersion", "5.9.6.10\0"
+            VALUE "InternalName", "StockChartX\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002 - 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OLESelfRegister", "\0"
+            VALUE "OriginalFilename", "StockChartX.OCX\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "StockChartX ActiveX Control Module\0"
+            VALUE "ProductVersion", "5.9.6.10\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ABOUTDLL            ICON    DISCARDABLE     "StockChartX.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_STOCKCHARTX         BITMAP  DISCARDABLE     "StockChartXCtl.bmp"
+IDB_STOCKCHARTX_256     BITMAP  DISCARDABLE     "stockchartx.bmp"
+IDB_BUY                 BITMAP  DISCARDABLE     "buy.bmp"
+IDB_SELL                BITMAP  DISCARDABLE     "sell.bmp"
+IDB_EXIT                BITMAP  DISCARDABLE     "bitmap1.bmp"
+IDB_SIGNAL              BITMAP  DISCARDABLE     "SignalPrice.bmp"
+IDB_EXIT_SHORT          BITMAP  DISCARDABLE     "ExitShort.bmp"
+IDB_EXIT_LONG           BITMAP  DISCARDABLE     "ExitLong.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX_STOCKCHARTX DIALOG DISCARDABLE  34, 22, 260, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About StockChartX Control"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_ABOUTDLL,IDC_STATIC,10,10,20,20
+    LTEXT           "StockChartX Professional Version 5.0",IDC_STATIC,40,10,
+                    170,8
+    LTEXT           "QWRT-BBTN-8972-NYWT-MQRT-987347",IDC_STATIC,40,25,170,8
+    DEFPUSHBUTTON   "OK",IDOK,221,7,32,14,WS_GROUP
+    LTEXT           "http://www.modulusfe.com",IDC_STATIC,38,39,156,9
+END
+
+IDD_PROPPAGE_STOCKCHARTX DIALOG DISCARDABLE  0, 0, 250, 62
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_PROP_DIALOG DIALOG DISCARDABLE  0, 0, 174, 196
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "###"
+FONT 8, "Microsoft Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO1,81,13,78,57,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | NOT WS_VISIBLE | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,81,28,78,57,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | NOT WS_VISIBLE | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,81,43,78,57,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | NOT WS_VISIBLE | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,81,58,78,57,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | NOT WS_VISIBLE | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO5,81,73,78,57,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | NOT WS_VISIBLE | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO6,81,88,78,62,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | NOT WS_VISIBLE | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO7,81,103,78,57,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | NOT WS_VISIBLE | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO8,81,118,78,67,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | NOT WS_VISIBLE | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,81,13,78,13,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT2,81,28,78,13,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT3,81,43,78,13,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT4,81,58,78,13,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT5,81,73,78,13,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT6,81,88,78,13,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT7,81,103,78,13,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT8,81,118,78,13,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    GROUPBOX        "",IDC_FRAME,3,1,168,176
+    LTEXT           "###",IDC_INFO,11,136,152,34
+    PUSHBUTTON      "&Help",IDC_CMD_HELP,3,180,50,14
+    DEFPUSHBUTTON   "&Apply",IDC_CMD_APPLY,69,180,50,14
+    PUSHBUTTON      "&Cancel",IDC_CMD_CANCEL,121,180,50,14
+    LTEXT           "###",IDC_LABEL1,13,14,64,10,NOT WS_VISIBLE
+    LTEXT           "###",IDC_LABEL2,13,30,64,10,NOT WS_VISIBLE
+    LTEXT           "###",IDC_LABEL3,13,44,64,10,NOT WS_VISIBLE
+    LTEXT           "###",IDC_LABEL4,13,60,64,10,NOT WS_VISIBLE
+    LTEXT           "###",IDC_LABEL5,13,74,64,10,NOT WS_VISIBLE
+    LTEXT           "###",IDC_LABEL6,13,89,64,10,NOT WS_VISIBLE
+    LTEXT           "###",IDC_LABEL7,13,105,64,10,NOT WS_VISIBLE
+    LTEXT           "###",IDC_LABEL8,13,120,64,10,NOT WS_VISIBLE
+    PUSHBUTTON      "...",IDC_COLOR,54,177,13,11
+END
+
+IDD_REMINDER DIALOG DISCARDABLE  0, 0, 352, 97
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Reminder"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,95,79,50,15,WS_DISABLED
+    LTEXT           "",IDC_MESSAGE,7,3,340,58
+    PUSHBUTTON      "&Buy Now!",IDBUYNOW,151,79,50,15
+    LTEXT           "",IDC_ENABLE_OK,4,82,85,9
+    PUSHBUTTON      "&LiveHelp",IDC_LIVEHELP,207,79,50,15
+    LTEXT           "",IDC_DAYS_LEFT,8,64,303,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX_STOCKCHARTX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PROPPAGE_STOCKCHARTX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_PROP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 171
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_REMINDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 347
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 94
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_SPLIT               CURSOR  DISCARDABLE     "cursor1.cur"
+IDC_OPEN_HAND           CURSOR  DISCARDABLE     "cur00001.cur"
+IDC_PENCIL              CURSOR  DISCARDABLE     "cur00003.cur"
+IDC_TEXT                CURSOR  DISCARDABLE     "cur00004.cur"
+IDC_CLOSED_HAND         CURSOR  DISCARDABLE     "cur00002.cur"
+IDC_CLOSED_HAND_NEW     CURSOR  DISCARDABLE     "cur00005.cur"
+IDC_CLOSED_HAND_ADD     CURSOR  DISCARDABLE     "cur00006.cur"
+IDC_ZOOMIN              CURSOR  DISCARDABLE     "cur00007.cur"
+IDC_SYMBOL_BUY          CURSOR  DISCARDABLE     "cur00008.cur"
+IDC_SYMBOL_SELL         CURSOR  DISCARDABLE     "cur00009.cur"
+IDC_SYMBOL_EXIT         CURSOR  DISCARDABLE     "cur00010.cur"
+IDC_SYMBOL              CURSOR  DISCARDABLE     "cur00011.cur"
+IDC_OPEN_HAND_MOVE      CURSOR  DISCARDABLE     "cur00012.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STOCKCHARTX         "StockChartX Control"
+    IDS_STOCKCHARTX_PPG     "StockChartX Property Page"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STOCKCHARTX_PPG_CAPTION "General"
+    IDS_REMINDER            "Thank you for your trying StockChartX. You can purchase StockChartX online by clicking the ""Buy Now!"" button below, or by telephone at (888) 318-3754 (press option 1 for sales). This is an evaluation version of copyrighted software. If you use it beyond the evaluation period, you are expected to register it so that we may continue to provide you with quality software and technical support.\n\nFor technical support, please contact support@modulusfe.com or use the Live Support option from our web site at http://www.modulusfe.com, or call us toll-free at (888) 318-3754 (press option 3 for support)."
+    IDS_ENABLE_OK           "Enabled in %1 seconds..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "StockChartX.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

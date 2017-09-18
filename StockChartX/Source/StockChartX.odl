@@ -1,0 +1,821 @@
+// StockChartX.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (StockChartX.tlb) that will become a resource in
+// StockChartX.ocx.
+
+// StockChartX PRO version
+
+
+[ uuid(6556E667-F828-4D0E-AF3E-C0FC768796CC), version(5.01),
+  helpfile("StockChartX.hlp"),
+  helpstring("StockChartX Professional Version"),
+  control ]
+library STOCKCHARTXLib
+{
+	#include <olectl.h>
+	#include <idispids.h>
+
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CStockChartXCtrl
+
+	typedef
+	[ uuid(F24289D5-3AD6-436d-9555-91EF3CCE00D6), helpstring("Price Style") ]
+	enum ePriceStyle
+	{
+		[helpstring("Standard")]				psStandard,
+		[helpstring("Point and Figure")]		psPointAndFigure,
+		[helpstring("Renko")]					psRenko,
+		[helpstring("Kagi")]					psKagi,
+		[helpstring("Three Line Break")]		psThreeLineBreak,
+		[helpstring("Equivolume")]				psEquiVolume,
+		[helpstring("Equivolume Shadow")]		psEquiVolumeShadow,
+		[helpstring("Candle Volume")]			psCandleVolume,
+		[helpstring("Heikin Ashi")]				psHeikinAshi,
+		[helpstring("Heikin Ashi Smooth")]		psHeikinAshiSmooth,
+		[helpstring("Line")]		    		psLine,
+		[helpstring("StockLine")]		    	psStockLine
+	}
+	PriceStyle;
+
+	
+	typedef
+	[ uuid(F24237D5-3AD4-436d-9555-94EF8CCE00D6), helpstring("Data Types") ]
+	enum eDataType
+	{
+		[helpstring("Null Value")]				dtNullValue		= -987654321,		
+		[helpstring("Points")]					dtPoints		= 1,
+		[helpstring("Percent")]					dtPercent		= 2
+	}
+	DataType;
+
+
+	typedef
+	[ uuid(F24217D5-3AD4-436d-9555-74EF8CCE00D6), helpstring("Z-Order") ]
+	enum eZOrder
+	{
+		[helpstring("Z-Order Front")]				zOrderFront	= 1,
+		[helpstring("Z-Order Back")]				zOrderBack  = -1
+	}
+	ZOrder;
+
+
+	typedef
+	[ uuid(F14217D5-3AD4-436d-9535-74EF8CCE00D2), helpstring("Fill Style") ]
+	enum eFillStyle
+	{
+		[helpstring("Transparent")]			fsTransparent	= 0,
+		[helpstring("Opaque")]				fsOpaque		= 1		
+	}
+	FillStyle;
+
+
+	typedef
+	[ uuid(F24237D5-3AD4-436d-9251-94EF8CCE00D7), helpstring("Mouse Pointers") ]
+	enum eMousePointer
+	{
+		[helpstring("Normal")]					mpNormal		= 0,
+		[helpstring("Hourglass")]				mpHourGlass		= 1,
+		[helpstring("Indicator")]				mpIndicator		= 2
+	}
+	MousePointer;
+
+
+	typedef
+	[ uuid(F24289D5-3AD6-436d-9555-94EF8CCE00D6), helpstring("Series Types") ]
+	enum eSeriesType
+	{
+		[helpstring("Standard Line Chart")]		stLineChart			= 502,
+		[helpstring("Volume Bar Chart")]		stVolumeChart		= 503,
+		[helpstring("OHLC Bar Chart")]			stStockBarChart		= 500,
+		[helpstring("HLC Bar Chart")]			stStockBarChartHLC	= 506,
+		[helpstring("Candle Chart")]			stCandleChart		= 501,
+		[helpstring("Stock Line Chart")]		stStockLineChart	= 507
+	}
+	SeriesType;
+
+
+	typedef
+	[ uuid(F24289D5-3AD6-436d-9355-94EF8CCE00D6), helpstring("Object Types") ]
+	enum eObjectType
+	{	
+		[helpstring("Text Object")]				otTextObject		= 504,
+		[helpstring("Static Text Object")]		otStaticTextObject	= 510,
+		[helpstring("Symbol Object")]			otSymbolObject		= 505,
+		[helpstring("Trend Line Object")]		otTrendLineObject	= 604,
+		[helpstring("Line Study Object")]		otLineStudyObject	= 604, // Same
+		[helpstring("Line Object")]				otLineObject		= 601,
+		[helpstring("Sell Symbol Object")]		otBuySymbolObject	= 1,
+		[helpstring("Buy Symbol Object")]		otSellSymbolObject	= 2,
+		[helpstring("Exit Symbol Object")]		otExitSymbolObject	= 3,
+		[helpstring("Exit Long Symbol Object")]		otExitLongSymbolObject	 = 5,
+		[helpstring("Exit Short Symbol Object")]	otExitShortSymbolObject	 = 6,
+		[helpstring("Signal Symbol Object")]		otSignalSymbolObject	 = 7,
+		[helpstring("Standard Line Chart")]		otLineChart			= 502,
+		[helpstring("Volume Bar Chart")]		otVolumeChart		= 503,
+		[helpstring("OHLC Bar Chart")]			otStockBarChart		= 500,
+		[helpstring("HLC Bar Chart")]			otStockBarChartHLC	= 506,
+		[helpstring("Candle Chart")]			otCandleChart		= 501,
+		[helpstring("Indicator Series")]		otIndicator			= 497
+	}
+	ObjectType;
+
+	typedef
+	[ uuid(F24289D5-3AD6-436d-9355-92EF8CCE00D1), helpstring("Symbol Object Types") ]
+	enum eSymbolType
+	{
+		[helpstring("Sell Symbol Object")]		soBuySymbolObject	 = 1,
+		[helpstring("Buy Symbol Object")]		soSellSymbolObject	 = 2,
+		[helpstring("Exit Symbol Object")]		soExitSymbolObject	 = 3,
+		[helpstring("Exit Long Symbol Object")]		soExitLongSymbolObject	 = 5,
+		[helpstring("Exit Short Symbol Object")]	soExitShortSymbolObject	 = 6,
+		[helpstring("Signal Symbol Object")]		soSignalSymbolObject	 = 7
+	}
+	SymbolType;
+
+
+	typedef
+	[ uuid(F24289D5-3AD6-436d-7355-94EF8CCE00D6), helpstring("Object Types") ]
+	enum eScaleType
+	{	
+		[helpstring("Linear Scale Type")]		stLinearScale	= 1,
+		[helpstring("Semi Log Scale Type")]		stSemiLogScale	= 2,
+		[helpstring("Left Alignment")]			stAlignLeft		= 1,
+		[helpstring("Right Alignment")]			stAlignRight	= 2
+	}
+	ScaleType;
+
+
+	typedef
+	[ uuid(F24289D1-3AD6-436d-7355-74EF8CCE07D7), helpstring("Object Types") ]
+	enum eStudyType
+	{
+		[helpstring("Ellipse")]					lsEllipse,		
+		[helpstring("Rectangle")]				lsRectangle,
+		[helpstring("Trend Line")]				lsTrendLine,
+		[helpstring("Speed Lines")]				lsSpeedLines,
+		[helpstring("Gann Fan")]				lsGannFan,		
+		[helpstring("Fibonacci Arcs")]			lsFibonacciArcs,		
+		[helpstring("Fibonacci Fan")]			lsFibonacciFan,
+		[helpstring("Fibonacci Retracements")]	lsFibonacciRetracements,
+		[helpstring("Fibonacci Progression")]	lsFibonacciProgression,
+		[helpstring("Fibonacci Time Zones")]	lsFibonacciTimeZones,		
+		[helpstring("Tirone Levels")]			lsTironeLevels,
+		[helpstring("Quadrant Lines")]			lsQuadrantLines,
+		[helpstring("Raff Regression")]			lsRaffRegression,
+		[helpstring("Error Channel")]			lsErrorChannel,
+		[helpstring("Freehand Drawing")]		lsFreehand,
+		[helpstring("Triangle")]				lsTriangle,
+		[helpstring("Channel")]					lsChannel,
+		[helpstring("Ray")]						lsRay,
+		[helpstring("XLine")]					lsXLine,
+		[helpstring("YLine")]					lsYLine,
+		[helpstring("Polyline")]				lsPolyline
+	}
+	StudyType;
+
+
+	typedef
+	[ uuid(F24289D5-3AD6-466d-9555-94EF8CCE00D6), helpstring("Indicator Types") ]
+	enum eIndicator
+	{
+		[helpstring("Simple Moving Average")]		indSimpleMovingAverage,
+		[helpstring("Generic Moving Average")]		indGenericMovingAverage,
+		[helpstring("ADX")]							indADX,
+		[helpstring("Exponential Moving Average")]	indExponentialMovingAverage,
+		[helpstring("Time Series Moving Average")]	indTimeSeriesMovingAverage,
+		[helpstring("Triangular Moving Average")]	indTriangularMovingAverage,
+		[helpstring("Variable Moving Average")]		indVariableMovingAverage,
+		[helpstring("VIDYA Moving Average")]		indVIDYA,
+		[helpstring("Welles Wilder Smoothing")]		indWellesWilderSmoothing,		
+		[helpstring("Weighted Moving Average")]		indWeightedMovingAverage,
+		[helpstring("Williams R")]					indWilliamsPctR,
+		[helpstring("Williams Accumulation Dist")]	indWilliamsAccumulationDistribution,
+		[helpstring("Volume Oscillator")]			indVolumeOscillator,
+		[helpstring("Vertical Horizontal Filter")]	indVerticalHorizontalFilter,
+		[helpstring("Ultimate Oscillator")]			indUltimateOscillator,
+		[helpstring("True Range")]					indTrueRange,	
+		[helpstring("TRIX")]						indTRIX,
+		[helpstring("Rainbow Oscillator")]			indRainbowOscillator,
+		[helpstring("Price Oscillator")]			indPriceOscillator,
+		[helpstring("Parabolic SAR")]				indParabolicSAR,
+		[helpstring("Momentum Oscillator")]			indMomentumOscillator,
+		[helpstring("MACD")]						indMACD,
+		[helpstring("Ease Of Movement")]			indEaseOfMovement,
+		[helpstring("Directional Movement System")]	indDirectionalMovementSystem,
+		[helpstring("Detrended Price Oscillator")]	indDetrendedPriceOscillator,
+		[helpstring("Chande Momentum Oscillator")]	indChandeMomentumOscillator,
+		[helpstring("Chaikin Volatility")]			indChaikinVolatility,		
+		[helpstring("Aroon")]						indAroon,
+		[helpstring("Aroon Oscillator")]			indAroonOscillator,
+		[helpstring("Linear Regression R-Squared")]	indLinearRegressionRSquared,
+		[helpstring("Linear Regression Forecast")]	indLinearRegressionForecast,
+		[helpstring("Linear Regression Slope")]		indLinearRegressionSlope,
+		[helpstring("Linear Regression Intercept")]	indLinearRegressionIntercept,		
+		[helpstring("Price Volume Trend")]			indPriceVolumeTrend,		
+		[helpstring("Performance Index")]			indPerformanceIndex,	
+		[helpstring("Commodity Channel Index")]		indCommodityChannelIndex,
+		[helpstring("Chaikin Money Flow")]			indChaikinMoneyFlow,
+		[helpstring("Weighted Close")]				indWeightedClose,
+		[helpstring("Volume ROC")]					indVolumeROC,
+		[helpstring("Typical Price")]				indTypicalPrice,
+		[helpstring("Standard Deviation")]			indStandardDeviation,
+		[helpstring("Price ROC")]					indPriceROC,
+		[helpstring("Median Price")]				indMedian,
+		[helpstring("High Minus Low")]				indHighMinusLow,
+		[helpstring("Bollinger Bands")]				indBollingerBands,
+		[helpstring("Fractal Chaos Bands")]			indFractalChaosBands,		
+		[helpstring("High/Low Bands")]				indHighLowBands,
+		[helpstring("Moving Average Envelope")]		indMovingAverageEnvelope,
+		[helpstring("Swing Index")]					indSwingIndex,
+		[helpstring("Accumulative Swing Index")]	indAccumulativeSwingIndex,
+		[helpstring("Comparative RSI")]				indComparativeRelativeStrength,
+		[helpstring("Mass Index")]					indMassIndex,
+		[helpstring("Money Flow Index")]			indMoneyFlowIndex,
+		[helpstring("Negative Volume Index")]		indNegativeVolumeIndex,
+		[helpstring("On Balance Volume")]			indOnBalanceVolume,
+		[helpstring("Positive Volume Index")]		indPositiveVolumeIndex,
+		[helpstring("Relative Strength Index")]		indRelativeStrengthIndex,
+		[helpstring("Trade Volume Index")]			indTradeVolumeIndex,		
+		[helpstring("Stochastic Oscillator")]		indStochasticOscillator,
+		[helpstring("Stochastic Momentum Index")]	indStochasticMomentumIndex,
+		[helpstring("Fractal Chaos Oscillator")]	indFractalChaosOscillator,
+		[helpstring("Prime Number Oscillator")]		indPrimeNumberOscillator,
+		[helpstring("Prime Number Bands")]			indPrimeNumberBands,
+		[helpstring("Historical Volatility")]		indHistoricalVolatility,
+		[helpstring("MACD Histogram")]				indMACDHistogram,
+		[helpstring("Custom Indicator")]			indCustomIndicator,
+		[helpstring("Volume Indicator")]			indVolume,
+		[helpstring("HILO Activator")]				indHILOActivator,
+		[hidden] LastIndicator
+	}
+	Indicator;
+
+	//Begin add - Eugen
+	typedef
+	[ uuid(1AC919F8-0FAB-4098-A289-878EF8B41F5F), helpstring("Parameters Types") ]
+	enum eParamType
+	{	
+		[helpstring("Linear Scale Type")]		ptMAType,
+		[helpstring("Linear Scale Type")]		ptPctDMAType,
+		[helpstring("Linear Scale Type")]		ptSymbol,
+		[helpstring("Semi Log Scale Type")]		ptSource,
+		[helpstring("Left Alignment")]			ptSource1,
+		[helpstring("Right Alignment")]			ptSource2,
+		[helpstring("Right Alignment")]			ptSource3,
+		[helpstring("Right Alignment")]			ptVolume,
+		[helpstring("Right Alignment")]			ptPointsOrPercent,
+		[helpstring("Right Alignment")]			ptPeriods,
+		[helpstring("Right Alignment")]			ptCycle1,
+		[helpstring("Right Alignment")]			ptCycle2,
+		[helpstring("Right Alignment")]			ptCycle3,
+		[helpstring("Right Alignment")]			ptShortTerm,
+		[helpstring("Right Alignment")]			ptLongTerm,
+		[helpstring("Right Alignment")]			ptRateOfChange,
+		[helpstring("Right Alignment")]			ptPctKPeriods,
+		[helpstring("Right Alignment")]			ptPctKSlowing,
+		[helpstring("Right Alignment")]			ptPctDSmooth,
+		[helpstring("Right Alignment")]			ptPctKSmooth,
+		[helpstring("Right Alignment")]			ptPctDDblSmooth,
+		[helpstring("Right Alignment")]			ptPctDPeriods,
+		[helpstring("Right Alignment")]			ptPctKDblSmooth,
+		[helpstring("Right Alignment")]			ptShortCycle,
+		[helpstring("Right Alignment")]			ptLongCycle,
+		[helpstring("Right Alignment")]			ptStandardDeviations,
+		[helpstring("Right Alignment")]			ptR2Scale,
+		[helpstring("Right Alignment")]			ptMinAF,
+		[helpstring("Right Alignment")]			ptMaxAF,
+		[helpstring("Right Alignment")]			ptShift,
+		[helpstring("Right Alignment")]			ptFactor,
+		[helpstring("Right Alignment")]			ptSignalPeriods,
+		[helpstring("Right Alignment")]			ptLimitMoveValue,
+		[helpstring("Right Alignment")]			ptMinTickVal,
+		[helpstring("Right Alignment")]			ptLevels,
+	}
+	ParamType;
+	//End Add - Eugen
+
+	[ uuid(68A22D73-5C59-47A3-96A0-978E141AACA3),
+	  helpstring("Dispatch interface for StockChartX Control"), hidden ]
+	dispinterface _DStockChartX
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CStockChartXCtrl)									
+			[id(1)] boolean RealTimeXLabels;						
+			[id(2)] long ScalePrecision;
+			[id(3)] boolean UseLineSeriesUpDownColors;
+			[id(4)] BSTR ID;			
+			[id(33)] OLE_COLOR ValuePanelColor;
+			[id(34)] OLE_COLOR ChartBackColor;
+			[id(35)] OLE_COLOR ChartForeColor;
+			[id(36)] OLE_COLOR Gridcolor;
+			[id(37)] SCALETYPE ScaleType;
+			[id(38)] BSTR Symbol;
+			[id(39)] OLE_COLOR UpColor;
+			[id(40)] OLE_COLOR DownColor;
+			[id(41)] long ScaleAlignment;
+			[id(42)] long WorkspaceRight;
+			[id(43)] long WorkspaceLeft;
+			[id(44)] boolean Changed;
+			[id(45)] long VisibleRecordCount;
+			[id(46)] long RecordCount;						
+			[id(47)] long FirstVisibleRecord;
+			[id(48)] long LastVisibleRecord;
+			[id(49)] long SeriesCount;
+			[id(50)] OLE_COLOR LineColor;			
+			[id(51)] OLE_HANDLE hWnd;		
+			[id(52)] long RightDrawingSpacePixels;			
+			[id(53)] boolean DarvasBoxes;
+			[id(54)] double DarvasStopPercent;
+			[id(5)] boolean HorizontalSeparators;
+			[id(6)] OLE_COLOR HorizontalSeparatorColor;
+			[id(7)] boolean ShowRecordsForXLabels;
+			[id(8)] boolean DisplayTitles;
+			[id(9)] boolean DisplayTitleBorder;			
+			[id(55)] long BarWidth;
+			[id(10)] BSTR Version;
+			[id(11)] boolean ThreeDStyle;			
+			[id(12)] boolean YGrid;
+			[id(13)] PriceStyle PriceStyle;
+			[id(14)] boolean XGrid;
+			[id(56)] long PanelCount;
+			[id(57)] long Alignment;			
+			[id(58)] long BarInterval;
+			[id(15)] boolean DisplayInfoText;
+			[id(16)] long MaxDisplayRecords;						
+			[id(17)] boolean IgnoreSeriesLengthErrors;
+			[id(18)] OLE_COLOR ValueViewGradientTop;
+			[id(19)] OLE_COLOR ValueViewGradientBottom;
+			[id(20)] boolean CrossHairs;
+			[id(21)] OLE_COLOR BackGradientTop;
+			[id(22)] OLE_COLOR BackGradientBottom;
+			[id(23)] MousePointer MousePointer;
+			[id(24)] OLE_COLOR CandleDownOutlineColor;
+			[id(25)] OLE_COLOR CandleUpOutlineColor;						
+			[id(59)] boolean UserEditing;
+			[id(26)] boolean UseVolumeUpDownColors;
+			[id(27)] double BarStartTime;			
+			[id(28)] double YScaleMinTick;
+			[id(60)] BSTR SelectedKey;
+			[id(61)] OBJECTTYPE SelectedType;
+			[id(29)] long TextAreaFontSize;
+			[id(30)] BSTR TextAreaFontName;
+			[id(62)] short CurrentPanel;
+			[id(31)] BSTR VolumePostfixLetter;
+			[id(32)] boolean ExtraTimePrecision;
+			[id(339) ] VARIANT_BOOL Magnetic;
+			[id(348)] LONG LineThickness;
+			[id(354) ] LONG Periodicity;
+			[id(355) ] BSTR StudyDirectory;
+			[id(356)] OLE_COLOR WickUpColor;
+			[id(357)] OLE_COLOR WickDownColor;
+			[id(358) ] LONG Language;
+			[id(364)] BSTR ApplicationDirectory;
+			[id(365) ] VARIANT_BOOL DeltaCursor;
+			[id(368)] LONG BarSize;
+			[id(369) ] LONG MousePositionX;
+			[id(370) ] LONG MousePositionY;
+			[id(371) ] LONG SmoothHeikinType;
+			[id(372) ] LONG SmoothHeikinPeriods;
+			[id(379) ] LONG PriceLineThickness;
+			[id(380) ] VARIANT_BOOL PriceLineMono;
+			[id(381) ] LONG PriceLineThicknessBar;
+			[id(388)] BSTR SaveImageTitle;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CStockChartXCtrl)
+			[id(99)] void AppendValue(BSTR Name, double JDate, double Value);
+			[id(63)] void EditValue(BSTR Name, double JDate, double Value);
+			[id(64)] void ClearValues(BSTR Name);
+			[id(65)] void Update(LONG operation);
+			[id(100)] void RemoveSeries(BSTR Name);
+			[id(66)] void ScrollLeft(long Records);
+			[id(67)] void ScrollRight(long Records);
+			[id(68)] void ZoomIn(long Records);
+			[id(69)] void ZoomOut(long Records);						
+			[id(70)] double GetValue(BSTR Name, long Record);
+			[id(71)] double GetValueByJDate(BSTR Name, double JDate);
+			[id(72)] double ToJulianDate(long nYear, long nMonth, long nDay, long nUHour, long nUMinute, long nUSecond);
+			[id(73)] BSTR FromJulianDate(double JulianDate);						
+			[id(101)] long AddSeries(BSTR Name, SERIESTYPE Type, long Panel);
+			[id(74)] long AddChartPanel();						
+			[id(75)] void ResetZoom();			
+			[id(76)] void RemoveAllSeries();
+			[id(77)] void ZoomUserDefined();	
+			[id(78)] long SaveFile(BSTR FileName);
+			[id(79)] long LoadFile(BSTR FileName);
+			[id(80)] void ClearDrawings();
+			[id(81)] void ShowLastTick(BSTR Series, double Value);
+			[id(82)] void ReDrawYScale(long Panel);
+			[id(83)] long GetPanelBySeriesName(BSTR Series);
+			[id(84)] void PrintChart();			
+			[id(85)] void RemoveSymbolObject(BSTR Key);
+			[id(86)] void AddSymbolObject(long Panel, double Value, long Record, SYMBOLTYPE Type, BSTR Key, BSTR Text);
+			[id(87)] void AddUserSymbolObject(SYMBOLTYPE Type, BSTR Key, BSTR Text);
+			[id(88)] void AddStaticText(long Panel, BSTR Text, BSTR Key, OLE_COLOR Color, VARIANT_BOOL Selectable, long X, long Y);
+			[id(89)] void AddUserDefinedText(BSTR Key);
+			[id(90)] void RemoveObject(OBJECTTYPE ObjectType, BSTR Key);
+			[id(91)] void AddUserTrendLine(BSTR Key);			
+			[id(92)] void SaveChartBitmap(BSTR FileName);
+			[id(93)] double GetJDate(BSTR Name, long Record);				
+			[id(94)] void ForcePaint();
+			[id(95)] long GetXPixel(long Record);			
+			[id(155), propget] long SeriesWeight(BSTR Name);
+			[id(155), propput] void SeriesWeight(BSTR Name, long nNewValue);
+			[id(156), propget] long PanelY1(long Panel);
+			[id(156), propput] void PanelY1(long Panel, long nNewValue);
+			[id(157), propget] long PanelY2(long Panel);
+			[id(157), propput] void PanelY2(long Panel, long nNewValue);
+			[id(158), propget] OLE_COLOR ObjectColor(OBJECTTYPE ObjectType, BSTR Key);
+			[id(158), propput] void ObjectColor(OBJECTTYPE ObjectType, BSTR Key, OLE_COLOR nNewValue);
+			[id(159), propget] VARIANT_BOOL ObjectSelectable(OBJECTTYPE ObjectType, BSTR Key);
+			[id(159), propput] void ObjectSelectable(OBJECTTYPE ObjectType, BSTR Key, VARIANT_BOOL bNewValue);						
+			[id(160), propget] SERIESTYPE SeriesType(BSTR Name);
+			[id(160), propput] void SeriesType(BSTR Name, SERIESTYPE nNewValue);
+			[id(161), propget] long SeriesStyle(BSTR Name);
+			[id(161), propput] void SeriesStyle(BSTR Name, long nNewValue);			
+			[id(162), propget] BSTR ObjectText(OBJECTTYPE ObjectType, BSTR Name);
+			[id(162), propput] void ObjectText(OBJECTTYPE ObjectType, BSTR Name, BSTR lpszNewValue);						
+			[id(163), propget] long ObjectWeight(OBJECTTYPE ObjectType, BSTR Name);
+			[id(163), propput] void ObjectWeight(OBJECTTYPE ObjectType, BSTR Name, long nNewValue);
+			[id(164), propget] long ObjectStyle(OBJECTTYPE ObjectType, BSTR Name);
+			[id(164), propput] void ObjectStyle(OBJECTTYPE ObjectType, BSTR Name, long nNewValue);					
+			[id(165), propget] VARIANT_BOOL ShareScale(BSTR Series);
+			[id(165), propput] void ShareScale(BSTR Series, VARIANT_BOOL bNewValue);
+			[id(166), propget] long SeriesColor(BSTR Name);
+			[id(166), propput] void SeriesColor(BSTR Name, long nNewValue);			
+			[id(96)] long GetYPixel(long Panel, double Value);
+			[id(167), propget] long BarColor(long Record, BSTR Name);
+			[id(167), propput] void BarColor(long Record, BSTR Name, long nNewValue);			
+			[id(97)] void DrawTrendLine(long Panel, double LeftValue, long LeftRecord, double RightValue, long RightRecord, BSTR Key);
+			[id(98)] VARIANT_BOOL AddIndicatorSeries(INDICATOR IndicatorType, BSTR Key, long Panel, VARIANT_BOOL UserParams);
+			//[id(178)] VARIANT_BOOL AddIndicatorSMA(BSTR Key, long Panel, BSTR Source, long Periods, int ColorR, int ColorG, int ColorB, int Style, int Thickness);
+			[id(168), propget] BSTR IndPropStr(BSTR Key, short ParamNum);
+			[id(168), propput] void IndPropStr(BSTR Key, short ParamNum, BSTR lpszNewValue);
+			[id(169), propget] double IndPropDbl(BSTR Key, short ParamNum);
+			[id(169), propput] void IndPropDbl(BSTR Key, short ParamNum, double newValue);
+			[id(170), propget] short IndPropInt(BSTR Key, short ParamNum);
+			[id(170), propput] void IndPropInt(BSTR Key, short ParamNum, short nNewValue);			
+			[id(102)] void ShowHelp(BSTR chmFileName, long helpTopic);
+			//[id(102)] VARIANT_BOOL ShowHelp(BSTR Key, long Panel, BSTR Source, long Periods, int ColorR, int ColorG, int ColorB, int Style, int Thickness);
+			[id(103)] void ShowIndicatorDialog(BSTR Key);
+			[id(104)] void AddHorizontalLine(long Panel, double Value);
+			[id(105)] void RemoveHorizontalLine(long Panel, double Value);
+			[id(171), propget] double PriceStyleParam(long Index);
+			[id(171), propput] void PriceStyleParam(long Index, double newValue);
+			[id(106)] void EnumIndicators();
+			[id(107)] void SetYScale(long Panel, double Max, double Min);
+			[id(108)] void ResetYScale(long Panel);
+			[id(109)] void EnumPriceStyles();
+			[id(110)] double GetMaxValue(BSTR Series);			
+			[id(111)] void AddSymbolObjectFromFile(long Panel, double Value, long Record, BSTR FileName, BSTR Key, BSTR Text);			
+			[id(112)] double GetMinValue(BSTR Series);
+			[id(113)] long GetObjectStartRecord(OBJECTTYPE ObjectType, BSTR Key);			
+			[id(114)] long GetObjectEndRecord(OBJECTTYPE ObjectType, BSTR Key);
+			[id(115)] double GetObjectStartValue(OBJECTTYPE ObjectType, BSTR Key);
+			[id(116)] double GetObjectEndValue(OBJECTTYPE ObjectType, BSTR Key);
+			[id(117)] void AppendValueAsTick(BSTR Name, double JDate, double Value);
+			[id(118)] long GetRecordByJDate(double JDate);
+			[id(119)] void SetSeriesUpDownColors(BSTR Name, OLE_COLOR UpColor, OLE_COLOR DownColor);
+			[id(120)] void SetObjectPosition(OBJECTTYPE ObjectType, BSTR Key, long StartRecord, double StartValue, long EndRecord, double EndValue);
+			[id(172), propget] boolean SeriesVisible(BSTR Name);
+			[id(172), propput] void SeriesVisible(BSTR Name, VARIANT_BOOL bNewValue);			
+			[id(121)] double GetYValueByPixel(long Pixel);
+			[id(173), propget] BSTR SeriesName(long Index);			
+			[id(122)] long GetIndicatorCountByType(Indicator IndicatorType);			
+			[id(123)] void ResetBarColors();	
+			//[id(123)] VARIANT_BOOL ResetBarColors(BSTR Key, long Panel, BSTR Source, int Index, long Periods, int ColorR, int ColorG, int ColorB, int Style, int Thickness);
+			[id(124)] double GetPriceStyleValueByJDate2(double JDate);
+			[id(125)] double GetPriceStyleValue1(long Record);
+			[id(126)] double GetPriceStyleValue2(long Record);			
+			[id(127)] double GetPriceStyleValueByJDate1(double JDate);
+			[id(128)] double GetPriceStyleValueByJDate3(double JDate);
+			[id(129)] double GetPriceStyleValue3(long Record);
+			[id(130)] void EnumSeries();
+			[id(131)] void MoveSeries(BSTR Name, long FromPanel, long ToPanel);
+			[id(132)] void EditValueByRecord(BSTR Name, long Record, double Value);
+			[id(133)] void RecalculateIndicators();
+			[id(134)] void DrawLineStudy(STUDYTYPE Type, BSTR Key);
+			[id(135)] long CrossOverRecord(long Record, BSTR Series1, BSTR Series2);
+			[id(136)] double CrossOverValue(long Record, BSTR Series1, BSTR Series2);
+			[id(174), propget] double LineStudyParam(BSTR Key, short ParamNum);
+			[id(174), propput] void LineStudyParam(BSTR Key, short ParamNum, double newValue);
+			[id(137)] boolean IsSelected(BSTR Key);
+			[id(138)] long SaveGeneralTemplate(BSTR FileName);
+			[id(139)] long LoadGeneralTemplate(BSTR FileName);
+			[id(140)] long SaveObjectTemplate(BSTR FileName);
+			[id(141)] long LoadObjectTemplate(BSTR FileName);
+			[id(142)] long GetObjectCount(OBJECTTYPE Type);
+			[id(143)] void ClearAllSeries();
+			[id(144)] short AddCustomIndDlgIndPropStr(BSTR IndicatorName, ParamType ParamType, BSTR DefValue);
+			[id(145)] short AddCustomIndDlgIndPropInt(BSTR IndicatorName, ParamType ParamType, long DefValue);
+			[id(146)] short AddCustomIndDlgIndPropDbl(BSTR IndicatorName, ParamType ParamType, double DefValue);
+			[id(147)] long SetCustomIndicatorData(BSTR IndicatorName, VARIANT Data, VARIANT_BOOL Append);
+			[id(175), propget] ZOrder ObjectZOrder(BSTR Key, OBJECTTYPE ObjectType);
+			[id(175), propput] void ObjectZOrder(BSTR Key, OBJECTTYPE ObjectType, ZOrder nNewValue);
+			[id(176), propget] FillStyle ObjectFillStyle(BSTR Key, OBJECTTYPE ObjectType);
+			[id(176), propput] void ObjectFillStyle(BSTR Key, OBJECTTYPE ObjectType, FillStyle nNewValue);
+			[id(148)] double GetVisibleMaxValue(BSTR Series);
+			[id(149)] double GetVisibleMinValue(BSTR Series);
+			[id(150)] void AddTrendLineWatch(BSTR TrendLineName, BSTR SeriesName);
+			[id(151)] void RemoveTrendLineWatch(BSTR TrendLineName, BSTR SeriesName);
+			[id(152)] Indicator GetIndicatorType(BSTR SeriesName);
+			[id(153)] void EditJDate(long Record, double JDate);
+			[id(154)] double ToJulianDateEx(long nYear, long nMonth, long nDay, long nUHour, long nUMinute, long nUSecond, long nUMilliSecond);
+			//}}AFX_ODL_METHOD
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+			[id(177), helpstring("Freeze - causes the entire chart to be frozen while adding a lot of objects")] void Freeze(VARIANT_BOOL freeze);
+			[id(178)] VARIANT_BOOL AddIndicatorSMA(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(179)] VARIANT_BOOL AddIndicatorASI(BSTR Key, LONG panel, BSTR Source, DOUBLE LimitMove, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(180), propget] LONG SeriesPeriods(BSTR Name, BSTR Code);
+			[id(180), propput] void SeriesPeriods(BSTR Name, BSTR Code, LONG newVal);
+			[id(181), propget] BSTR SeriesSource(BSTR Name, BSTR Code);
+			[id(181), propput] void SeriesSource(BSTR Name, BSTR Code, BSTR newVal);
+			[id(182)] VARIANT_BOOL UpdateIndicatorSMA(BSTR Key, LONG panel, BSTR Source, LONG Index, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(183)] VARIANT_BOOL UpdateIndicatorASI(BSTR Key, LONG panel, BSTR Source, LONG Index, DOUBLE LimitMove, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(184)] VARIANT_BOOL AddIndicatorAroon(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness, LONG ColorR2, LONG ColorG2, LONG ColorB2, LONG Style2, LONG Thickness2);
+			[id(185)] VARIANT_BOOL UpdateIndicatorAroon(BSTR Key, LONG panel, BSTR Symbol, LONG Index, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness, LONG ColorR2, LONG ColorG2, LONG ColorB2, LONG Style2, LONG Thickness2);
+			[id(186)] VARIANT_BOOL AddIndicatorAroonOsc(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(187)] VARIANT_BOOL UpdateIndicatorAroonOsc(BSTR Key, LONG panel, BSTR Symbol, LONG Index, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(189)] VARIANT_BOOL UpdateIndicatorBollinger(BSTR Key, LONG panel, BSTR Source, LONG Index, LONG Periods, DOUBLE StandardDev, LONG MAType, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(190)] VARIANT_BOOL AddIndicatorChaikinMoney(BSTR Key, LONG panel, BSTR Symbol, BSTR Volume, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(191)] VARIANT_BOOL UpdateIndicatorChaikinMoney(BSTR Key, LONG panel, BSTR Symbol, LONG Index, BSTR Volume, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(192)] VARIANT_BOOL AddIndicatorChaikinVolatility(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG RateChange, LONG MAType, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(193)] VARIANT_BOOL UpdateIndicatorChaikinVolatility(BSTR Key, LONG panel, BSTR Symbol, LONG Index, LONG Periods, LONG RateChange, LONG MAType, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(194)] VARIANT_BOOL AddIndicatorChandeMomentum(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(195)] VARIANT_BOOL UpdateIndicatorChandeMomentum(BSTR Key, LONG panel, BSTR Source, LONG Index, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(196)] VARIANT_BOOL AddIndicatorCommodityChannel(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(197)] VARIANT_BOOL UpdateIndicatorCommodityChannel(BSTR Key, LONG panel, BSTR Symbol, LONG Index, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(198)] VARIANT_BOOL AddIndicatorComparativeRSI(BSTR Key, LONG panel, BSTR Source1, BSTR Source2, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(199)] VARIANT_BOOL UpdateIndicatorComparativeRSI(BSTR Key, LONG panel, BSTR Source1, LONG Index, BSTR Source2, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(200)] VARIANT_BOOL AddIndicatorDetrendedPrice(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG MAType, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(201)] VARIANT_BOOL UpdateIndicatorDetrendedPrice(BSTR Key, LONG panel, BSTR Source, LONG Index, LONG Periods, LONG MAType, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(202)] VARIANT_BOOL AddIndicatorDirectMoveSystem(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness, LONG ColorR2, LONG ColorG2, LONG ColorB2, LONG Style2, LONG Thickness2, LONG ColorR3, LONG ColorG3, LONG ColorB3, LONG Style3, LONG Thickness3);
+			[id(203)] VARIANT_BOOL UpdateIndicatorDirectMoveSystem(BSTR Key, LONG panel, BSTR Symbol, LONG Index, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness, LONG ColorR2, LONG ColorG2, LONG ColorB2, LONG Style2, LONG Thickness2, LONG ColorR3, LONG ColorG3, LONG ColorB3, LONG Style3, LONG Thickness3);
+			[id(204)] VARIANT_BOOL AddIndicatorEasyMovement(BSTR Key, LONG panel, BSTR Symbol, BSTR Volume, LONG Periods, LONG MAType, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(205)] VARIANT_BOOL UpdateIndicatorEasyMovement(BSTR Key, LONG panel, BSTR Symbol, LONG Index, BSTR Volume, LONG Periods, LONG MAType, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(206)] VARIANT_BOOL AddIndicatorEMA(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(207)] VARIANT_BOOL UpdateIndicatorEMA(BSTR Key, LONG panel, BSTR Source, LONG Index, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(208)] VARIANT_BOOL AddIndicatorFractalChaos(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(209)] VARIANT_BOOL UpdateIndicatorFractalChaos(BSTR Key, LONG panel, BSTR Symbol, LONG Index, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(210)] VARIANT_BOOL AddIndicatorFractalChaosOsc(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(211)] VARIANT_BOOL UpdateIndicatorFractalChaosOsc(BSTR Key, LONG panel, BSTR Symbol, LONG Index, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(212)] VARIANT_BOOL AddIndicatorHighMinusLow(BSTR Key, LONG panel, BSTR Symbol, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(213)] VARIANT_BOOL UpdateIndicatorHighMinusLow(BSTR Key, LONG panel, BSTR Symbol, LONG Index, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(214)] VARIANT_BOOL AddIndicatorHighLowBands(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(215)] VARIANT_BOOL UpdateIndicatorHighLowBands(BSTR Key, LONG panel, BSTR Symbol, LONG Index, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(216)] VARIANT_BOOL AddIndicatorHistoricalVolatility(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG BarHistory, DOUBLE StandardDev, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(217)] VARIANT_BOOL UpdateIndicatorHistoricalVolatility(BSTR Key, LONG panel, BSTR Source, LONG Index, LONG Periods, LONG BarHistory, DOUBLE StandardDev, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(218)] VARIANT_BOOL AddIndicatorLinearRegForecast(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(219)] VARIANT_BOOL UpdateIndicatorLinearRegForecast(BSTR Key, LONG panel, BSTR Source, LONG Index, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(221)] VARIANT_BOOL UpdateIndicatorLinearRegIntercept(BSTR Key, LONG panel, BSTR Source, LONG Index, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(222)] VARIANT_BOOL AddIndicatorLinearRegRSquare(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(223)] VARIANT_BOOL UpdateIndicatorLinearRegRSquare(BSTR Key, LONG panel, BSTR Source, LONG Index, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(224)] VARIANT_BOOL AddIndicatorLinearRegSlope(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(225)] VARIANT_BOOL UpdateIndicatorLinearRegSlope(BSTR Key, LONG panel, BSTR Source, LONG Index, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(228)] VARIANT_BOOL AddIndicatorMACDHistogram(BSTR Key, LONG panel, BSTR Symbol, LONG LongCycle, LONG ShortCycle, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(229)] VARIANT_BOOL UpdateIndicatorMACDHistogram(BSTR Key, LONG panel, BSTR Symbol, LONG Index, LONG LongCycle, LONG ShortCycle, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(230)] VARIANT_BOOL AddIndicatorMACD(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, FLOAT Scale, LONG ShortCycle, LONG LongCycle, LONG ColorR1, LONG ColorG1, LONG ColorB1, LONG Style1, LONG Thickness1, LONG ColorR2, LONG ColorG2, LONG ColorB2, LONG Style2, LONG Thickness2);
+			[id(231)] VARIANT_BOOL UpdateIndicatorMACD(BSTR Key, LONG panel, BSTR Symbol, LONG Index, LONG Periods, LONG ShortCycle, LONG LongCycle, LONG ColorR1, LONG ColorG1, LONG ColorB1, LONG Style1, LONG Thickness1, LONG ColorR2, LONG ColorG2, LONG ColorB2, LONG Style2, LONG Thickness2);
+			
+			[id(232), propget] LONG SeriesShortCycle(BSTR Name, BSTR Code);
+			[id(232), propput] void SeriesShortCycle(BSTR Name, BSTR Code, LONG newVal);
+			[id(233), propget] LONG SeriesLongCycle(BSTR Name, BSTR Code);
+			[id(233), propput] void SeriesLongCycle(BSTR Name, BSTR Code, LONG newVal);
+			[id(234), propget] BSTR SeriesSymbol(BSTR Name, BSTR Code);
+			[id(234), propput] void SeriesSymbol(BSTR Name, BSTR Code, BSTR newVal);
+			[id(235), propget] DOUBLE SeriesLimitMove(BSTR Name, BSTR Code);
+			[id(235), propput] void SeriesLimitMove(BSTR Name, BSTR Code, DOUBLE newVal);
+			[id(236)] VARIANT_BOOL AddIndicatorMassIndex(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(237)] VARIANT_BOOL UpdateIndicatorMassIndex(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(238)] VARIANT_BOOL AddIndicatorMedian(BSTR Key, LONG panel, BSTR Symbol, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(239)] VARIANT_BOOL UpdateIndicatorMedian(BSTR Key, LONG panel, BSTR Symbol, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(240)] VARIANT_BOOL AddIndicatorMomentum(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(241)] VARIANT_BOOL UpdateIndicatorMomentum(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(242)] VARIANT_BOOL AddIndicatorMoneyFlow(BSTR Key, LONG panel, BSTR Symbol, BSTR Volume, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(243)] VARIANT_BOOL UpdateIndicatorMoneyFlow(BSTR Key, LONG panel, BSTR Symbol, BSTR Volume, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(244)] VARIANT_BOOL AddIndicatorMAEnvelope(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG MAType, DOUBLE Shift, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(245)] VARIANT_BOOL UpdateIndicatorMAEnvelope(BSTR Key, LONG panel, LPCSTR Source, LONG Periods, LONG MAType, DOUBLE Shift, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(246)] VARIANT_BOOL AddIndicatorNegVolume(BSTR Key, LONG panel, BSTR Source, BSTR Volume, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(247)] VARIANT_BOOL UpdateIndicatorNegVolume(BSTR Key, LONG panel, BSTR Source, BSTR Volume, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(248)] VARIANT_BOOL AddIndicatorBalanceVolume(BSTR Key, LONG panel, BSTR Source, BSTR Volume, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(249)] VARIANT_BOOL UpdateIndicatorBalanceVolume(BSTR Key, LONG panel, BSTR Source, BSTR Volume, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(250)] VARIANT_BOOL AddIndicatorParabolicSAR(BSTR Key, LONG panel, BSTR Symbol, DOUBLE MinAF, DOUBLE MaxAF, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(251)] VARIANT_BOOL UpdateIndicatorParabolicSAR(BSTR Key, LONG panel, BSTR Symbol, DOUBLE MinAF, DOUBLE MaxAF, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(252)] VARIANT_BOOL AddIndicatorPerformance(BSTR Key, LONG panel, BSTR Source, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(253)] VARIANT_BOOL UpdateIndicatorPerformance(BSTR Key, LONG panel, BSTR Source, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(254)] VARIANT_BOOL AddIndicatorPositiveVolume(BSTR Key, LONG panel, BSTR Source, BSTR Volume, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(255)] VARIANT_BOOL UpdateIndicatorPositiveVolume(BSTR Key, LONG panel, BSTR Source, BSTR Volume, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(256)] VARIANT_BOOL AddIndicatorPriceOscillator(BSTR Key, LONG panel, BSTR Source, LONG LongCycle, LONG ShortCycle, LONG MAType, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(257)] VARIANT_BOOL UpdateIndicatorPriceOscillator(BSTR Key, LONG panel, BSTR Source, LONG LongCycle, LONG ShortCycle, LONG MAType, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(258)] VARIANT_BOOL AddIndicatorPriceROC(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(259)] VARIANT_BOOL UpdateIndicatorPriceROC(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(260)] VARIANT_BOOL AddIndicatorPriceVolume(BSTR Key, LONG panel, BSTR Source, BSTR Volume, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(261)] VARIANT_BOOL UpdateIndicatorPriceVolume(BSTR Key, LONG panel, BSTR Source, BSTR Volume, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(262)] VARIANT_BOOL AddIndicatorPNumberBands(BSTR Key, LONG panel, BSTR Source, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(263)] VARIANT_BOOL UpdateIndicatorPNumberBands(BSTR Key, LONG panel, BSTR Source, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(264)] VARIANT_BOOL AddIndicatorPNumberOscillator(BSTR Key, LONG panel, BSTR Source, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(265)] VARIANT_BOOL UpdateIndicatorPNumberOscillator(BSTR Key, LONG panel, BSTR Source, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(266)] VARIANT_BOOL AddIndicatorRainbowOsc(BSTR Key, LONG panel, BSTR Source, LONG Levels, LONG MAType, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(267)] VARIANT_BOOL UpdateIndicatorRainbowOsc(BSTR Key, LONG panel, BSTR Source, LONG Levels, LONG MAType, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(268)] VARIANT_BOOL AddIndicatorRelativeStrenght(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness, DOUBLE Threshold1, DOUBLE Threshold2, LONG TColorR, LONG TColorG, LONG TColorB, LONG TStyle, LONG TThickness);
+			[id(269)] VARIANT_BOOL UpdateIndicatorRelativeStrenght(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness, DOUBLE Threshold1, DOUBLE Threshold2, LONG TColorR, LONG TColorG, LONG TColorB, LONG TStyle, LONG TThickness);
+			[id(270)] VARIANT_BOOL AddIndicatorStandardDev(BSTR Key, LONG panel, BSTR Source, LONG Periods, DOUBLE StandarDev, LONG MAType, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(271)] VARIANT_BOOL UpdateIndicatorStandardDev(BSTR Key, LONG panel, BSTR Source, LONG Periods, DOUBLE StandardDev, LONG MAType, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(272)] VARIANT_BOOL AddIndicatorStocMomentum(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG Smooth, LONG DblSmooth, LONG DPeriods, LONG MAType, LONG DMAType, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness, LONG ColorR2, LONG ColorG2, LONG ColorB2, LONG Style2, LONG Thickness2);
+			[id(273)] VARIANT_BOOL UpdateIndicatorStocMomentum(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG Smooth, LONG DblSmooth, LONG DPeriods, LONG MAType, LONG DMAType, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness, LONG ColorR2, LONG ColorG2, LONG ColorB2, LONG Style2, LONG Thickness2);
+			[id(274)] VARIANT_BOOL AddIndicatorStocOscillator(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG Slowing, LONG DPeriods, LONG MAType, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness, LONG ColorR2, LONG ColorG2, LONG ColorB2, LONG Style2, LONG Thickness2);
+			[id(275)] VARIANT_BOOL UpdateIndicatorStocOscillator(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG Slowing, LONG DPeriods, LONG MAType, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness, LONG ColorR2, LONG ColorG2, LONG ColorB2, LONG Style2, LONG Thickness2);
+			[id(276)] VARIANT_BOOL AddIndicatorSwingIndex(BSTR Key, LONG panel, BSTR Symbol, DOUBLE LimitMove, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(277)] VARIANT_BOOL UpdateIndicatorSwingIndex(BSTR Key, LONG panel, BSTR Symbol, DOUBLE LimitMove, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(278)] VARIANT_BOOL AddIndicatorTimeSMA(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(279)] VARIANT_BOOL UpdateIndicatorTimeSMA(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(280)] VARIANT_BOOL AddIndicatorTradeVolume(BSTR Key, LONG panel, BSTR Source, BSTR Volume, DOUBLE MinTick, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(281)] VARIANT_BOOL UpdateIndicatorTradeVolume(BSTR Key, LONG panel, BSTR Source, BSTR Volume, DOUBLE MinTick, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(282)] VARIANT_BOOL AddIndicatorTriangularMA(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(283)] VARIANT_BOOL UpdateIndicatorTriangularMA(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(284)] VARIANT_BOOL AddIndicatorTRIX(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(285)] VARIANT_BOOL UpdateIndicatorTRIX(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(286)] VARIANT_BOOL AddIndicatorTrueRange(BSTR Key, LONG panel, BSTR Symbol, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(287)] VARIANT_BOOL UpdateIndicatorTrueRange(BSTR Key, LONG panel, BSTR Symbol, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(288)] VARIANT_BOOL AddIndicatorTypicalPrice(BSTR Key, LONG panel, BSTR Symbol, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(289)] VARIANT_BOOL UpdateIndicatorTypicalPrice(BSTR Key, LONG panel, BSTR Symbol, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(290)] VARIANT_BOOL AddIndicatorUltimateOsc(BSTR Key, LONG panel, BSTR Symbol, LONG Cycle1, LONG Cycle2, LONG Cycle3, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(291)] VARIANT_BOOL UpdateIndicatorUltimateOsc(BSTR Key, LONG panel, BSTR Symbol, LONG Cycle1, LONG Cycle2, LONG Cycle3, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(292)] VARIANT_BOOL AddIndicatorVariableMA(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(293)] VARIANT_BOOL UpdateIndicatorVariableMA(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(294)] VARIANT_BOOL AddIndicatorVertiHoriFilter(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(295)] VARIANT_BOOL UpdateIndicatorVertiHoriFilter(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(296)] VARIANT_BOOL AddIndicatorVIDYA(BSTR Key, LONG panel, BSTR Source, LONG Periods, DOUBLE R2Scale, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(297)] VARIANT_BOOL UpdateIndicatorVIDYA(BSTR Key, LONG panel, BSTR Source, LONG Periods, DOUBLE R2Scale, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(298)] VARIANT_BOOL AddIndicatorVolumeOsc(BSTR Key, LONG panel, BSTR Volume, LONG ShortTerm, LONG LongTerm, LONG PointPercent, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(299)] VARIANT_BOOL UpdateIndicatorVolumeOsc(BSTR Key, LONG panel, BSTR Volume, LONG ShortTerm, LONG LongTerm, LONG PointPercent, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(300)] VARIANT_BOOL AddIndicatorVolumeROC(BSTR Key, LONG panel, BSTR Volume, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(301)] VARIANT_BOOL UpdateIndicatorVolumeROC(BSTR Key, LONG panel, BSTR Volume, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(302)] VARIANT_BOOL AddIndicatorWeightedClose(BSTR Key, LONG panel, BSTR Symbol, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(303)] VARIANT_BOOL UpdateIndicatorWeightedCLose(BSTR Key, LONG panel, BSTR Symbol, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(304)] VARIANT_BOOL AddIndicatorWeightedMA(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(305)] VARIANT_BOOL UpdateIndicatorWeightedMA(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(306)] VARIANT_BOOL AddIndicatorWellesWilder(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(307)] VARIANT_BOOL UpdateIndicatorWellesWilder(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(308)] VARIANT_BOOL AddIndicatorWilliamAD(BSTR Key, LONG panel, BSTR Symbol, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(309)] VARIANT_BOOL UpdateIndicatorWilliamAD(BSTR Key, LONG panel, BSTR Symbol, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(310)] VARIANT_BOOL AddIndicatorWilliamPCTR(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(311)] VARIANT_BOOL UpdateIndicatorWilliamPCTR(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(312), propget] DOUBLE SeriesStandarDev(BSTR Name, BSTR Code);
+			[id(312), propput] void SeriesStandarDev(BSTR Name, BSTR Code, DOUBLE newVal);
+			[id(313), propget] LONG SeriesMAType(BSTR Name, BSTR Code);
+			[id(313), propput] void SeriesMAType(BSTR Name, BSTR Code, LONG newVal);
+			[id(314), propget] BSTR SeriesVolumeSource(BSTR Name, BSTR Code);
+			[id(314), propput] void SeriesVolumeSource(BSTR Name, BSTR Code, BSTR newVal);
+			[id(315), propget] LONG SeriesRateChange(BSTR Name, BSTR Code);
+			[id(315), propput] void SeriesRateChange(BSTR Name, BSTR Code, LONG newVal);
+			[id(316), propget] BSTR SeriesSource2(BSTR Name, BSTR Code);
+			[id(316), propput] void SeriesSource2(BSTR Name, BSTR Code, BSTR newVal);
+			[id(317)] VARIANT_BOOL AddIndicatorBollinger(BSTR Key, LONG panel, BSTR Source, LONG Periods, DOUBLE StandardDev, LONG MAType, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(318)] VARIANT_BOOL AddIndicatorLinearRegIntercept(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(319), propget] LONG SeriesBarHistory(BSTR Name, BSTR Code);
+			[id(319), propput] void SeriesBarHistory(BSTR Name, BSTR Code, LONG newVal);
+			[id(320), propget] DOUBLE SeriesShift(BSTR Name, BSTR Code);
+			[id(320), propput] void SeriesShift(BSTR Name, BSTR Code, DOUBLE newVal);
+			[id(321), propget] DOUBLE SeriesMinAF(BSTR Name, BSTR Code);
+			[id(321), propput] void SeriesMinAF(BSTR Name, BSTR Code, DOUBLE newVal);
+			[id(322), propget] DOUBLE MaxAF(BSTR Name, BSTR Code);
+			[id(322), propput] void MaxAF(BSTR Name, BSTR Code, DOUBLE newVal);
+			[id(323), propget] LONG SeriesLevel(BSTR Name, BSTR Code);
+			[id(323), propput] void SeriesLevel(BSTR Name, BSTR Code, LONG newVal);
+			[id(324), propget] DOUBLE SeriesMinTick(BSTR Name, BSTR Code);
+			[id(324), propput] void SeriesMinTick(BSTR Name, BSTR Code, DOUBLE newVal);
+			[id(325), propget] LONG SeriesCycle(BSTR Name, BSTR Code, LONG Index);
+			[id(325), propput] void SeriesCycle(BSTR Name, BSTR Code, LONG Index, LONG newVal);
+			[id(326), propget] DOUBLE SeriesR2Scale(BSTR Name, BSTR Code);
+			[id(326), propput] void SeriesR2Scale(BSTR Name, BSTR Code, DOUBLE newVal);
+			[id(327), propget] LONG SeriesShortTPeriod(BSTR Name, BSTR Code);
+			[id(327), propput] void SeriesShortTPeriod(BSTR Name, BSTR Code, LONG newVal);
+			[id(328), propget] LONG SeriesLongTPeriod(BSTR Name, BSTR Code);
+			[id(328), propput] void SeriesLongTPeriod(BSTR Name, BSTR Code, LONG newVal);
+			[id(329), propget] LONG SeriesPointPercent(BSTR Name, BSTR Code);
+			[id(329), propput] void SeriesPointPercent(BSTR Name, BSTR Code, LONG newVal);
+			[id(330), propget] LONG SeriesKPeriod(BSTR Name, BSTR Code);
+			[id(330), propput] void SeriesKPeriod(BSTR Name, BSTR Code, LONG newVal);
+			[id(331), propget] LONG SeriesKSmooth(BSTR Name, BSTR Code);
+			[id(331), propput] void SeriesKSmooth(BSTR Name, BSTR Code, LONG newVal);
+			[id(332), propget] LONG SeriesPctKDblSmooth(BSTR Name, BSTR Code);
+			[id(332), propput] void SeriesPctKDblSmooth(BSTR Name, BSTR Code, LONG newVal);
+			[id(333), propget] LONG SeriesDPeriod(BSTR Name, BSTR Code);
+			[id(333), propput] void SeriesDPeriod(BSTR Name, BSTR Code, LONG newVal);
+			[id(334), propget] LONG SeriesDMAType(BSTR Name, BSTR Code);
+			[id(334), propput] void SeriesDMAType(BSTR Name, BSTR Code, LONG newVal);
+			[id(335), propget] LONG SeriesKSlowing(BSTR Name, BSTR Code);
+			[id(335), propput] void SeriesKSlowing(BSTR Name, BSTR Code, LONG newVal);
+			[id(336)] void AddUserXLine(BSTR Key);
+			[id(337)] void AddUserYLine(BSTR Key);
+			[id(338)] double GetXRecordByPixel(LONG Pixel);
+			[id(340)] void UpdateTrendLine(BSTR Key, LONG Style, LONG Thickness, LONG ColorR, LONG ColorG, LONG ColorB, VARIANT_BOOL RadExtension, VARIANT_BOOL RightExtension, VARIANT_BOOL LeftExtension, DOUBLE Value);
+			[id(341)] LONG GetTrendLineStyle(BSTR Key);
+			[id(342)] LONG GetTrendLineThickness(BSTR Key);
+			[id(343)] LONG GetTrendLineColor(BSTR Key);
+			[id(344)] VARIANT_BOOL GetTrendLineRightExtension(BSTR Key);
+			[id(345)] VARIANT_BOOL GetTrendLineLeftExtension(BSTR Key);
+			[id(346)] DOUBLE GetFibonacciParameter(BSTR Key, LONG Index);
+			[id(347)] void UpdateFibonacciParams(BSTR Key, DOUBLE param1, DOUBLE param2, DOUBLE param3, DOUBLE param4, DOUBLE param5, DOUBLE param6, DOUBLE param7, DOUBLE param8, DOUBLE param9, DOUBLE param10);
+			[id(349)] void SetFibonacciRetParams(DOUBLE param0, DOUBLE param1, DOUBLE param2, DOUBLE param3, DOUBLE param4, DOUBLE param5, DOUBLE param6, DOUBLE param7, DOUBLE param8, DOUBLE param9);
+			[id(350)] void SetFibonacciProParams(DOUBLE param0, DOUBLE param1, DOUBLE param2, DOUBLE param3, DOUBLE param4, DOUBLE param5, DOUBLE param6, DOUBLE param7, DOUBLE param8, DOUBLE param9);
+			[id(351)] DOUBLE GetYScaleMax(LONG panel);
+			[id(352)] DOUBLE GetYScaleMin(LONG panel);
+			[id(353)] void LoadUserStudyLine(LONG panel);
+			[id(359)] VARIANT_BOOL AddIndicatorVolume(BSTR Key, LONG panel, BSTR Volume, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(360)] VARIANT_BOOL UpdateIndicatorVolume(BSTR Key, LONG panel, BSTR Volume, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(361)] VARIANT_BOOL AddIndicatorGenericMovingAverage(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG Shift, LONG MAType, DOUBLE R2Scale,LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(362)] VARIANT_BOOL UpdateIndicatorGenericMovingAverage(BSTR Key, LONG panel, BSTR Source, LONG Periods, LONG Shift, LONG MAType, DOUBLE R2Scale, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(363), propget] LONG SeriesShiftInt(BSTR Name, BSTR Code);
+			[id(363), propput] void SeriesShiftInt(BSTR Name, BSTR Code, LONG newVal);
+			[id(366)] VARIANT_BOOL AddIndicatorHILO(BSTR Key, LONG panel, BSTR Symbol, LONG PeriodsHigh, LONG PeriodsLow, LONG Shift, DOUBLE Scale, OLE_COLOR LineColorHigh, OLE_COLOR LineColorLow, LONG Style, LONG Thickness);
+			[id(367)] VARIANT_BOOL UpdateIndicatorHILO(BSTR Key, LONG panel, BSTR Symbol, LONG PeriodsHigh, LONG PeriodsLow, LONG Shift, DOUBLE Scale, OLE_COLOR LineColorHigh, OLE_COLOR LineColorLow, LONG Style, LONG Thickness);
+			[id(373)] void AppendRangeValues(BSTR Name, SAFEARRAY(DOUBLE) JDates, SAFEARRAY(DOUBLE) Values, LONG Size);
+			[id(374)] VARIANT_BOOL AddIndicatorADX(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style,  LONG Thickness);
+			[id(375)] VARIANT_BOOL UpdateIndicatorADX(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style,  LONG Thickness);
+			[id(376)] VARIANT_BOOL AddIndicatorDI(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness, LONG ColorR2, LONG ColorG2, LONG ColorB2, LONG Style2, LONG Thickness2);
+
+			[id(377)] VARIANT_BOOL UpdateIndicatorDI(BSTR Key, LONG panel, BSTR Symbol, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness, LONG ColorR2, LONG ColorG2, LONG ColorB2, LONG Style2, LONG Thickness2);
+			[id(378)] void AbortDrawing(void);
+			[id(382)] VARIANT_BOOL AddIndicatorAccumulationDistribution(BSTR Key, LONG panel, BSTR Symbol, BSTR Volume, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(383)] VARIANT_BOOL UpdateIndicatorAccumulationDistribution(BSTR Key, LONG panel, BSTR Symbol, LONG Index, BSTR Volume, LONG Periods, LONG ColorR, LONG ColorG, LONG ColorB, LONG Style, LONG Thickness);
+			[id(384)] void MovePanelIndex(LONG panel, LONG offset, VARIANT_BOOL moveUp);
+			[id(385)] DOUBLE GetTrendLineValue(BSTR Key);
+			[id(386), propget] DOUBLE SeriesThreshold(BSTR name, LONG index);
+			[id(386), propput] void SeriesThreshold(BSTR name, LONG index, DOUBLE newVal);
+			[id(387)] void UnSelect();
+};
+
+	//  Event dispatch interface for CStockChartXCtrl
+
+	[ uuid(6005828E-C667-45E2-B533-71090FEA9B7A),
+	  helpstring("Event interface for StockChartX Control") ]
+	dispinterface _DStockChartXEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CStockChartXCtrl)
+			[id(1)] void SelectSeries(BSTR Name);
+			[id(2)] void DeleteSeries(BSTR Name);
+			[id(3)] void MouseMove(OLE_XPOS_PIXELS X, OLE_YPOS_PIXELS Y, long Record);
+			[id(4)] void Paint(long Panel);
+			[id(5)] void Scroll();			
+			[id(6)] void ItemRightClick(OBJECTTYPE ObjectType, BSTR Name, OLE_XPOS_PIXELS X, OLE_YPOS_PIXELS Y);
+			[id(7)] void ItemLeftClick(OBJECTTYPE ObjectType, BSTR Name, OLE_XPOS_PIXELS X, OLE_YPOS_PIXELS Y);
+			[id(8)] void ItemDoubleClick(OBJECTTYPE ObjectType, BSTR Name, OLE_XPOS_PIXELS X, OLE_YPOS_PIXELS Y);
+			[id(9)] void ItemMouseMove(OBJECTTYPE ObjectType, BSTR Name, OLE_XPOS_PIXELS X, OLE_YPOS_PIXELS Y);
+			[id(10)] void OnError(BSTR Description);
+			[id(11)] void MouseEnter();
+			[id(12)] void MouseExit();
+			[id(13)] void ShowInfoPanel();
+			[id(14)] void Zoom();
+			[id(15)] void OnLButtonDown();
+			[id(16)] void OnLButtonUp();				
+			[id(17)] void ShowDialog();
+			[id(18)] void HideDialog();
+			[id(19)] void EnumIndicator(BSTR IndicatorName, long IndicatorID);
+			[id(20)] void EnumPriceStyle(BSTR PriceStyleName, long PriceStyleID);
+			[id(DISPID_CLICK)] void Click();
+			[id(21)] void OnRButtonDown();
+			[id(22)] void OnRButtonUp();
+			[id(23)] void OnChar(short nChar, short nRepCnt, short nFlags);
+			[id(24)] void OnKeyUp(short nChar, short nRepCnt, short nFlags);
+			[id(25)] void EnumSeries(BSTR Name, long Panel, SeriesType TypeOfSeries);
+			[id(26)] void DialogCancel();
+			[id(27)] void SeriesMoved(BSTR Name, long FromPanel, long ToPanel);
+			[id(28)] void DoubleClick();
+			[id(29)] void UserDrawingComplete(StudyType StudyType, BSTR Name);
+			[id(30)] void CustomIndicatorNeedData(BSTR IndicatorName);
+			[id(31)] void TrendLinePenetration(BSTR TrendLineName, BSTR SeriesName, short Direction);
+			[id(32)] void OnKeyDown(short nChar, short nRepCnt, short nFlags);
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CStockChartXCtrl
+
+	[ uuid(89D9AAAF-DC4F-4F72-ACF3-D2EDB8644A44), licensed,
+	  helpstring("StockChartX Professional Version"), control ]
+	coclass StockChartX
+	{
+		[default] dispinterface _DStockChartX;
+		[default, source] dispinterface _DStockChartXEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

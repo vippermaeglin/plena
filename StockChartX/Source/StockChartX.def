@@ -1,0 +1,10 @@
+; StockChartX.def : Declares the module parameters.
+
+LIBRARY      "STOCKCHARTX.OCX"
+
+; LNK4222 error can be ignored!
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE
