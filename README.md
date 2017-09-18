@@ -29,7 +29,7 @@ C#, Telerik, InstallShield, Dotfuscator.
 * DS Plena:
 C#, ASP.NET, MS SQL.
 * StockChartX:
-C++.
+C++, ActiveX.
 * TradeScript:
 C#.
 * Crainiate Open Diagram:
