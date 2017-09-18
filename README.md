@@ -7,34 +7,38 @@ Plena Trading Platform is a simple and powerful tool for traders in stock market
 
 ### Platform Modules ###
 
-* iTicket-Server:
-Server backend with resources, REST APIs, and administrative tools.
-* iTicket-LandingPage:
-Landing page with product details and comercial contacts.
-* iTicket-Desktop:
-Desktop application to manage tickets and transactions on client side.
-* iTicket-UserApp:
-Android/iOS mobile app to users buy tickets at establishments or events.
-* iTicket-ClientApp:
-Google Services, REST Retrofit.
+* M4 Admin:
+Web application with resources and administrative tools.
+* M4 C# DDF:
+Desktop application for distribution of Plena Trading Platform.
+* DS Plena:
+Data Service application for real time quotes and data syncronization.
+* StockChartX:
+Graphical core to render charts, indicators and mathematical studies.
+* TradeScript:
+Script library used for backtesting.
+* Crainiate Open Diagram:
+Open source visual tool to create visual diagrams.
 
 ### Stacks & Frameworks ###
 
-* iTicket-Server:
-Java-EE, JSF, MongoDB noSQL, RestEasy, JSON, WildFly.
-* iTicket-LandingPage:
-Java JSF, JavaScript, Html, Bootstrap e CSS.
-* iTicket-Desktop:
-Java-FX, MongoDB noSQL, QR-Code Gen, PrintManager, REST Retrofit.
-* iTicket-UserApp:
-Android/iOS mobile app to users buy tickets at establishments or events.
-* iTicket-ClientApp:
-Java, CouchBase noSQL, QR-Code Scan, REST Retrofit.
+* M4 Admin:
+C#, ASP.NET, XML, WebServices, MS SQL.
+* M4 C# DDF:
+C#, Telerik, InstallShield, Dotfuscator.
+* DS Plena:
+C#, ASP.NET, MS SQL.
+* StockChartX:
+C++.
+* TradeScript:
+C#.
+* Crainiate Open Diagram:
+C#.
 
 ### Contribution guidelines ###
 
-* This a public demonstration, forks and contributions are in another private repository.
+* Anyone and everyone is welcome to contribute.
 
 ### Contact ###
 
-* [vinicius@iticket.me](mailto:vinicius@iticket.me)
+* [vinicius.silva.arruda@gmail.com](mailto:vinicius.silva.arruda@gmail.com)
