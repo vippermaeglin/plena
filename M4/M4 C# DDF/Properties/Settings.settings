@@ -1,0 +1,310 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="M4.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TwitterUN" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TwitterPW" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TweetTrades" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LSTR" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Username" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Server" Type="System.String" Scope="User">
+      <Value Profile="(Default)">qs01.ddfplus.com</Value>
+    </Setting>
+    <Setting Name="Symbol" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Interval" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Bars" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="LastSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="LastPos" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="WindowState" Type="System.Windows.Forms.FormWindowState" Scope="User">
+      <Value Profile="(Default)">Normal</Value>
+    </Setting>
+    <Setting Name="Style" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Office2007Silver</Value>
+    </Setting>
+    <Setting Name="M4_modulusfe_platform_data_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://platform.modulusfe.com/data/service.asmx</Value>
+    </Setting>
+    <Setting Name="ScanSymbols" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Script" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Periodicity" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="oauth_token" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="oauth_secret" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="consumerSecret" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4oDfASz8t7dVlpfRcdgtQbauohZrLgVfrIwD8de5mE</Value>
+    </Setting>
+    <Setting Name="consumerKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">iaSD4uobC6uYVvpKGPbYQ</Value>
+    </Setting>
+    <Setting Name="display_name" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="M4_modulusfe_platform_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/M4Inet/Service.asmx</Value>
+    </Setting>
+    <Setting Name="DictionaryLanguage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PortugueseBrazil</Value>
+    </Setting>
+    <Setting Name="SelectText" Type="Telerik.WinControls.ClickMode" Scope="User">
+      <Value Profile="(Default)">Release</Value>
+    </Setting>
+    <Setting Name="SuperscriptionProxy" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PortProxy" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SuperscriptionProxySocks" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PortProxySocks" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UserAuthenticationProxy" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PasswordAuthenticationProxy" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="NotProxy" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ConfigProxyNavigator" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ProxyServer" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ProxySocks" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="AuthenticationProxy" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Server1_Ip" Type="System.String" Scope="User">
+      <Value Profile="(Default)">54.187.159.71</Value>
+    </Setting>
+    <Setting Name="Server2_Ip" Type="System.String" Scope="User">
+      <Value Profile="(Default)">localhost</Value>
+    </Setting>
+    <Setting Name="Server3_Ip" Type="System.String" Scope="User">
+      <Value Profile="(Default)">192.168.1.9</Value>
+    </Setting>
+    <Setting Name="Stp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1800000</Value>
+    </Setting>
+    <Setting Name="Server1_Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">80</Value>
+    </Setting>
+    <Setting Name="Server2_Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">56510</Value>
+    </Setting>
+    <Setting Name="Server3_Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">56510</Value>
+    </Setting>
+    <Setting Name="GridVertical" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="GridHorizontal" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BackGradientTop" Type="System.String" Scope="User">
+      <Value Profile="(Default)">255,255,255</Value>
+    </Setting>
+    <Setting Name="BackGradientBottom" Type="System.String" Scope="User">
+      <Value Profile="(Default)">213,231,255</Value>
+    </Setting>
+    <Setting Name="ChartBackColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">213,231,255</Value>
+    </Setting>
+    <Setting Name="GridColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">135,206,235</Value>
+    </Setting>
+    <Setting Name="ChartForeColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0</Value>
+    </Setting>
+    <Setting Name="UpColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,255,0</Value>
+    </Setting>
+    <Setting Name="DownColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">255,0,0</Value>
+    </Setting>
+    <Setting Name="HorizontalSeparatorColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">135,206,235</Value>
+    </Setting>
+    <Setting Name="MSelectionBorderColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,255</Value>
+    </Setting>
+    <Setting Name="ThemeSubscribe" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SemiLogScale" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PanelSeparator" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PaddingTop" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="PaddingBottom" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="PaddingRight" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="ChartViewport" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="Decimals" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="History" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5000</Value>
+    </Setting>
+    <Setting Name="GridVerticalOverwrite" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="GridHorizontalOverwrite" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BackGradientTopOverwrite" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BackGradientBottomOverwrite" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ChartBackColorOverwrite" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="GridColorOverwrite" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ChartForeColorOverwrite" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DownColorOverwrite" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PainelSeparatorColorOverwrite" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="UpColorOverwrite" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CandleBorderColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0</Value>
+    </Setting>
+    <Setting Name="CandleBorderColorOverwrite" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ScaleColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,0,0</Value>
+    </Setting>
+    <Setting Name="ScaleColorOverwrite" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="AssociateGradient" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SchemeColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SchemeSky</Value>
+    </Setting>
+    <Setting Name="MaxHistoryGuest" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">300</Value>
+    </Setting>
+    <Setting Name="DefaultBackColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">240,240,240</Value>
+    </Setting>
+    <Setting Name="DefaultLabelGraphColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,109,160</Value>
+    </Setting>
+    <Setting Name="DefaultBackColorChart" Type="System.String" Scope="User">
+      <Value Profile="(Default)">232,232,239</Value>
+    </Setting>
+    <Setting Name="SettingsPriceLineMono" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SettingsPriceLineThickness" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="SettingsPriceBarLineThickness" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="VisiblePortfolio" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="StartPage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.plena-tp.com.br/</Value>
+    </Setting>
+    <Setting Name="SettingsHeikinSmoothType" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="SettingsHeikinSmoothPeriod" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">17</Value>
+    </Setting>
+    <Setting Name="TabDataPosition" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Less</Value>
+    </Setting>
+    <Setting Name="HistoricalConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Historical.mdf;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Historical.mdf;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="DefaultPeriodicity" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ask</Value>
+    </Setting>
+    <Setting Name="ServerURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">54.187.159.71</Value>
+    </Setting>
+    <Setting Name="DateInstallation" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">04/10/2014 15:13:00</Value>
+    </Setting>
+    <Setting Name="IsFirstUse" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="PlenaDataConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\PlenaData.mdf;Integrated Security=True;&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\PlenaData.mdf;Integrated Security=True;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

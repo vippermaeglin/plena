@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE dotfuscator SYSTEM "http://www.preemptive.com/dotfuscator/dtd/dotfuscator_v2.3.dtd">
+<dotfuscator version="2.3">
+  <global>
+    <option>debug</option>
+  </global>
+  <input>
+    <loadpaths />
+    <asmlist>
+      <inputassembly refid="9af132ad-966d-4c43-975f-7147ee80fbf2">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${active6b8e0b62ee144fbcbb14809fa31a113e}" name="DSPlena.dll" />
+        <loadpaths>
+          <file dir="${configdir}\..\..\..\DSPlena\bin\Debug\" />
+        </loadpaths>
+      </inputassembly>
+      <inputassembly refid="b38ff497-2b43-4da1-a8d9-5a9b6d40deaa">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${actived3ebf03f16bc4be69bd236e27b8ed743}" name="M4.exe" />
+        <loadpaths>
+          <file dir="${configdir}\..\..\bin\x86\" />
+        </loadpaths>
+      </inputassembly>
+      <inputassembly refid="425ebbde-b3d6-4259-a08b-6e46b67fdaff">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${activec0b4fec6275a4574bcc4a06cdcedca3f}" name="M4.DataServer.Interface.dll" />
+        <loadpaths>
+          <file dir="${configdir}\..\..\..\DSPlena\M4.DataServer.Interface\bin\Debug\" />
+        </loadpaths>
+      </inputassembly>
+      <inputassembly refid="4921f74d-8ebb-4cc2-ae71-c7da8ebbe326">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${activeb24ce7b6d65144f192c6c08700be6676}" name="M4Admin.exe" />
+        <loadpaths>
+          <file dir="${configdir}\..\..\..\M4 Admin\bin\Debug\" />
+        </loadpaths>
+      </inputassembly>
+      <inputassembly refid="b79e5e71-9887-42ba-9618-a1f497e0a848">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${active63bd7daa97f546f194aeb948727005a0}" name="M4Core.dll" />
+        <loadpaths>
+          <file dir="${configdir}\..\..\M4Core\bin\Debug\" />
+        </loadpaths>
+      </inputassembly>
+      <inputassembly refid="bc6e6c5d-1ad1-4a75-b27c-deb4279ee0a3">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${active79f0a10a6879449592e7c5fb42339a60}" name="M4Data.dll" />
+        <loadpaths>
+          <file dir="${configdir}\..\..\M4Data\bin\Debug\" />
+        </loadpaths>
+      </inputassembly>
+      <inputassembly refid="549b7b9e-54dc-4ad5-8f5e-2e6444880d5a">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${activeeee8f2910e5b4ddaa2b2e7a1ac01e17b}" name="M4Utils.dll" />
+        <loadpaths>
+          <file dir="${configdir}\..\..\M4Utils\bin\Debug\" />
+        </loadpaths>
+      </inputassembly>
+      <inputassembly refid="06951e99-1627-4e92-ab4e-c320bf15b586">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${active9a7c5f5d134d485bbafcdc1df32ef612}" name="ModulusFE.Sockets.dll" />
+        <loadpaths>
+          <file dir="${configdir}\..\..\..\DSPlena\ModulusFE.Sockets\bin\Debug\" />
+        </loadpaths>
+      </inputassembly>
+    </asmlist>
+  </input>
+  <output>
+    <file dir="${configdir}\Dotfuscated" />
+  </output>
+  <renaming>
+    <option>xmlserialization</option>
+    <mapping>
+      <mapoutput overwrite="false">
+        <file dir="${configdir}\Dotfuscated" name="map.xml" />
+      </mapoutput>
+    </mapping>
+    <referencerulelist>
+      <referencerule rulekey="{89769974-93E9-4e71-8D92-BE70E855ACFC}" />
+      <referencerule rulekey="{494EA3BA-B947-44B5-BEE8-A11CC85AAF9B}" />
+      <referencerule rulekey="{6655B10A-FD58-462d-8D4F-5B1316DFF0FF}" />
+      <referencerule rulekey="{7D9C8B02-2383-420f-8740-A9760394C2C1}" />
+      <referencerule rulekey="{229FD6F8-5BCC-427b-8F72-A7A413ECDF1A}" />
+      <referencerule rulekey="{2B7E7C8C-A39A-4db8-9DFC-6AFD38509061}" />
+      <referencerule rulekey="{4D81E604-A545-4631-8B6D-C3735F793F80}" />
+    </referencerulelist>
+  </renaming>
+  <controlflow level="high" />
+  <sos mergeruntime="true">
+    <option>dontsendtamper</option>
+  </sos>
+  <smartobfuscation>
+    <smartobfuscationreport verbosity="all" overwrite="false" />
+  </smartobfuscation>
+</dotfuscator>

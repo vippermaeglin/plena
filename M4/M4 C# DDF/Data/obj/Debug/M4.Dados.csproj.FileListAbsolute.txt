@@ -1,0 +1,7 @@
+C:\MFE\M4\M4 C# DDF\Data\bin\Debug\M4.Dados.dll
+C:\MFE\M4\M4 C# DDF\Data\bin\Debug\M4.Dados.pdb
+C:\MFE\M4\M4 C# DDF\Data\bin\Debug\M4.Objetos.dll
+C:\MFE\M4\M4 C# DDF\Data\bin\Debug\M4.Objetos.pdb
+C:\MFE\M4\M4 C# DDF\Data\obj\Debug\ResolveAssemblyReference.cache
+C:\MFE\M4\M4 C# DDF\Data\obj\Debug\M4.Dados.dll
+C:\MFE\M4\M4 C# DDF\Data\obj\Debug\M4.Dados.pdb
