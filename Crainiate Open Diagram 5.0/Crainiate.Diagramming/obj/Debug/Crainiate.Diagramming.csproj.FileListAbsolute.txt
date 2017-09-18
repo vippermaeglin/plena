@@ -1,0 +1,5 @@
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming\bin\Crainiate.Diagramming.dll
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming\bin\Crainiate.Diagramming.pdb
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming\obj\Debug\Crainiate.Diagramming.dll
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming\obj\Debug\Crainiate.Diagramming.pdb
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming\obj\Debug\Crainiate.Diagramming.csprojResolveAssemblyReference.cache

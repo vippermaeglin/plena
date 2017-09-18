@@ -1,0 +1,15 @@
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming.Forms\obj\Debug\Crainiate.Diagramming.Forms.csprojResolveAssemblyReference.cache
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming.Forms\bin\Debug\Crainiate.Diagramming.Forms.dll
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming.Forms\bin\Debug\Crainiate.Diagramming.Forms.pdb
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming.Forms\bin\Debug\Crainiate.Diagramming.dll
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming.Forms\bin\Debug\Crainiate.Diagramming.pdb
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming.Forms\obj\Debug\Crainiate.Diagramming.Forms.Diagram.resources
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming.Forms\obj\Debug\Crainiate.Diagramming.Forms.LabelEdit.resources
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming.Forms\obj\Debug\FlowchartingResources.resources
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming.Forms\obj\Debug\Crainiate.Diagramming.Printing.PrintDocument.resources
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming.Forms\obj\Debug\Crainiate.Diagramming.Forms.Overview.resources
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming.Forms\obj\Debug\Crainiate.Diagramming.Forms.Ruler.resources
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming.Forms\obj\Debug\Crainiate.Diagramming.Forms.Palette.resources
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming.Forms\obj\Debug\Crainiate.Diagramming.Forms.csproj.GenerateResource.Cache
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming.Forms\obj\Debug\Crainiate.Diagramming.Forms.dll
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\Crainiate Open Diagram 5.0\Crainiate.Diagramming.Forms\obj\Debug\Crainiate.Diagramming.Forms.pdb
