@@ -1,0 +1,9 @@
+TRADESCRIPT ON SOLUTION:
+1- Solution>Add>Existing Project
+2- Build TradeScript.dll on debug mode
+3- regsvr32 %plena%\TradeScript\Trunk\Debug\TradeScript.dll
+4- Add Reference>Browse>%plena%\TradeScript\Trunk\Debug\TradeScript.dll (Don`t use Add Reference>Solution)
+5- References>Interop.TradeScriptLib>Properties>Embed Interop Types = FALSE
+6- Build All
+
+DEBUGGING TRADESCRIPT:

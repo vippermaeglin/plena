@@ -1,0 +1,21 @@
+Alterar versão StockChartX.ocx
+
+	-Arquivo StockChartX.rc:
+		FILEVERSION X,Y,0,0 (linha 57)
+		PRODUCTVERSION X,Y,0,0 (linha 58)
+		VALUE "FileVersion", "X.Y.0.0\0" (linha 76)
+		VALUE "ProductVersion", "X.Y.0.0\0" (linha 84)
+		
+	-Arquivo StockChartXCtl.cpp:
+		m_version = "StockChartX Professional Version X.Y.0.0 compiled dd/MM/YYYY"; (linha 1494)
+	
+	-Arquivo StockChartXCtl.odl:
+	[ uuid(6556E667-F828-4D0E-AF3E-C0FC768796CC), version(X.Y), (linha 10)
+		
+Alterar versão M4:
+	
+	-PROJECT>M4 Properties>Application>Assembly Information
+		Assembly Version
+		File Version
+		
+	-(Fazer o mesmo para cada projeto na Solução modificado)

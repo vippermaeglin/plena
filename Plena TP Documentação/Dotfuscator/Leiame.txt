@@ -1,0 +1,7 @@
+Deverão ser excluídos os controles:
+- M4.M4v2.Chart.IndicatorElements
+- M4.M4v2.Chart.LineStudy
+- M4.M4v2.Chart.PriceSettings
+- M4.M4v2.Settings
+- M4.Properties
+- {}
