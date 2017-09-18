@@ -1,0 +1,212 @@
+﻿Build started 18/12/2014 11:30:52.
+     1>Project "D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\StockChartX\Source\StockChartX.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ITASDK /IWrappers /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /O2 /Ob1 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D _PRO_VERSION /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _MBCS /GF /EHa /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Release/StockChartX.pch" /Fo".\Release/" /Fd".\Release/vc120.pdb" /FR".\Release\\" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /analyze- /errorReport:prompt /clr:nostdlib CalendarPanel.cpp Candle.cpp LineStudyPolyline.cpp LineStudyTriangle.cpp tasdk\CLinearRegression.cpp CO.cpp COL.cpp Indicator.cpp Wrappers\IndicatorAccumulativeSwingIndex.cpp Wrappers\IndicatorComparativeRelativeStrength.cpp Wrappers\IndicatorMomentum.cpp Wrappers\IndicatorTimeSeriesMovingAverage.cpp IndPropDlg.cpp IOStructures.cpp LineStudyEllipse.cpp LineStudyFibonacciArcs.cpp LineStudyFibonacciFan.cpp LineStudyFibonacciRetracements.cpp LineStudyFibonacciTimeZones.cpp LineStudyGannFan.cpp LineStudyQuadrantLines.cpp StockChartXCtl.cpp SymbolObject.cpp TextArea.cpp ValueView.cpp
+         CalendarPanel.cpp
+         Candle.cpp
+         LineStudyPolyline.cpp
+         LineStudyTriangle.cpp
+         CLinearRegression.cpp
+         CO.cpp
+         COL.cpp
+     1>COL.cpp(8): warning C4627: '#include "julian.h"': skipped when looking for precompiled header use
+                 Add directive to 'stdafx.h' or rebuild precompiled header
+         Indicator.cpp
+         IndicatorAccumulativeSwingIndex.cpp
+         IndicatorComparativeRelativeStrength.cpp
+         IndicatorMomentum.cpp
+         IndicatorTimeSeriesMovingAverage.cpp
+         IndPropDlg.cpp
+         IOStructures.cpp
+         LineStudyEllipse.cpp
+         LineStudyFibonacciArcs.cpp
+         LineStudyFibonacciFan.cpp
+         LineStudyFibonacciRetracements.cpp
+         LineStudyFibonacciTimeZones.cpp
+         LineStudyGannFan.cpp
+         Generating Code...
+         Compiling...
+         LineStudyQuadrantLines.cpp
+         StockChartXCtl.cpp
+     1>StockChartXCtl.cpp(2643): warning C4101: 'series' : unreferenced local variable
+     1>StockChartXCtl.cpp(6517): warning C4101: 'visibleValue' : unreferenced local variable
+     1>StockChartXCtl.cpp(12523): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>StockChartXCtl.cpp(12565): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>StockChartXCtl.cpp(12603): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>StockChartXCtl.cpp(17883): warning C4800: 'VARIANT_BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>StockChartXCtl.cpp(17884): warning C4800: 'VARIANT_BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>StockChartXCtl.cpp(17885): warning C4800: 'VARIANT_BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>StockChartXCtl.cpp(18416): warning C4800: 'VARIANT_BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+         SymbolObject.cpp
+         TextArea.cpp
+         ValueView.cpp
+     1>ValueView.cpp(357): warning C4129: '%' : unrecognized character escape sequence
+     1>ValueView.cpp(362): warning C4129: '%' : unrecognized character escape sequence
+     1>ValueView.cpp(683): warning C4129: '%' : unrecognized character escape sequence
+         Generating Code...
+     1>d:\projetos visual\projeto plena\plena trading platform release 2\stockchartx\source\valueview.cpp(563): warning C4700: uninitialized local variable 'xt2' used
+     1>d:\projetos visual\projeto plena\plena trading platform release 2\stockchartx\source\valueview.cpp(563): warning C4700: uninitialized local variable 'yt1' used
+     1>d:\projetos visual\projeto plena\plena trading platform release 2\stockchartx\source\valueview.cpp(563): warning C4700: uninitialized local variable 'xt1' used
+     1>D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\StockChartX\Source\StockChartXCtl.cpp : warning C4793: 'COleControl::`vcall'{536}'' : function compiled as native :
+         	non-clrcall vcall thunks must be compiled as native
+     1>D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\StockChartX\Source\StockChartXCtl.cpp : warning C4793: 'COleControl::`vcall'{540}'' : function compiled as native :
+         	non-clrcall vcall thunks must be compiled as native
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ITASDK /IWrappers /Zi /clr /nologo /W3 /WX- /O2 /Ob1 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D _PRO_VERSION /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _MBCS /GF /EHa /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Release/" /Fd".\Release/" /FR".\Release\\" /TP /analyze- /errorReport:prompt "C:\Users\Vinicius\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D NDEBUG /D _VC80_UPGRADE=0x0600 /l"0x0409" /I.\Release\ /nologo /fo".\Release\StockChartX.res" StockChartX.rc 
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1186,5): warning MSB8012: TargetPath(D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\StockChartX\Source\.\Release\StockChartX.dll) does not match the Linker's OutputFile property value (D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\StockChartX\Source\Release\StockChartX.ocx). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1187,5): warning MSB8012: TargetExt(.dll) does not match the Linker's OutputFile property value (.ocx). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Release/StockChartX.ocx" /INCREMENTAL /NOLOGO /DEF:".\StockChartX.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /PDB:".\Release/StockChartX.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /IMPLIB:".\Release/StockChartX.lib" /MACHINE:X86 /SAFESEH:NO /DLL .\Release\StockChartX.res
+         .\Release/CalendarPanel.obj
+         .\Release/Candle.obj
+         .\Release/IndicatorAccumulationDistribution.obj
+         .\Release/IndicatorADX.obj
+         .\Release/Coordinates.obj
+         .\Release/IndicatorGenericMovingAverage.obj
+         .\Release/IndicatorHILOActivator.obj
+         .\Release/IndicatorVolume.obj
+         .\Release/LineStudyChannel.obj
+         .\Release/LineStudyFibonacciProgression.obj
+         .\Release/LineStudyPolyline.obj
+         .\Release/LineStudyTriangle.obj
+         .\Release/PDCHandler.obj
+         .\Release/PointF.obj
+         .\Release/RectF.obj
+         .\Release/CBands.obj
+         .\Release/CField.obj
+         .\Release/CGeneral.obj
+         .\Release/ChartPanel.obj
+         .\Release/CIndex.obj
+         .\Release/CLinearRegression.obj
+         .\Release/CMovingAverage.obj
+         .\Release/CNavigator.obj
+         .\Release/CNote.obj
+         .\Release/CO.obj
+         .\Release/COL.obj
+         .\Release/COscillator.obj
+         .\Release/CRecordset.obj
+         .\Release/Date.obj
+         .\Release/DialogReminder.obj
+         .\Release/gbitmapprinter.obj
+         .\Release/Indicator.obj
+         .\Release/IndicatorAccumulativeSwingIndex.obj
+         .\Release/IndicatorAroon.obj
+         .\Release/IndicatorAroonOscillator.obj
+         .\Release/IndicatorBollingerBands.obj
+         .\Release/IndicatorChaikinMoneyFlow.obj
+         .\Release/IndicatorChaikinVolatility.obj
+         .\Release/IndicatorChandeMomentumOscillator.obj
+         .\Release/IndicatorCommodityChannelIndex.obj
+         .\Release/IndicatorComparativeRelativeStrength.obj
+         .\Release/IndicatorCustom.obj
+         .\Release/IndicatorDetrendedPriceOscillator.obj
+         .\Release/IndicatorDI.obj
+         .\Release/IndicatorDirectionalMovementSystem.obj
+         .\Release/IndicatorEaseOfMovement.obj
+         .\Release/IndicatorExponentialMovingAverage.obj
+         .\Release/IndicatorFractalChaosBands.obj
+         .\Release/IndicatorFractalChaosOscillator.obj
+         .\Release/IndicatorHighLowBands.obj
+         .\Release/IndicatorHighMinusLow.obj
+         .\Release/IndicatorHistoricalVolatility.obj
+         .\Release/IndicatorLinearRegressionForecast.obj
+         .\Release/IndicatorLinearRegressionIntercept.obj
+         .\Release/IndicatorLinearRegressionRSquared.obj
+         .\Release/IndicatorLinearRegressionSlope.obj
+         .\Release/IndicatorMACD.obj
+         .\Release/IndicatorMACDHistogram.obj
+         .\Release/IndicatorMassIndex.obj
+         .\Release/IndicatorMedian.obj
+         .\Release/IndicatorMomentum.obj
+         .\Release/IndicatorMoneyFlowIndex.obj
+         .\Release/IndicatorMovingAverageEnvelope.obj
+         .\Release/IndicatorNegativeVolumeIndex.obj
+         .\Release/IndicatorOnBalanceVolume.obj
+         .\Release/IndicatorParabolicSAR.obj
+         .\Release/IndicatorPerformanceIndex.obj
+         .\Release/IndicatorPositiveVolumeIndex.obj
+         .\Release/IndicatorPriceOscillator.obj
+         .\Release/IndicatorPriceROC.obj
+         .\Release/IndicatorPriceVolumeTrend.obj
+         .\Release/IndicatorPrimeNumberBands.obj
+         .\Release/IndicatorPrimeNumberOscillator.obj
+         .\Release/IndicatorRainbowOscillator.obj
+         .\Release/IndicatorRelativeStrengthIndex.obj
+         .\Release/IndicatorSimpleMovingAverage.obj
+         .\Release/IndicatorStandardDeviation.obj
+         .\Release/IndicatorStochasticMomentumIndex.obj
+         .\Release/IndicatorStochasticOscillator.obj
+         .\Release/IndicatorSwingIndex.obj
+         .\Release/IndicatorTimeSeriesMovingAverage.obj
+         .\Release/IndicatorTradeVolumeIndex.obj
+         .\Release/IndicatorTriangularMovingAverage.obj
+         .\Release/IndicatorTRIX.obj
+         .\Release/IndicatorTrueRange.obj
+         .\Release/IndicatorTypeicalPrice.obj
+         .\Release/IndicatorUltimateOscillator.obj
+         .\Release/IndicatorVariableMovingAverage.obj
+         .\Release/IndicatorVerticalHorizontalFilter.obj
+         .\Release/IndicatorVIDYA.obj
+         .\Release/IndicatorVolumeOscillator.obj
+         .\Release/IndicatorVolumeROC.obj
+         .\Release/IndicatorWeightedClose.obj
+         .\Release/IndicatorWeightedMovingAverage.obj
+         .\Release/IndicatorWellesWilderSmoothing.obj
+         .\Release/IndicatorWilliamsAccumulationDistribution.obj
+         .\Release/IndicatorWilliamsPctR.obj
+         .\Release/IndPropDlg.obj
+         .\Release/IOStructures.obj
+         .\Release/LineStandard.obj
+         .\Release/LineStudyEllipse.obj
+         .\Release/LineStudyErrorChannel.obj
+         .\Release/LineStudyFibonacciArcs.obj
+         .\Release/LineStudyFibonacciFan.obj
+         .\Release/LineStudyFibonacciRetracements.obj
+         .\Release/LineStudyFibonacciTimeZones.obj
+         .\Release/LineStudyFreehand.obj
+         .\Release/LineStudyGannFan.obj
+         .\Release/LineStudyQuadrantLines.obj
+         .\Release/LineStudyRaffRegression.obj
+         .\Release/LineStudyRectangle.obj
+         .\Release/LineStudySpeedLines.obj
+         .\Release/LineStudyTironeLevels.obj
+         .\Release/PriceStyle.obj
+         .\Release/PriceStyleEquiVolume.obj
+         .\Release/PriceStyleHeikinAshi.obj
+         .\Release/PriceStyleKagi.obj
+         .\Release/PriceStylePointAndFigure.obj
+         .\Release/PriceStyleRenko.obj
+         .\Release/PriceStyleThreeLineBreak.obj
+         .\Release/SerializerX.obj
+         .\Release/Series.obj
+         .\Release/SeriesStandard.obj
+         .\Release/SeriesStock.obj
+         .\Release/StdAfx.obj
+         .\Release/StockChartX.obj
+         .\Release/StockChartXCtl.obj
+         .\Release/SymbolObject.obj
+         .\Release/TASDK.obj
+         .\Release/TextArea.obj
+         .\Release/ValueView.obj
+         .\Release/XML.obj
+         ".\Release/.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+            Creating library .\Release/StockChartX.lib and object .\Release/StockChartX.exp
+         StockChartX.vcxproj -> D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\StockChartX\Source\.\Release\StockChartX.dll
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o".\Release/StockChartX.bsc" .\Release\CalendarPanel.sbr .\Release\Candle.sbr .\Release\IndicatorAccumulationDistribution.sbr .\Release\IndicatorADX.sbr .\Release\Coordinates.sbr .\Release\IndicatorGenericMovingAverage.sbr .\Release\IndicatorHILOActivator.sbr .\Release\IndicatorVolume.sbr .\Release\LineStudyChannel.sbr .\Release\LineStudyFibonacciProgression.sbr .\Release\LineStudyPolyline.sbr .\Release\LineStudyTriangle.sbr .\Release\PDCHandler.sbr .\Release\PointF.sbr .\Release\RectF.sbr .\Release\CBands.sbr .\Release\CField.sbr .\Release\CGeneral.sbr .\Release\ChartPanel.sbr .\Release\CIndex.sbr .\Release\CLinearRegression.sbr .\Release\CMovingAverage.sbr .\Release\CNavigator.sbr .\Release\CNote.sbr .\Release\CO.sbr .\Release\COL.sbr .\Release\COscillator.sbr .\Release\CRecordset.sbr .\Release\Date.sbr .\Release\DialogReminder.sbr .\Release\gbitmapprinter.sbr .\Release\Indicator.sbr .\Release\IndicatorAccumulativeSwingIndex.sbr .\Release\IndicatorAroon.sbr .\Release\IndicatorAroonOscillator.sbr .\Release\IndicatorBollingerBands.sbr .\Release\IndicatorChaikinMoneyFlow.sbr .\Release\IndicatorChaikinVolatility.sbr .\Release\IndicatorChandeMomentumOscillator.sbr .\Release\IndicatorCommodityChannelIndex.sbr .\Release\IndicatorComparativeRelativeStrength.sbr .\Release\IndicatorCustom.sbr .\Release\IndicatorDetrendedPriceOscillator.sbr .\Release\IndicatorDI.sbr .\Release\IndicatorDirectionalMovementSystem.sbr .\Release\IndicatorEaseOfMovement.sbr .\Release\IndicatorExponentialMovingAverage.sbr .\Release\IndicatorFractalChaosBands.sbr .\Release\IndicatorFractalChaosOscillator.sbr .\Release\IndicatorHighLowBands.sbr .\Release\IndicatorHighMinusLow.sbr .\Release\IndicatorHistoricalVolatility.sbr .\Release\IndicatorLinearRegressionForecast.sbr .\Release\IndicatorLinearRegressionIntercept.sbr .\Release\IndicatorLinearRegressionRSquared.sbr .\Release\IndicatorLinearRegressionSlope.sbr .\Release\IndicatorMACD.sbr .\Release\IndicatorMACDHistogram.sbr .\Release\IndicatorMassIndex.sbr .\Release\IndicatorMedian.sbr .\Release\IndicatorMomentum.sbr .\Release\IndicatorMoneyFlowIndex.sbr .\Release\IndicatorMovingAverageEnvelope.sbr .\Release\IndicatorNegativeVolumeIndex.sbr .\Release\IndicatorOnBalanceVolume.sbr .\Release\IndicatorParabolicSAR.sbr .\Release\IndicatorPerformanceIndex.sbr .\Release\IndicatorPositiveVolumeIndex.sbr .\Release\IndicatorPriceOscillator.sbr .\Release\IndicatorPriceROC.sbr .\Release\IndicatorPriceVolumeTrend.sbr .\Release\IndicatorPrimeNumberBands.sbr .\Release\IndicatorPrimeNumberOscillator.sbr .\Release\IndicatorRainbowOscillator.sbr .\Release\IndicatorRelativeStrengthIndex.sbr .\Release\IndicatorSimpleMovingAverage.sbr .\Release\IndicatorStandardDeviation.sbr .\Release\IndicatorStochasticMomentumIndex.sbr .\Release\IndicatorStochasticOscillator.sbr .\Release\IndicatorSwingIndex.sbr .\Release\IndicatorTimeSeriesMovingAverage.sbr .\Release\IndicatorTradeVolumeIndex.sbr .\Release\IndicatorTriangularMovingAverage.sbr .\Release\IndicatorTRIX.sbr .\Release\IndicatorTrueRange.sbr .\Release\IndicatorTypeicalPrice.sbr .\Release\IndicatorUltimateOscillator.sbr .\Release\IndicatorVariableMovingAverage.sbr .\Release\IndicatorVerticalHorizontalFilter.sbr .\Release\IndicatorVIDYA.sbr .\Release\IndicatorVolumeOscillator.sbr .\Release\IndicatorVolumeROC.sbr .\Release\IndicatorWeightedClose.sbr .\Release\IndicatorWeightedMovingAverage.sbr .\Release\IndicatorWellesWilderSmoothing.sbr .\Release\IndicatorWilliamsAccumulationDistribution.sbr .\Release\IndicatorWilliamsPctR.sbr .\Release\IndPropDlg.sbr .\Release\IOStructures.sbr .\Release\LineStandard.sbr .\Release\LineStudyEllipse.sbr .\Release\LineStudyErrorChannel.sbr .\Release\LineStudyFibonacciArcs.sbr .\Release\LineStudyFibonacciFan.sbr .\Release\LineStudyFibonacciRetracements.sbr .\Release\LineStudyFibonacciTimeZones.sbr .\Release\LineStudyFreehand.sbr .\Release\LineStudyGannFan.sbr .\Release\LineStudyQuadrantLines.sbr .\Release\LineStudyRaffRegression.sbr .\Release\LineStudyRectangle.sbr .\Release\LineStudySpeedLines.sbr .\Release\LineStudyTironeLevels.sbr .\Release\PriceStyle.sbr .\Release\PriceStyleEquiVolume.sbr .\Release\PriceStyleHeikinAshi.sbr .\Release\PriceStyleKagi.sbr .\Release\PriceStylePointAndFigure.sbr .\Release\PriceStyleRenko.sbr .\Release\PriceStyleThreeLineBreak.sbr .\Release\SerializerX.sbr .\Release\Series.sbr .\Release\SeriesStandard.sbr .\Release\SeriesStock.sbr .\Release\StdAfx.sbr .\Release\StockChartX.sbr .\Release\StockChartXCtl.sbr .\Release\SymbolObject.sbr .\Release\TASDK.sbr .\Release\TextArea.sbr .\Release\ValueView.sbr .\Release\XML.sbr ".\Release\.NETFramework,Version=v4.0.AssemblyAttributes.sbr"
+       CustomBuildStep:
+         regsvr32 /s /c "C:\Projeto Plena\Plena Trading Platform Release 2\StockChartX\Source\Release\StockChartX.ocx"
+         echo regsvr32 exec. time > ".\Release\regsvr32.trg"
+         
+         :VCEnd
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(202,5): error MSB3073: The command "regsvr32 /s /c "C:\Projeto Plena\Plena Trading Platform Release 2\StockChartX\Source\Release\StockChartX.ocx"
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(202,5): error MSB3073: echo regsvr32 exec. time > ".\Release\regsvr32.trg"
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(202,5): error MSB3073: 
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(202,5): error MSB3073: :VCEnd" exited with code 3.
+     1>Done Building Project "D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\StockChartX\Source\StockChartX.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:52.86
