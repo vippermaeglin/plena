@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ListAllUserKeys">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllUserKeysResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListAllUserKeysResult" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CreateLicenseKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientPassword" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="DaysExpires" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateLicenseKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateLicenseKeyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActivateLicenseKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActivateLicenseKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ActivateLicenseKeyResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeincrementLicenseKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeincrementLicenseKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeincrementLicenseKeyResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetActivationsRemaining">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetActivationsRemainingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetActivationsRemainingResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsTrialMode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsTrialModeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsTrialModeResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MarkLicenseAsPaid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MarkLicenseAsPaidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MarkLicenseAsPaidResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateLicenseKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateLicenseKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidateLicenseKeyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RemoveUserResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListUserData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListUserDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListUserDataResult" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Data" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetUserDataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearAlerts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearAlertsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ClearAlertsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAlerts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAlertsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAlertsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPublicData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DataKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPublicDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPublicDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListPublicData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contains" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListPublicDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListPublicDataResult" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ListAllUserKeysSoapIn">
+    <wsdl:part name="parameters" element="tns:ListAllUserKeys" />
+  </wsdl:message>
+  <wsdl:message name="ListAllUserKeysSoapOut">
+    <wsdl:part name="parameters" element="tns:ListAllUserKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateLicenseKeySoapIn">
+    <wsdl:part name="parameters" element="tns:CreateLicenseKey" />
+  </wsdl:message>
+  <wsdl:message name="CreateLicenseKeySoapOut">
+    <wsdl:part name="parameters" element="tns:CreateLicenseKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActivateLicenseKeySoapIn">
+    <wsdl:part name="parameters" element="tns:ActivateLicenseKey" />
+  </wsdl:message>
+  <wsdl:message name="ActivateLicenseKeySoapOut">
+    <wsdl:part name="parameters" element="tns:ActivateLicenseKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeincrementLicenseKeySoapIn">
+    <wsdl:part name="parameters" element="tns:DeincrementLicenseKey" />
+  </wsdl:message>
+  <wsdl:message name="DeincrementLicenseKeySoapOut">
+    <wsdl:part name="parameters" element="tns:DeincrementLicenseKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetActivationsRemainingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetActivationsRemaining" />
+  </wsdl:message>
+  <wsdl:message name="GetActivationsRemainingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetActivationsRemainingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsTrialModeSoapIn">
+    <wsdl:part name="parameters" element="tns:IsTrialMode" />
+  </wsdl:message>
+  <wsdl:message name="IsTrialModeSoapOut">
+    <wsdl:part name="parameters" element="tns:IsTrialModeResponse" />
+  </wsdl:message>
+  <wsdl:message name="MarkLicenseAsPaidSoapIn">
+    <wsdl:part name="parameters" element="tns:MarkLicenseAsPaid" />
+  </wsdl:message>
+  <wsdl:message name="MarkLicenseAsPaidSoapOut">
+    <wsdl:part name="parameters" element="tns:MarkLicenseAsPaidResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidateLicenseKeySoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateLicenseKey" />
+  </wsdl:message>
+  <wsdl:message name="ValidateLicenseKeySoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateLicenseKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="RemoveUserSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveUser" />
+  </wsdl:message>
+  <wsdl:message name="RemoveUserSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListUserDataSoapIn">
+    <wsdl:part name="parameters" element="tns:ListUserData" />
+  </wsdl:message>
+  <wsdl:message name="ListUserDataSoapOut">
+    <wsdl:part name="parameters" element="tns:ListUserDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserData" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetUserDataSoapIn">
+    <wsdl:part name="parameters" element="tns:SetUserData" />
+  </wsdl:message>
+  <wsdl:message name="SetUserDataSoapOut">
+    <wsdl:part name="parameters" element="tns:SetUserDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClearAlertsSoapIn">
+    <wsdl:part name="parameters" element="tns:ClearAlerts" />
+  </wsdl:message>
+  <wsdl:message name="ClearAlertsSoapOut">
+    <wsdl:part name="parameters" element="tns:ClearAlertsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAlertsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAlerts" />
+  </wsdl:message>
+  <wsdl:message name="GetAlertsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAlertsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPublicDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPublicData" />
+  </wsdl:message>
+  <wsdl:message name="GetPublicDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPublicDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListPublicDataSoapIn">
+    <wsdl:part name="parameters" element="tns:ListPublicData" />
+  </wsdl:message>
+  <wsdl:message name="ListPublicDataSoapOut">
+    <wsdl:part name="parameters" element="tns:ListPublicDataResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="ListAllUserKeys">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns a list of all user keys</wsdl:documentation>
+      <wsdl:input message="tns:ListAllUserKeysSoapIn" />
+      <wsdl:output message="tns:ListAllUserKeysSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateLicenseKey">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Creates a license key that expires in the specified number of days.</wsdl:documentation>
+      <wsdl:input message="tns:CreateLicenseKeySoapIn" />
+      <wsdl:output message="tns:CreateLicenseKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateLicenseKey">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Activates an application license  and increments the license count for that key.</wsdl:documentation>
+      <wsdl:input message="tns:ActivateLicenseKeySoapIn" />
+      <wsdl:output message="tns:ActivateLicenseKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeincrementLicenseKey">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Subtracts one activation for the specified license key (use when you uninstall a copy of the software)</wsdl:documentation>
+      <wsdl:input message="tns:DeincrementLicenseKeySoapIn" />
+      <wsdl:output message="tns:DeincrementLicenseKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActivationsRemaining">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the number of activations left for the specified license key</wsdl:documentation>
+      <wsdl:input message="tns:GetActivationsRemainingSoapIn" />
+      <wsdl:output message="tns:GetActivationsRemainingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsTrialMode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns true if the specified license key is in trial mode</wsdl:documentation>
+      <wsdl:input message="tns:IsTrialModeSoapIn" />
+      <wsdl:output message="tns:IsTrialModeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MarkLicenseAsPaid">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Marks an activated trial license key as 'paid'.</wsdl:documentation>
+      <wsdl:input message="tns:MarkLicenseAsPaidSoapIn" />
+      <wsdl:output message="tns:MarkLicenseAsPaidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateLicenseKey">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Validates a license key. This function must be called each time your application starts up. Returns an error if the license key has not yet been activated.</wsdl:documentation>
+      <wsdl:input message="tns:ValidateLicenseKeySoapIn" />
+      <wsdl:output message="tns:ValidateLicenseKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveUser">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Removes a license key and all associated user data</wsdl:documentation>
+      <wsdl:input message="tns:RemoveUserSoapIn" />
+      <wsdl:output message="tns:RemoveUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListUserData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns all user data keys for a specific user</wsdl:documentation>
+      <wsdl:input message="tns:ListUserDataSoapIn" />
+      <wsdl:output message="tns:ListUserDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns user data</wsdl:documentation>
+      <wsdl:input message="tns:GetUserDataSoapIn" />
+      <wsdl:output message="tns:GetUserDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetUserData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Sets user data - overwrites the data if it already exists</wsdl:documentation>
+      <wsdl:input message="tns:SetUserDataSoapIn" />
+      <wsdl:output message="tns:SetUserDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearAlerts">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Removes all user data marked as an alert</wsdl:documentation>
+      <wsdl:input message="tns:ClearAlertsSoapIn" />
+      <wsdl:output message="tns:ClearAlertsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAlerts">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns all user data marked as an alert</wsdl:documentation>
+      <wsdl:input message="tns:GetAlertsSoapIn" />
+      <wsdl:output message="tns:GetAlertsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns public data</wsdl:documentation>
+      <wsdl:input message="tns:GetPublicDataSoapIn" />
+      <wsdl:output message="tns:GetPublicDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListPublicData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns all public user data keys for a specific keyword</wsdl:documentation>
+      <wsdl:input message="tns:ListPublicDataSoapIn" />
+      <wsdl:output message="tns:ListPublicDataSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListAllUserKeys">
+      <soap:operation soapAction="http://tempuri.org/ListAllUserKeys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateLicenseKey">
+      <soap:operation soapAction="http://tempuri.org/CreateLicenseKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateLicenseKey">
+      <soap:operation soapAction="http://tempuri.org/ActivateLicenseKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeincrementLicenseKey">
+      <soap:operation soapAction="http://tempuri.org/DeincrementLicenseKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActivationsRemaining">
+      <soap:operation soapAction="http://tempuri.org/GetActivationsRemaining" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsTrialMode">
+      <soap:operation soapAction="http://tempuri.org/IsTrialMode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MarkLicenseAsPaid">
+      <soap:operation soapAction="http://tempuri.org/MarkLicenseAsPaid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateLicenseKey">
+      <soap:operation soapAction="http://tempuri.org/ValidateLicenseKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveUser">
+      <soap:operation soapAction="http://tempuri.org/RemoveUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListUserData">
+      <soap:operation soapAction="http://tempuri.org/ListUserData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserData">
+      <soap:operation soapAction="http://tempuri.org/GetUserData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserData">
+      <soap:operation soapAction="http://tempuri.org/SetUserData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearAlerts">
+      <soap:operation soapAction="http://tempuri.org/ClearAlerts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlerts">
+      <soap:operation soapAction="http://tempuri.org/GetAlerts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicData">
+      <soap:operation soapAction="http://tempuri.org/GetPublicData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListPublicData">
+      <soap:operation soapAction="http://tempuri.org/ListPublicData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListAllUserKeys">
+      <soap12:operation soapAction="http://tempuri.org/ListAllUserKeys" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateLicenseKey">
+      <soap12:operation soapAction="http://tempuri.org/CreateLicenseKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateLicenseKey">
+      <soap12:operation soapAction="http://tempuri.org/ActivateLicenseKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeincrementLicenseKey">
+      <soap12:operation soapAction="http://tempuri.org/DeincrementLicenseKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActivationsRemaining">
+      <soap12:operation soapAction="http://tempuri.org/GetActivationsRemaining" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsTrialMode">
+      <soap12:operation soapAction="http://tempuri.org/IsTrialMode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MarkLicenseAsPaid">
+      <soap12:operation soapAction="http://tempuri.org/MarkLicenseAsPaid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateLicenseKey">
+      <soap12:operation soapAction="http://tempuri.org/ValidateLicenseKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveUser">
+      <soap12:operation soapAction="http://tempuri.org/RemoveUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListUserData">
+      <soap12:operation soapAction="http://tempuri.org/ListUserData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserData">
+      <soap12:operation soapAction="http://tempuri.org/GetUserData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserData">
+      <soap12:operation soapAction="http://tempuri.org/SetUserData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearAlerts">
+      <soap12:operation soapAction="http://tempuri.org/ClearAlerts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlerts">
+      <soap12:operation soapAction="http://tempuri.org/GetAlerts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicData">
+      <soap12:operation soapAction="http://tempuri.org/GetPublicData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListPublicData">
+      <soap12:operation soapAction="http://tempuri.org/ListPublicData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://localhost/M4Inet/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://localhost/M4Inet/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
