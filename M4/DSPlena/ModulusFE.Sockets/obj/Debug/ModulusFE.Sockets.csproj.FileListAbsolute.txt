@@ -1,0 +1,6 @@
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\M4\DSPlena\ModulusFE.Sockets\bin\Debug\ModulusFE.Sockets.dll
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\M4\DSPlena\ModulusFE.Sockets\bin\Debug\ModulusFE.Sockets.pdb
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\M4\DSPlena\ModulusFE.Sockets\bin\Debug\RabbitMQ.Client.dll
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\M4\DSPlena\ModulusFE.Sockets\obj\Debug\ModulusFE.Sockets.dll
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\M4\DSPlena\ModulusFE.Sockets\obj\Debug\ModulusFE.Sockets.pdb
+D:\Projetos Visual\Projeto Plena\Plena Trading Platform Release 2\M4\DSPlena\ModulusFE.Sockets\obj\Debug\ModulusFE.Sockets.csprojResolveAssemblyReference.cache

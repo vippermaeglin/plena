@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0B4FEC6-275A-4574-BCC4-A06CDCEDCA3F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>M4.DataServer.Interface</RootNamespace>
+    <AssemblyName>M4.DataServer.Interface</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="extremedb4net">
+      <HintPath>..\libs\extremeDB\extremedb4net.dll</HintPath>
+    </Reference>
+    <Reference Include="extremedb4net_mursiw_debug">
+      <HintPath>..\libs\extremeDB\extremedb4net_mursiw_debug.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.DDFLINK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\M4.DataServer.DDF\obj\Debug\Interop.DDFLINK.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\libs\System.Data.SQLite.DLL</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BarData.cs" />
+    <Compile Include="ProtocolStructs\SymbolSnapshotPS.cs" />
+    <Compile Include="SymbolSnapshot.cs" />
+    <Compile Include="UpdateLog.cs" />
+    <Compile Include="DBManagerShared.cs" />
+    <Compile Include="DataBaseManager.cs" />
+    <Compile Include="DateTimeExtensions.cs" />
+    <Compile Include="HistoryRequest.cs" />
+    <Compile Include="Periodicity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtocolStructs\AuthenticationPS.cs" />
+    <Compile Include="ProtocolStructs\BarDataPS.cs" />
+    <Compile Include="ProtocolStructs\HistoryRequestPS.cs" />
+    <Compile Include="Ping.cs" />
+    <Compile Include="ProtocolStructs\PingPS.cs" />
+    <Compile Include="ProtocolStructs\SymbolsPS.cs" />
+    <Compile Include="ProtocolStructs\StructsIds.cs" />
+    <Compile Include="ProtocolStructs\SubscribeSymbolPS.cs" />
+    <Compile Include="ProtocolStructs\TickDataPS.cs" />
+    <Compile Include="Symbol.cs" />
+    <Compile Include="TickData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ModulusFE.Sockets\ModulusFE.Sockets.csproj">
+      <Project>{9A7C5F5D-134D-485B-BAFC-DC1DF32EF612}</Project>
+      <Name>ModulusFE.Sockets</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

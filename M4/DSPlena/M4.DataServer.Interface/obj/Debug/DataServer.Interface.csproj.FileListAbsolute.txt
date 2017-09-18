@@ -1,0 +1,44 @@
+C:\Users\Vinicius\Desktop\Plena\Modulus DataServer\M4.DataServer.Interface\bin\Debug\M4.DataServer.Interface.dll
+C:\Users\Vinicius\Desktop\Plena\Modulus DataServer\M4.DataServer.Interface\bin\Debug\M4.DataServer.Interface.pdb
+C:\Users\Vinicius\Desktop\Plena\Modulus DataServer\M4.DataServer.Interface\bin\Debug\ModulusFE.Sockets.dll
+C:\Users\Vinicius\Desktop\Plena\Modulus DataServer\M4.DataServer.Interface\bin\Debug\ModulusFE.Sockets.pdb
+C:\Users\Vinicius\Desktop\Plena\Modulus DataServer\M4.DataServer.Interface\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Vinicius\Desktop\Plena\Modulus DataServer\M4.DataServer.Interface\obj\Debug\M4.DataServer.Interface.dll
+C:\Users\Vinicius\Desktop\Plena\Modulus DataServer\M4.DataServer.Interface\obj\Debug\M4.DataServer.Interface.pdb
+C:\Users\Vinicius\Desktop\Plena\Modulus DataServer\M4.DataServer.Interface\bin\Debug\System.Data.SQLite.DLL
+C:\Users\Vinicius\Desktop\Plena\Modulus DataServer\M4.DataServer.Interface\bin\Debug\System.Data.SQLite.xml
+C:\Users\Vinicius\Desktop\Plena\Modulus DataServer\M4.DataServer.Interface\bin\Debug\extremedb4net.dll
+C:\Users\Vinicius\Desktop\Plena\Modulus DataServer\M4.DataServer.Interface\bin\Debug\extremedb4net_mursiw_debug.dll
+C:\Users\Admin\Desktop\PLENA\M4\trunk\Modulus DataServer\M4.DataServer.Interface\bin\Debug\M4.DataServer.Interface.dll
+C:\Users\Admin\Desktop\PLENA\M4\trunk\Modulus DataServer\M4.DataServer.Interface\bin\Debug\M4.DataServer.Interface.pdb
+C:\Users\Admin\Desktop\PLENA\M4\trunk\Modulus DataServer\M4.DataServer.Interface\bin\Debug\extremedb4net.dll
+C:\Users\Admin\Desktop\PLENA\M4\trunk\Modulus DataServer\M4.DataServer.Interface\bin\Debug\extremedb4net_mursiw_debug.dll
+C:\Users\Admin\Desktop\PLENA\M4\trunk\Modulus DataServer\M4.DataServer.Interface\bin\Debug\ModulusFE.Sockets.dll
+C:\Users\Admin\Desktop\PLENA\M4\trunk\Modulus DataServer\M4.DataServer.Interface\bin\Debug\System.Data.SQLite.DLL
+C:\Users\Admin\Desktop\PLENA\M4\trunk\Modulus DataServer\M4.DataServer.Interface\bin\Debug\ModulusFE.Sockets.pdb
+C:\Users\Admin\Desktop\PLENA\M4\trunk\Modulus DataServer\M4.DataServer.Interface\bin\Debug\System.Data.SQLite.xml
+C:\Users\Admin\Desktop\PLENA\M4\trunk\Modulus DataServer\M4.DataServer.Interface\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\PLENA\M4\trunk\Modulus DataServer\M4.DataServer.Interface\obj\Debug\M4.DataServer.Interface.dll
+C:\Users\Admin\Desktop\PLENA\M4\trunk\Modulus DataServer\M4.DataServer.Interface\obj\Debug\M4.DataServer.Interface.pdb
+C:\Users\Vinicius\Desktop\Plena\M4\Modulus DataServer\M4.DataServer.Interface\bin\Debug\M4.DataServer.Interface.dll
+C:\Users\Vinicius\Desktop\Plena\M4\Modulus DataServer\M4.DataServer.Interface\bin\Debug\M4.DataServer.Interface.pdb
+C:\Users\Vinicius\Desktop\Plena\M4\Modulus DataServer\M4.DataServer.Interface\bin\Debug\extremedb4net.dll
+C:\Users\Vinicius\Desktop\Plena\M4\Modulus DataServer\M4.DataServer.Interface\bin\Debug\extremedb4net_mursiw_debug.dll
+C:\Users\Vinicius\Desktop\Plena\M4\Modulus DataServer\M4.DataServer.Interface\bin\Debug\ModulusFE.Sockets.dll
+C:\Users\Vinicius\Desktop\Plena\M4\Modulus DataServer\M4.DataServer.Interface\bin\Debug\System.Data.SQLite.DLL
+C:\Users\Vinicius\Desktop\Plena\M4\Modulus DataServer\M4.DataServer.Interface\bin\Debug\ModulusFE.Sockets.pdb
+C:\Users\Vinicius\Desktop\Plena\M4\Modulus DataServer\M4.DataServer.Interface\bin\Debug\System.Data.SQLite.xml
+C:\Users\Vinicius\Desktop\Plena\M4\Modulus DataServer\M4.DataServer.Interface\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Vinicius\Desktop\Plena\M4\Modulus DataServer\M4.DataServer.Interface\obj\Debug\M4.DataServer.Interface.dll
+C:\Users\Vinicius\Desktop\Plena\M4\Modulus DataServer\M4.DataServer.Interface\obj\Debug\M4.DataServer.Interface.pdb
+C:\Users\Filipe Nogueira\Desktop\Projeto\Plena\M4 - Vinicius\M4\Modulus DataServer\M4.DataServer.Interface\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Filipe Nogueira\Desktop\Projeto\Plena\M4 - Vinicius\M4\Modulus DataServer\M4.DataServer.Interface\obj\Debug\M4.DataServer.Interface.pdb
+C:\Users\Filipe Nogueira\Desktop\Projeto\Plena\M4 - Vinicius\M4\Modulus DataServer\M4.DataServer.Interface\bin\Debug\M4.DataServer.Interface.dll
+C:\Users\Filipe Nogueira\Desktop\Projeto\Plena\M4 - Vinicius\M4\Modulus DataServer\M4.DataServer.Interface\bin\Debug\M4.DataServer.Interface.pdb
+C:\Users\Filipe Nogueira\Desktop\Projeto\Plena\M4 - Vinicius\M4\Modulus DataServer\M4.DataServer.Interface\bin\Debug\extremedb4net.dll
+C:\Users\Filipe Nogueira\Desktop\Projeto\Plena\M4 - Vinicius\M4\Modulus DataServer\M4.DataServer.Interface\bin\Debug\extremedb4net_mursiw_debug.dll
+C:\Users\Filipe Nogueira\Desktop\Projeto\Plena\M4 - Vinicius\M4\Modulus DataServer\M4.DataServer.Interface\bin\Debug\ModulusFE.Sockets.dll
+C:\Users\Filipe Nogueira\Desktop\Projeto\Plena\M4 - Vinicius\M4\Modulus DataServer\M4.DataServer.Interface\bin\Debug\System.Data.SQLite.DLL
+C:\Users\Filipe Nogueira\Desktop\Projeto\Plena\M4 - Vinicius\M4\Modulus DataServer\M4.DataServer.Interface\bin\Debug\ModulusFE.Sockets.pdb
+C:\Users\Filipe Nogueira\Desktop\Projeto\Plena\M4 - Vinicius\M4\Modulus DataServer\M4.DataServer.Interface\bin\Debug\System.Data.SQLite.xml
+C:\Users\Filipe Nogueira\Desktop\Projeto\Plena\M4 - Vinicius\M4\Modulus DataServer\M4.DataServer.Interface\obj\Debug\M4.DataServer.Interface.dll
