@@ -32,7 +32,7 @@ C#, ASP.NET, MS SQL.
 C++, ActiveX.
 * TradeScript:
 C#.
-* Crainiate Open Diagram:
+* Crainiate Open Source Diagram:
 C#.
 
 ### Contribution guidelines ###
