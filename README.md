@@ -1,4 +1,4 @@
-<img src="https://scontent.fplu11-1.fna.fbcdn.net/v/t31.0-8/10371327_1384645041846600_7466280185310397610_o.jpg?oh=dff3d69fa1d81f0e13f03fff2c87a0ab&oe=5AB9DEBA" alt="Self-Driving Car" width="800px">
+<img src="plena.jpg" alt="Plena" width="800px">
 
 # Plena Trading Platform #
 * [www.plena-tp.com.br](https://www.facebook.com/pg/plena.tp)
