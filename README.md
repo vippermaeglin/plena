@@ -35,6 +35,11 @@ C#.
 * Crainiate Open Source Diagram:
 C#.
 
+### Infra & DevOps ###
+
+* Server Backend provisioned on Azure with pipeline hooked to TFS
+* Desktop application manually built with InstallShield
+
 ### Contribution guidelines ###
 
 * Anyone and everyone is welcome to contribute.
