@@ -39,6 +39,7 @@ C#.
 
 * Server Backend provisioned on Azure with pipeline hooked to TFS
 * Desktop application manually built with InstallShield
+* Message broadcast with RabbitMQ
 
 ### Architecture ###
 
@@ -46,7 +47,7 @@ C#.
 
 ### Demo ###
 
-<img src="plena-video.gif" width="480" alt="Example Video" align="middle"/>
+<img src="plena-video.gif" width="960" alt="Example Video" align="middle"/>
 
 ### Contribution guidelines ###
 
