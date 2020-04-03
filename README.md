@@ -40,6 +40,10 @@ C#.
 * Server Backend provisioned on Azure with pipeline hooked to TFS
 * Desktop application manually built with InstallShield
 
+### Architecture ###
+
+<img src="plena-architecture.png" width="480" alt="Architecture" align="middle"/>
+
 ### Demo ###
 
 <img src="plena-video.gif" width="480" alt="Example Video" align="middle"/>
