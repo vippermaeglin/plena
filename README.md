@@ -42,7 +42,7 @@ C#.
 
 ### Demo ###
 
-<img src="plena-video.gif" width="480" alt="Example Video" align="middle"/>
+<img src="plena-video.gif" width="960" alt="Example Video" align="middle"/>
 
 ### Contribution guidelines ###
 
