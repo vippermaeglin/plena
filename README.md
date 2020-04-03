@@ -40,6 +40,10 @@ C#.
 * Server Backend provisioned on Azure with pipeline hooked to TFS
 * Desktop application manually built with InstallShield
 
+### Demo ###
+
+<img src="plena-video.gif" width="480" alt="Example Video" align="middle"/>
+
 ### Contribution guidelines ###
 
 * Anyone and everyone is welcome to contribute.
