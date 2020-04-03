@@ -43,7 +43,7 @@ C#.
 
 ### Architecture ###
 
-<img src="plena-architecture.png" width="480" alt="Architecture" align="middle"/>
+<img src="plena-architecture.png" width="960" alt="Architecture" align="middle"/>
 
 ### Demo ###
 
